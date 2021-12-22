@@ -1,15 +1,44 @@
 @import "../fonts/stylesheet.css";
+@import "../icon/style.css";
+.header .header-inner {
+  padding: 23px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.header .header-inner .header-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header .header-inner .header-nav li {
+  margin-right: 30px;
+}
+.header .header-inner .header-nav .header-link {
+  font-family: "Futura PT Book", sans-serif;
+  font-size: 17px;
+}
+.header .header-inner .header-icon-group .icon {
+  font-size: 28px;
+  color: #2C2C2C;
+  margin-left: 20px;
+}
+
 body {
-  font-family: "Roboto Slab", serif;
-  background-color: #E5E5E5;
+  font-family: "Futura PT", sans-serif;
+  background-color: #ffffff;
   font-size: 16px;
   font-weight: normal;
   min-height: 100vh;
   overflow-x: hidden;
 }
 
-.container-lg {
-  max-width: 1080px;
+a {
+  text-decoration: none;
+}
+
+.container-xl {
+  max-width: 1400px;
   margin-right: auto;
   margin-left: auto;
 }

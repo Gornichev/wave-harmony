@@ -1,0 +1,16 @@
+body {
+  font-family: "Futura PT", sans-serif;
+  background-color: #E5E5E5;
+  font-size: 16px;
+  font-weight: normal;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container-xl {
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*# sourceMappingURL=header.css.map */
