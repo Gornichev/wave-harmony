@@ -18,11 +18,14 @@
 .header .header-link-phone {
   font-size: 18px;
   font-family: "Futura-PT-Bold", sans-serif;
+  line-height: 25px;
   color: #2B2A28;
 }
 .header .header-phone-text {
   font-size: 18px;
+  line-height: 25px;
   font-family: "Futura-PT-Book", sans-serif;
+  color: #2B2A28;
 }
 .header .icon-group .icon {
   font-size: 28px;
@@ -39,6 +42,10 @@
   color: #2B2A28;
   font-family: "Futura-PT-Book", sans-serif;
   padding: 5px 15px;
+}
+.navbar .nav .active {
+  background: #FFECC8;
+  border-radius: 10px;
 }
 .navbar .nav .nav-item {
   margin-right: 30px;
@@ -62,6 +69,11 @@ a {
 
 .container {
   max-width: 1424px;
+}
+
+.background {
+  background-image: linear-gradient(#CFAFFF, #A6C6D1);
+  height: 620px;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
