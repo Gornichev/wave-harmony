@@ -11,29 +11,39 @@
 <body>
 
 <div class="container">
-    <header class="py-3 mb-4 border-bottom">
-        <div class="container d-flex flex-wrap justify-content-center">
-            <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
-                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-                <span class="fs-4">Double header</span>
-            </a>
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0">
-                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-            </form>
+    <header class="header">
+        <a href="#" class="logo"><img src="int/img/logo.svg" alt="logo"></a>
+        <div class="row align-items-center">
+            <div class="col">
+                <a href="tel:88005113639"> 8 (800) 511 36 39</a> бесплатно по России
+            </div>
+            <div class="col-auto">
+                <ul class="list-unstyled d-flex">
+                    <li><a href="#"><i class="icon icon-find"></i></a></li>
+                    <li><a href="#"><i class="icon icon-heat"></i><span class="dot danger"></span></a></li>
+                    <li><a href="#"><i class="icon icon-bag"></i><span class="dot danger"></span></a></li>
+                </ul>
+            </div>
         </div>
     </header>
-    <nav class="py-2 bg-light border-bottom">
-        <div class="container d-flex flex-wrap">
+    <nav class="navbar navbar-expand-xl">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleXl" aria-controls="navbarsExampleXxl" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="icon icon-heat"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExampleXl">
             <ul class="nav me-auto">
-                <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active" aria-current="page">Каталог</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Блог</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">О бренде</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Размеры</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Доставка и оплата</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Отзывы</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Создай свой купальник</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Сертификаты</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Контакты</a></li>
             </ul>
             <ul class="nav">
-                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Login</a></li>
-                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Sign up</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><span class="text-danger">Распродажа до -40%</span></a></li>
             </ul>
         </div>
     </nav>

@@ -1,27 +1,19 @@
-@import "../fonts/stylesheet.css";
+@import "../fonts/fonts.css";
 @import "../icon/style.css";
-.header .header-inner {
-  padding: 23px 0;
-  display: flex;
-  justify-content: space-between;
+.header {
+  position: relative;
+  margin-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-.header .header-inner .header-nav {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.header .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.header .header-inner .header-nav li {
-  margin-right: 30px;
-}
-.header .header-inner .header-nav .header-link {
-  font-family: "Futura PT Book", sans-serif;
-  font-size: 17px;
-}
-.header .header-inner .header-icon-group .icon {
-  font-size: 28px;
-  color: #2C2C2C;
-  margin-left: 20px;
+.header .logo img {
+  max-height: 50px;
 }
 
 body {
