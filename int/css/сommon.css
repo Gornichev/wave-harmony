@@ -16,6 +16,11 @@
   max-height: 50px;
 }
 
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 body {
   font-family: "Futura PT", sans-serif;
   background-color: #ffffff;
@@ -29,10 +34,8 @@ a {
   text-decoration: none;
 }
 
-.container-xl {
-  max-width: 1400px;
-  margin-right: auto;
-  margin-left: auto;
+.container {
+  max-width: 1424px;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
