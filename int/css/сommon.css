@@ -2,9 +2,7 @@
 @import "../icon/style.css";
 .header {
   position: relative;
-  margin-bottom: 10px;
   padding-top: 30px;
-  padding-bottom: 30px;
 }
 .header .logo {
   position: absolute;
@@ -34,8 +32,8 @@
 }
 
 .navbar {
-  padding: 23px 0;
   background: #ffffff;
+  padding: 30px;
 }
 .navbar .nav .nav-link {
   font-size: 18px;
