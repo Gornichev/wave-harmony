@@ -121,6 +121,19 @@
   background-position: top;
   background-size: cover;
 }
+.section-intro .swiper-slide .swiper-tool-tip {
+  position: absolute;
+  top: 35%;
+  left: 48%;
+}
+.section-intro .swiper-slide .icon {
+  width: 24px;
+  background: #ffffff;
+  height: 24px;
+  border-radius: 100%;
+  padding: 9px;
+  outline: 8px rgba(255, 255, 255, 0.3) solid;
+}
 
 .btn-light {
   background: none;
