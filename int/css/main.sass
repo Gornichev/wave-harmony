@@ -15,8 +15,40 @@ a
 	max-width: 1424px
 
 //<!--Section-intro-->
-.background
-	background-image: linear-gradient(#CFAFFF, #A6C6D1)
-	height: 620px
+.section-intro
+
+	.swiper-group
+		text-align: left
+
+		.swiper-title
+			font-size: 90px
+			line-height: 115px
+			color: $mainColor
+			margin-bottom: 10px
+			font-family: 'Futura-PT-Book',sans-serif
+
+		.swiper-text
+			font-size: 26px
+			line-height: 36px
+			color: $mainColor
+			margin-bottom: 50px
+			font-family: 'Futura-PT-Book',sans-serif
+		.btn
+			margin-bottom: 100px
+
+
+			&:after
+				content: ""
+				background: url("../img/Waves.png")
+
+
+	.swiper-slide
+		position: relative
+		min-height: 700px
+		background-image: url("../img/bg-grad-full.jpg")
+		background-repeat: no-repeat
+		background-position: left top
+		background-size: 100%
+
 
 
