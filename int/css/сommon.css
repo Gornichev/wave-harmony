@@ -126,7 +126,18 @@
   top: 35%;
   left: 48%;
 }
+.section-intro .swiper-slide .swiper-tool-tip .tooltip-inner {
+  max-width: 310px;
+  padding: 3px 8px;
+  color: #000;
+  text-align: center;
+  background-color: red;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
 .section-intro .swiper-slide .icon {
+  font-size: 6px;
   width: 24px;
   background: #ffffff;
   height: 24px;
