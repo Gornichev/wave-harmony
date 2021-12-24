@@ -123,18 +123,20 @@
 }
 .section-intro .swiper-slide .swiper-tool-tip {
   position: absolute;
-  top: 35%;
-  left: 48%;
+  top: 34%;
+  left: 51%;
+  opacity: 0.8;
 }
-.section-intro .swiper-slide .swiper-tool-tip .tooltip-inner {
-  max-width: 310px;
-  padding: 3px 8px;
-  color: #000;
-  text-align: center;
-  background-color: red;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+.section-intro .swiper-slide .swiper-tool-tip-position-2 {
+  position: absolute;
+  top: 34%;
+  left: 51%;
+  -webkit-transition: 0.5s ease;
+  opacity: 0.8;
+}
+.section-intro .swiper-slide .swiper-tool-tip-position-2:hover {
+  opacity: 0;
+  transition: 0.5s;
 }
 .section-intro .swiper-slide .icon {
   font-size: 6px;
@@ -144,6 +146,18 @@
   border-radius: 100%;
   padding: 9px;
   outline: 8px rgba(255, 255, 255, 0.3) solid;
+}
+
+.tooltip-inner {
+  max-width: 260px;
+  padding: 25px;
+  font-size: 18px;
+  line-height: 23px;
+  font-family: "Futura-PT-Book", sans-serif;
+  color: #2C2C2C;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 25px;
 }
 
 .btn-light {
