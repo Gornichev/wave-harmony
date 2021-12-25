@@ -150,17 +150,15 @@
   line-height: 23px;
   font-family: "Futura-PT-Book", sans-serif;
   color: #2C2C2C;
-  text-align: center;
+  text-align: left;
   background-color: #ffffff;
-  border-radius: 25px;
+  opacity: 1;
+  border-radius: 20px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.15);
 }
 
 .tooltip .tooltip-arrow:before {
-  border-left-color: #ffffff;
-}
-
-.tooltip .tooltip-arrow:before {
-  border-right-color: #ffffff;
+  display: none;
 }
 
 .btn-light {
