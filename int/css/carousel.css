@@ -5,7 +5,6 @@
 .swiper .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,6 +24,105 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.swiper .swiper-pagination {
+  position: relative;
+  text-align: left;
+  top: 120px;
+}
+.swiper .swiper-pagination-bullet {
+  border-radius: 0;
+  width: 15px;
+  height: 6px;
+  margin: 0;
+}
+.swiper .swiper-pagination-bullet-active {
+  background: #ffffff;
+  margin: 0;
+}
+
+.section-intro {
+  margin-bottom: 80px;
+}
+.section-intro .swiper-group {
+  text-align: left;
+}
+.section-intro .swiper-group .swiper-title {
+  font-size: 90px;
+  line-height: 115px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-family: "Futura-PT-Book", sans-serif;
+}
+.section-intro .swiper-group .swiper-text {
+  font-size: 26px;
+  line-height: 36px;
+  color: #ffffff;
+  margin-bottom: 50px;
+  font-family: "Futura-PT-Book", sans-serif;
+}
+.section-intro .swiper-slide {
+  position: relative;
+  min-height: 700px;
+  background-image: url("../img/bg-grad-full.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.section-intro .swiper-slide .swiper-tool-tip {
+  position: absolute;
+  top: 34%;
+  left: 51%;
+}
+.section-intro .swiper-slide .swiper-tool-tip-position-2 {
+  position: absolute;
+  top: 80%;
+  left: 49%;
+}
+.section-intro .swiper-slide .swiper-tool-tip-position-3 {
+  position: absolute;
+  top: 42%;
+  right: 22%;
+}
+.section-intro .swiper-slide .swiper-tool-tip-position-4 {
+  position: absolute;
+  top: 77%;
+  right: 17%;
+}
+.section-intro .swiper-slide .icon {
+  font-size: 6px;
+  width: 24px;
+  background: #ffffff;
+  height: 24px;
+  border-radius: 100%;
+  padding: 9px;
+  outline: 8px rgba(255, 255, 255, 0.3) solid;
+  opacity: 0.8;
+  -webkit-transition: 0.5s ease;
+}
+.section-intro .swiper-slide .icon-plus:hover {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.tooltip-inner {
+  max-width: 260px;
+  padding: 25px;
+  font-size: 18px;
+  line-height: 23px;
+  font-family: "Futura-PT-Book", sans-serif;
+  color: #2C2C2C;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 25px;
+}
+
+.tooltip .tooltip-arrow:before {
+  border-left-color: #ffffff;
+}
+
+.tooltip .tooltip-arrow:before {
+  border-right-color: #ffffff;
 }
 
 /*# sourceMappingURL=carousel.css.map */

@@ -1,55 +1,18 @@
-.header {
-  position: relative;
-  margin-bottom: 10px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.header .logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.header .logo img {
-  max-height: 50px;
-}
-.header .header-link-phone {
-  font-size: 18px;
-  font-family: "Futura-PT-Bold", sans-serif;
-  line-height: 25px;
-  color: #2B2A28;
-}
-.header .header-phone-text {
-  font-size: 18px;
-  line-height: 25px;
+.btn-light {
+  background: none;
+  color: #ffffff;
   font-family: "Futura-PT-Book", sans-serif;
-  color: #2B2A28;
-}
-.header .icon-group .icon {
-  font-size: 28px;
-  color: #2C2C2C;
-  margin-left: 30px;
 }
 
-.navbar {
-  padding-top: 0;
-  padding-bottom: 0;
+.btn-lg {
+  padding: 16px 30px;
+  border-radius: 15px;
+  font-size: 20px;
+  line-height: 20px;
 }
-.navbar .nav .nav-link {
-  font-size: 18px;
-  color: #2B2A28;
-  font-family: "Futura-PT-Book", sans-serif;
-  padding: 5px 15px;
-}
-.navbar .nav .active {
-  background: #FFECC8;
-  border-radius: 10px;
-}
-.navbar .nav .nav-item {
-  margin-right: 30px;
-}
-.navbar .nav .nav-item:last-child {
-  margin: 0;
+
+.btn-outline-info {
+  color: #21A5B5 100% #71B2B4 100%;
 }
 
 /*# sourceMappingURL=button.css.map */
