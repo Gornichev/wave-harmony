@@ -96,6 +96,9 @@
   margin: 0;
 }
 
+.section-intro {
+  margin-bottom: 80px;
+}
 .section-intro .swiper-group {
   text-align: left;
 }
@@ -209,6 +212,52 @@ a {
 
 .container {
   max-width: 1424px;
+}
+
+.section-item {
+  position: relative;
+}
+.section-item .item-header {
+  margin-bottom: 60px;
+}
+.section-item .swiper-button-next {
+  position: absolute;
+  top: 10%;
+  right: 25%;
+}
+.section-item .swiper-button-next:after {
+  font-size: 11px;
+  padding: 24px;
+  color: #21A5B5;
+  outline: 1px solid #21A5B5;
+  border-radius: 15px;
+  height: 54px;
+  width: 54px;
+}
+.section-item .swiper-button-prev {
+  position: absolute;
+  top: 10%;
+  left: 68%;
+}
+.section-item .swiper-button-prev:after {
+  font-size: 11px;
+  padding: 24px;
+  color: #21A5B5;
+  outline: 1px solid #21A5B5;
+  border-radius: 15px;
+  height: 54px;
+  width: 54px;
+}
+.section-item .item-body {
+  position: relative;
+  text-align: left;
+}
+.section-item .item-body .icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 24px;
+  color: #2C2C2C;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
