@@ -125,18 +125,21 @@
   position: absolute;
   top: 34%;
   left: 51%;
-  opacity: 0.8;
 }
 .section-intro .swiper-slide .swiper-tool-tip-position-2 {
   position: absolute;
-  top: 34%;
-  left: 51%;
-  -webkit-transition: 0.5s ease;
-  opacity: 0.8;
+  top: 80%;
+  left: 49%;
 }
-.section-intro .swiper-slide .swiper-tool-tip-position-2:hover {
-  opacity: 0;
-  transition: 0.5s;
+.section-intro .swiper-slide .swiper-tool-tip-position-3 {
+  position: absolute;
+  top: 42%;
+  right: 22%;
+}
+.section-intro .swiper-slide .swiper-tool-tip-position-4 {
+  position: absolute;
+  top: 77%;
+  right: 17%;
 }
 .section-intro .swiper-slide .icon {
   font-size: 6px;
@@ -146,6 +149,12 @@
   border-radius: 100%;
   padding: 9px;
   outline: 8px rgba(255, 255, 255, 0.3) solid;
+  opacity: 0.8;
+  -webkit-transition: 0.5s ease;
+}
+.section-intro .swiper-slide .icon-plus:hover {
+  opacity: 0;
+  transition: 0.5s;
 }
 
 .tooltip-inner {
@@ -158,6 +167,14 @@
   text-align: center;
   background-color: #ffffff;
   border-radius: 25px;
+}
+
+.tooltip .tooltip-arrow:before {
+  border-left-color: #ffffff;
+}
+
+.tooltip .tooltip-arrow:before {
+  border-right-color: #ffffff;
 }
 
 .btn-light {

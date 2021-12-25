@@ -78,20 +78,21 @@
 			position: absolute
 			top: 34%
 			left: 51%
-			opacity: 0.8
-
 
 		.swiper-tool-tip-position-2
 			position: absolute
-			top: 34%
-			left: 51%
-			-webkit-transition: 0.5s ease
-			opacity: 0.8
+			top: 80%
+			left: 49%
 
-			&:hover
-				opacity: 0
-				transition: 0.5s
+		.swiper-tool-tip-position-3
+			position: absolute
+			top: 42%
+			right: 22%
 
+		.swiper-tool-tip-position-4
+			position: absolute
+			top: 77%
+			right: 17%
 
 		.icon
 			font-size: 6px
@@ -101,6 +102,13 @@
 			border-radius: 100%
 			padding: 9px
 			outline: 8px $mainlightColor solid
+			opacity: 0.8
+			-webkit-transition: 0.5s ease
+
+		.icon-plus
+			&:hover
+				opacity: 0
+				transition: 0.5s
 
 .tooltip-inner
 	max-width: 260px
@@ -112,6 +120,16 @@
 	text-align: center
 	background-color: $mainColor
 	border-radius: 25px
+
+.tooltip .tooltip-arrow:before
+	border-left-color: $mainColor
+
+.tooltip .tooltip-arrow:before
+	border-right-color: $mainColor
+
+
+
+
 
 
 
