@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper-intro", {
+const swiperIntro = new Swiper(".swiper-intro", {
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -9,3 +9,18 @@ var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggl
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
 })
+// Slider-item
+const SwiperItem = new Swiper(".Swiper-item", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});

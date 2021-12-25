@@ -190,6 +190,10 @@
   line-height: 20px;
 }
 
+.btn-outline-info {
+  color: #21A5B5 100% #71B2B4 100%;
+}
+
 body {
   font-family: "Futura PT", sans-serif;
   background-color: #ffffff;
