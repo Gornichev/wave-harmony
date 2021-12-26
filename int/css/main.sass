@@ -103,13 +103,23 @@ a
 			display: flex
 			list-style: none
 
-			.item-size-link
+			li:after
+				content: "|"
+				width: 1px
+				height: 7px
+				color: $lightColor
+				margin: 0 7px
+
+			li:last-child:after
+				display: none
+
+		.item-size-link
 				font-size: 16px
 				line-height: 22px
 				color: $mainText
 				font-family: "Futura-PT-Book", sans-serif
-				padding-right: 7px
-				border-right: 1px solid $lightColor
+
+
 
 
 

@@ -282,13 +282,21 @@ a {
   display: flex;
   list-style: none;
 }
-.section-item .item-footer .item-size .item-size-link {
+.section-item .item-footer .item-size li:after {
+  content: "|";
+  width: 1px;
+  height: 7px;
+  color: #E3E3E3;
+  margin: 0 7px;
+}
+.section-item .item-footer .item-size li:last-child:after {
+  display: none;
+}
+.section-item .item-footer .item-size-link {
   font-size: 16px;
   line-height: 22px;
   color: #2C2C2C;
   font-family: "Futura-PT-Book", sans-serif;
-  padding-right: 7px;
-  border-right: 1px solid #E3E3E3;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
