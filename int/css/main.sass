@@ -14,18 +14,37 @@ a
 .container
 	max-width: 1424px
 
+.section-intro
+	margin-bottom: 80px
+
 //section-item
 
 .section-item
 	position: relative
 
 	.item-header
-		margin-bottom: 60px
+		margin-bottom: 44px
+
+		.section-item-title
+			font-family: 'Futura-PT-Medium',sans-serif
+			font-size: 44px
+			line-height: 61px
+			color: $mainText
+			margin-bottom: 10px
+
+		.section-item-text
+			font-family: 'Futura-PT-Book', sans-serif
+			font-size: 20px
+			line-height: 28px
+			color: $secondColor
+
+		.item-wrapper
+			padding-top: 22px
 
 	.swiper-button-next
 		position: absolute
 		top: 10%
-		right: 25%
+		right: 26%
 
 		&:after
 			font-size: 11px
@@ -39,7 +58,7 @@ a
 	.swiper-button-prev
 		position: absolute
 		top: 10%
-		left: 68%
+		left: 66%
 
 		&:after
 			font-size: 11px
@@ -53,12 +72,55 @@ a
 	.item-body
 		position: relative
 		text-align: left
+		background: $mainBackground
 
 		.icon
 			position: absolute
-			top: 0
-			right: 0
-			font-size: 24px
+			top: 18px
+			right: 15px
+			font-size: 20px
 			color: $mainText
+
+	.item-footer
+
+		.item-price
+			font-size: 20px
+			line-height: 28px
+			color: $mainText
+			font-family: 'Futura-PT-Demi',sans-serif
+			margin-bottom: 1px
+
+		.item-name
+			font-size: 20px
+			line-height: 28px
+			color: $mainText
+			font-family: "Futura-PT-Book", sans-serif
+			margin-bottom: 5px
+
+		.item-size
+			margin: 0
+			padding: 0
+			display: flex
+			list-style: none
+
+			.item-size-link
+				font-size: 16px
+				line-height: 22px
+				color: $mainText
+				font-family: "Futura-PT-Book", sans-serif
+				padding-right: 7px
+				border-right: 1px solid $lightColor
+
+
+
+
+
+
+
+
+
+
+
+
 
 

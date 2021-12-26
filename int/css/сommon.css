@@ -15,7 +15,7 @@
 }
 .header .header-link-phone {
   font-size: 18px;
-  font-family: "Futura-PT-Bold", sans-serif;
+  font-family: "Futura-PT-Medium", sans-serif;
   line-height: 25px;
   color: #2B2A28;
 }
@@ -62,6 +62,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  margin-bottom: 25px;
+  min-width: 335px;
 }
 .swiper .swiper-pagination {
   position: relative;
@@ -79,27 +81,25 @@
   margin: 0;
 }
 
-.section-intro {
-  margin-bottom: 80px;
-}
-.section-intro .swiper-group {
+.swiper-intro .swiper-group {
   text-align: left;
+  padding-top: 150px;
 }
-.section-intro .swiper-group .swiper-title {
+.swiper-intro .swiper-group .swiper-title {
   font-size: 90px;
   line-height: 115px;
   color: #ffffff;
   margin-bottom: 10px;
   font-family: "Futura-PT-Book", sans-serif;
 }
-.section-intro .swiper-group .swiper-text {
+.swiper-intro .swiper-group .swiper-text {
   font-size: 26px;
   line-height: 36px;
   color: #ffffff;
   margin-bottom: 50px;
   font-family: "Futura-PT-Book", sans-serif;
 }
-.section-intro .swiper-slide {
+.swiper-intro .swiper-slide {
   position: relative;
   min-height: 700px;
   background-image: url("../img/bg-grad-full.jpg");
@@ -107,27 +107,27 @@
   background-position: top;
   background-size: cover;
 }
-.section-intro .swiper-slide .swiper-tool-tip {
+.swiper-intro .swiper-slide .swiper-tool-tip {
   position: absolute;
   top: 34%;
   left: 51%;
 }
-.section-intro .swiper-slide .swiper-tool-tip-position-2 {
+.swiper-intro .swiper-slide .swiper-tool-tip-position-2 {
   position: absolute;
   top: 80%;
   left: 49%;
 }
-.section-intro .swiper-slide .swiper-tool-tip-position-3 {
+.swiper-intro .swiper-slide .swiper-tool-tip-position-3 {
   position: absolute;
   top: 42%;
   right: 22%;
 }
-.section-intro .swiper-slide .swiper-tool-tip-position-4 {
+.swiper-intro .swiper-slide .swiper-tool-tip-position-4 {
   position: absolute;
   top: 77%;
   right: 17%;
 }
-.section-intro .swiper-slide .icon {
+.swiper-intro .swiper-slide .icon {
   font-size: 6px;
   width: 24px;
   background: #ffffff;
@@ -138,7 +138,7 @@
   opacity: 0.8;
   -webkit-transition: 0.5s ease;
 }
-.section-intro .swiper-slide .icon-plus:hover {
+.swiper-intro .swiper-slide .icon-plus:hover {
   opacity: 0;
   transition: 0.5s;
 }
@@ -176,6 +176,7 @@
 
 .btn-outline-info {
   color: #21A5B5 100% #71B2B4 100%;
+  font-family: "Futura-PT-Medium", sans-serif;
 }
 
 body {
@@ -195,16 +196,36 @@ a {
   max-width: 1424px;
 }
 
+.section-intro {
+  margin-bottom: 80px;
+}
+
 .section-item {
   position: relative;
 }
 .section-item .item-header {
-  margin-bottom: 60px;
+  margin-bottom: 44px;
+}
+.section-item .item-header .section-item-title {
+  font-family: "Futura-PT-Medium", sans-serif;
+  font-size: 44px;
+  line-height: 61px;
+  color: #2C2C2C;
+  margin-bottom: 10px;
+}
+.section-item .item-header .section-item-text {
+  font-family: "Futura-PT-Book", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  color: #444444;
+}
+.section-item .item-header .item-wrapper {
+  padding-top: 22px;
 }
 .section-item .swiper-button-next {
   position: absolute;
   top: 10%;
-  right: 25%;
+  right: 26%;
 }
 .section-item .swiper-button-next:after {
   font-size: 11px;
@@ -218,7 +239,7 @@ a {
 .section-item .swiper-button-prev {
   position: absolute;
   top: 10%;
-  left: 68%;
+  left: 66%;
 }
 .section-item .swiper-button-prev:after {
   font-size: 11px;
@@ -232,13 +253,42 @@ a {
 .section-item .item-body {
   position: relative;
   text-align: left;
+  background: #F8F8F8;
 }
 .section-item .item-body .icon {
   position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 24px;
+  top: 18px;
+  right: 15px;
+  font-size: 20px;
   color: #2C2C2C;
+}
+.section-item .item-footer .item-price {
+  font-size: 20px;
+  line-height: 28px;
+  color: #2C2C2C;
+  font-family: "Futura-PT-Demi", sans-serif;
+  margin-bottom: 1px;
+}
+.section-item .item-footer .item-name {
+  font-size: 20px;
+  line-height: 28px;
+  color: #2C2C2C;
+  font-family: "Futura-PT-Book", sans-serif;
+  margin-bottom: 5px;
+}
+.section-item .item-footer .item-size {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+.section-item .item-footer .item-size .item-size-link {
+  font-size: 16px;
+  line-height: 22px;
+  color: #2C2C2C;
+  font-family: "Futura-PT-Book", sans-serif;
+  padding-right: 7px;
+  border-right: 1px solid #E3E3E3;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
