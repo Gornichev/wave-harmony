@@ -212,6 +212,7 @@ a {
 
 .section-item {
   position: relative;
+  margin-bottom: 230px;
 }
 .section-item .item-header {
   margin-bottom: 44px;

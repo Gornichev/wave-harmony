@@ -24,3 +24,12 @@ const SwiperItem = new Swiper(".Swiper-item", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+// swiper-trust
+var swiper = new Swiper(".swiper-trust", {
+    scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+        direction: "vertical",
+    },
+});
