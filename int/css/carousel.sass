@@ -1,16 +1,8 @@
 @import "variables"
 
-.swiper
+.swiper-intro
 	width: 100%
 	height: 100%
-
-	.swiper-slide img
-		display: block
-		width: 100%
-		height: 100%
-		object-fit: cover
-		margin-bottom: 25px
-		min-width: 335px
 
 	.swiper-pagination
 		position: relative
@@ -26,8 +18,6 @@
 	.swiper-pagination-bullet-active
 		background: $mainColor
 		margin: 0
-
-.swiper-intro
 
 	.swiper-group
 		text-align: left
@@ -54,6 +44,13 @@
 		background-repeat: no-repeat
 		background-position: top
 		background-size: cover
+
+		img
+			display: block
+			width: 100%
+			height: 100%
+			object-fit: cover
+			min-width: 335px
 
 		.swiper-tool-tip
 			position: absolute
@@ -87,6 +84,7 @@
 			-webkit-transition: 0.5s ease
 
 		.icon-plus
+
 			&:hover
 				opacity: 0
 				transition: 0.5s
@@ -107,15 +105,51 @@
 .tooltip .tooltip-arrow:before
 	display: none
 
+.swiper-card
 
+	.swiper-slide
+		overflow: hidden
+		height: 611px
+		cursor: pointer
 
+		.item-footer
+			padding-top: 25px
+			position: relative
+			background-color: $mainColor
+			min-height: 183px
+			-webkit-transition: all .12s linear
+			-moz-transition: all .12s linear
+			-o-transition: all .12s linear
+			transition: all .12s linear
 
+			.btn
+				position: absolute
+				bottom: 0
+				left: 0
 
+		&:hover
 
+			.item-footer
+				transform: translateY(-79px)
 
+	.button-control
+		display: flex
 
+		.swiper-button
+			top: 0
+			left: 0
+			right: 0
+			position: relative
+			border: 1px solid $gradientColorOne
+			border-radius: 15px
+			height: 54px
+			width: 54px
+			color: $gradientColorOne
+			padding: 0
 
+			&:after
+				font-size: 12px
 
-
-
+			& + .swiper-button
+				margin-left: 15px
 

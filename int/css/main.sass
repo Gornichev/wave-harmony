@@ -38,37 +38,7 @@ a
 			font-size: 20px
 			line-height: 28px
 			color: $secondColor
-
-		.item-wrapper
-			padding-top: 22px
-
-	.swiper-button-next
-		position: absolute
-		top: 10%
-		right: 26%
-
-		&:after
-			font-size: 11px
-			padding: 24px
-			color: $gradientColorOne
-			outline: 1px solid $gradientColorOne
-			border-radius: 15px
-			height: 54px
-			width: 54px
-
-	.swiper-button-prev
-		position: absolute
-		top: 10%
-		left: 66%
-
-		&:after
-			font-size: 11px
-			padding: 24px
-			color: $gradientColorOne
-			outline: 1px solid $gradientColorOne
-			border-radius: 15px
-			height: 54px
-			width: 54px
+			margin-bottom: 0
 
 	.item-body
 		position: relative
@@ -104,21 +74,23 @@ a
 			display: flex
 			list-style: none
 
-			li:after
-				content: "|"
-				width: 1px
-				height: 7px
-				color: $lightColor
-				margin: 0 7px
+			li
 
-			li:last-child:after
-				display: none
+				&:after
+					content: "|"
+					width: 1px
+					height: 7px
+					color: $lightColor
+					margin: 0 7px
 
-		.item-size-link
-				font-size: 16px
-				line-height: 22px
-				color: $mainText
-				font-family: "Futura-PT-Book", sans-serif
+				&:last-child:after
+					display: none
+
+			.item-size-link
+					font-size: 16px
+					line-height: 22px
+					color: $mainText
+					font-family: "Futura-PT-Book", sans-serif
 
 
 

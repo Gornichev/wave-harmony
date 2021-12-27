@@ -10,9 +10,9 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 // Slider-item
-const SwiperItem = new Swiper(".Swiper-item", {
+const SwiperItem = new Swiper(".swiper-card", {
     slidesPerView: 4,
-    spaceBetween: 30,
+    spaceBetween: 20,
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {
