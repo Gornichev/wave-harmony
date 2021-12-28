@@ -34,6 +34,10 @@ const slider = new Swiper(".in-trust-slider", {
     freeMode: true,
     watchSlidesProgress: true,
     direction: "horizontal",
+    scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+    },
     breakpoints: {
         0: {
             slidesPerView: 2,
@@ -50,11 +54,12 @@ const slider = new Swiper(".in-trust-slider", {
 
 const intro = new Swiper(".trust-slider", {
     spaceBetween: 24,
+    loop: true,
     thumbs: {
         swiper: slider,
     },
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    // },
 });

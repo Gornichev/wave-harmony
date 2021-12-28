@@ -241,8 +241,7 @@
   overflow: hidden;
 }
 .swiper.in-trust-slider .swiper-slide img {
-  width: 100%;
-  min-height: 287px;
+  min-width: 150px;
   border-radius: 25px;
 }
 .swiper.in-trust-slider .swiper-slide-thumb-active {
