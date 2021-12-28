@@ -53,7 +53,7 @@ const slider = new Swiper(".in-trust-slider", {
 });
 
 const intro = new Swiper(".trust-slider", {
-    spaceBetween: 24,
+    spaceBetween: 30,
     loop: true,
     thumbs: {
         swiper: slider,
