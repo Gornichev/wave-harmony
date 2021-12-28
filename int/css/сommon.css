@@ -367,19 +367,20 @@ a {
   margin-bottom: 80px;
 }
 
+.title {
+  font-family: "Futura-PT-Medium", sans-serif;
+  font-size: 44px;
+  line-height: 61px;
+  color: #2C2C2C;
+  margin-bottom: 10px;
+}
+
 .section-item {
   position: relative;
   margin-bottom: 230px;
 }
 .section-item .item-header {
   margin-bottom: 57px;
-}
-.section-item .item-header .section-item-title {
-  font-family: "Futura-PT-Medium", sans-serif;
-  font-size: 44px;
-  line-height: 61px;
-  color: #2C2C2C;
-  margin-bottom: 10px;
 }
 .section-item .item-header .section-item-text {
   font-family: "Futura-PT-Book", sans-serif;
@@ -439,12 +440,6 @@ a {
 
 .section-trust .section-trust-header {
   margin-bottom: 60px;
-}
-.section-trust .section-trust-header .section-trust-title {
-  font-family: "Futura-PT-Medium", sans-serif;
-  font-size: 44px;
-  line-height: 61px;
-  color: #2C2C2C;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
