@@ -438,8 +438,16 @@ a {
   font-family: "Futura-PT-Book", sans-serif;
 }
 
+.section-trust {
+  margin-bottom: 120px;
+}
 .section-trust .section-trust-header {
   margin-bottom: 60px;
+}
+
+.section-best {
+  background: #F8F8F8;
+  padding-top: 110px;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
