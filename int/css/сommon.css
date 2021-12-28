@@ -294,6 +294,21 @@
   opacity: 1 !important;
 }
 
+input[type=checkbox] {
+  display: none;
+}
+
+label:after {
+  content: "\e900";
+  font-size: 25px;
+  font-family: icomoon, sans-serif;
+}
+
+input[type=checkbox]:checked + .label {
+  background: #f00;
+  color: #fff;
+}
+
 .row-padding-10 {
   margin-left: -10px !important;
   margin-right: -10px !important;
@@ -447,6 +462,7 @@ a {
 
 .section-best {
   background: #F8F8F8;
+  content: "\e900";
   padding-top: 110px;
 }
 

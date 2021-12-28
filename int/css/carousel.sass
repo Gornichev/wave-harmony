@@ -250,3 +250,18 @@
 			margin: auto
 			opacity: 1!important
 
+
+
+input[type=checkbox]
+	display: none
+
+label
+
+	&:after
+		content: "\e900"
+		font-size: 25px
+		font-family: icomoon, sans-serif
+
+input[type=checkbox]:checked + .label
+	background: #f00
+	color: #fff
