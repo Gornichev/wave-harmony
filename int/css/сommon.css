@@ -283,6 +283,15 @@
 .swiper.in-trust-slider .swiper-slide-thumb-active {
   opacity: 1;
 }
+.swiper.in-trust-slider .swiper-scrollbar {
+  width: 10px;
+  background: #F0F0F0;
+}
+.swiper.in-trust-slider .swiper-scrollbar-drag {
+  background: #CFCFCF;
+  width: 4px;
+  margin: auto;
+}
 
 .row-padding-10 {
   margin-left: -10px !important;
