@@ -220,21 +220,57 @@
   align-items: flex-end;
   justify-content: center;
   border-radius: 16px;
-  min-height: 590px;
+  min-height: 510px;
 }
-.swiper.trust-slider .swiper-slide img {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 16px;
+.swiper.trust-slider .swiper-slide .trust-card {
+  background: #ffffff;
+  padding: 144px 89px;
+  text-align: left;
+  border-radius: 80px;
+}
+.swiper.trust-slider .swiper-slide .trust-card .title-card {
+  font-size: 25px;
+  line-height: 35px;
+  font-family: "Futura-PT-Medium", sans-serif;
+  margin-bottom: 5px;
+  color: #2C2C2C;
+}
+.swiper.trust-slider .swiper-slide .trust-card .card-link {
+  font-size: 19px;
+  line-height: 26px;
+  font-family: "Futura-PT-Book", sans-serif;
+  margin-bottom: 15px;
+  color: #21A5B5;
+  display: block;
+}
+.swiper.trust-slider .swiper-slide .trust-card .card-element {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Futura-PT-Medium", sans-serif;
+  margin-bottom: 15px;
+  color: #848484;
+  display: block;
+}
+.swiper.trust-slider .swiper-slide .trust-card .trust-card-text {
+  font-size: 18px;
+  line-height: 25px;
+  font-family: "Futura-PT-Medium", sans-serif;
+  margin-bottom: 15px;
+  color: #2C2C2C;
+}
+.swiper.trust-slider .swiper-slide .trust-card .card-link-footer {
+  font-size: 18px;
+  line-height: 25px;
+  font-family: "Futura-PT-Book", sans-serif;
+  color: #21A5B5;
+  border-bottom: 1px solid #21A5B5;
+  margin-right: 20px;
 }
 .swiper.in-trust-slider .swiper-wrapper {
   display: flex;
   flex-direction: column;
-  max-height: 590px;
+  max-height: 510px;
+  max-width: 200px;
 }
 .swiper.in-trust-slider .swiper-slide {
   opacity: 0.4;
@@ -380,6 +416,10 @@ a {
   line-height: 22px;
   color: #2C2C2C;
   font-family: "Futura-PT-Book", sans-serif;
+}
+
+.section-trust .section-trust-header {
+  margin-bottom: 60px;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */

@@ -162,7 +162,6 @@
 
 	.swiper-slide
 
-
 		img
 			display: block
 			object-fit: cover
@@ -175,23 +174,59 @@
 			align-items: flex-end
 			justify-content: center
 			border-radius: 16px
-			min-height: 590px
+			min-height: 510px
 
-			img
-				width: 100%
-				position: absolute
-				top: 0
-				left: 0
-				right: 0
-				bottom: 0
-				border-radius: 16px
+			.trust-card
+				background: $mainColor
+				padding: 144px 89px
+				text-align: left
+				border-radius: 80px
+
+				.title-card
+					font-size: 25px
+					line-height: 35px
+					font-family: "Futura-PT-Medium", sans-serif
+					margin-bottom: 5px
+					color: $mainText
+
+				.card-link
+					font-size: 19px
+					line-height: 26px
+					font-family: "Futura-PT-Book", sans-serif
+					margin-bottom: 15px
+					color: $gradientColorOne
+					display: block
+
+				.card-element
+					font-size: 16px
+					line-height: 22px
+					font-family: "Futura-PT-Medium", sans-serif
+					margin-bottom: 15px
+					color: $pasiiveColor
+					display: block
+
+				.trust-card-text
+					font-size: 18px
+					line-height: 25px
+					font-family: "Futura-PT-Medium", sans-serif
+					margin-bottom: 15px
+					color: $mainText
+
+				.card-link-footer
+					font-size: 18px
+					line-height: 25px
+					font-family: "Futura-PT-Book", sans-serif
+					color: $gradientColorOne
+					border-bottom: 1px solid $gradientColorOne
+					margin-right: 20px
 
 	&.in-trust-slider
 
 		.swiper-wrapper
 			display: flex
 			flex-direction: column
-			max-height: 590px
+			max-height: 510px
+			max-width: 200px
 
 		.swiper-slide
 			opacity: 0.4

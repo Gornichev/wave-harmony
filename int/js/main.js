@@ -29,8 +29,8 @@ const SwiperItem = new Swiper(".swiper-card", {
 
 const slider = new Swiper(".in-trust-slider", {
     loop: true,
-    spaceBetween: 10,
-    slidesPerView: 2,
+    spaceBetween: 15,
+    slidesPerView: 3,
     freeMode: true,
     watchSlidesProgress: true,
     direction: "horizontal",
