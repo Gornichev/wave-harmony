@@ -63,10 +63,11 @@
   top: 120px;
 }
 .swiper-intro .swiper-pagination-bullet {
-  border-radius: 0;
+  border-radius: 2px;
   width: 15px;
   height: 6px;
   margin: 0;
+  background: rgba(255, 255, 255, 0.25);
 }
 .swiper-intro .swiper-pagination-bullet-active {
   background: #ffffff;
@@ -118,12 +119,12 @@
 .swiper-intro .swiper-slide .swiper-tool-tip-position-3 {
   position: absolute;
   top: 42%;
-  right: 22%;
+  left: 76%;
 }
 .swiper-intro .swiper-slide .swiper-tool-tip-position-4 {
   position: absolute;
-  top: 77%;
-  right: 17%;
+  top: 76%;
+  left: 83%;
 }
 .swiper-intro .swiper-slide .icon {
   font-size: 6px;
@@ -202,6 +203,50 @@
 }
 .swiper-card .button-control .swiper-button + .swiper-button {
   margin-left: 15px;
+}
+
+.swiper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper .swiper-slide img {
+  display: block;
+  object-fit: cover;
+}
+.swiper.trust-slider .swiper-slide {
+  padding: 15px 15px 45px 15px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 16px;
+  min-height: 590px;
+}
+.swiper.trust-slider .swiper-slide img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 16px;
+}
+.swiper.in-trust-slider .swiper-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-height: 590px;
+}
+.swiper.in-trust-slider .swiper-slide {
+  opacity: 0.4;
+  overflow: hidden;
+}
+.swiper.in-trust-slider .swiper-slide img {
+  width: 100%;
+  min-height: 287px;
+  border-radius: 25px;
+}
+.swiper.in-trust-slider .swiper-slide-thumb-active {
+  opacity: 1;
 }
 
 .row-padding-10 {

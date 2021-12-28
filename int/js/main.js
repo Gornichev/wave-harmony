@@ -26,10 +26,35 @@ const SwiperItem = new Swiper(".swiper-card", {
 });
 
 // swiper-trust
-var swiper = new Swiper(".swiper-trust", {
-    scrollbar: {
-        el: ".swiper-scrollbar",
-        hide: true,
-        direction: "vertical",
+
+const slider = new Swiper(".in-trust-slider", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 2,
+    freeMode: true,
+    watchSlidesProgress: true,
+    direction: "horizontal",
+    breakpoints: {
+        0: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 3,
+        },
+        992: {
+            direction: "vertical",
+            spaceBetween: 24,
+        },
+    }
+});
+
+const intro = new Swiper(".trust-slider", {
+    spaceBetween: 24,
+    thumbs: {
+        swiper: slider,
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
     },
 });
