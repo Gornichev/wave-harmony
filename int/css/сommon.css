@@ -443,12 +443,6 @@ a {
   margin-bottom: 60px;
 }
 
-.section-best {
-  background: #F8F8F8;
-  content: "\e900";
-  padding-top: 110px;
-}
-
 .checkbox-follow {
   line-height: 1;
   cursor: pointer;
@@ -468,6 +462,30 @@ a {
 .checkbox-follow [type=checkbox]:checked + .icon:before {
   content: "\e90a";
   font-size: 20px;
+}
+
+.section-best {
+  padding-top: 100px;
+}
+.section-best .title-wrapper {
+  max-width: 560px;
+}
+.section-best .section-best-wrapper {
+  max-width: 410px;
+  padding: 12px 0 0 43px;
+}
+.section-best .section-best-wrapper .icon-element {
+  font-size: 23px;
+  color: #21A5B5;
+  position: relative;
+  top: -12px;
+  left: -43px;
+}
+.section-best .section-best-wrapper .section-best-text {
+  font-size: 18px;
+  line-height: 25px;
+  font-family: "Futura-PT-Book", sans-serif;
+  color: #2C2C2C;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
