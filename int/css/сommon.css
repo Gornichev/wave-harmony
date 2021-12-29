@@ -394,44 +394,10 @@ a {
   text-align: left;
   background: #F8F8F8;
 }
-.section-item .item-body .icon {
+.section-item .item-body .checkbox-follow {
   position: absolute;
-  top: 5px;
-  right: 7px;
-  font-size: 20px;
-  color: #2C2C2C;
-}
-.section-item .item-body label {
-  display: block;
-}
-.section-item .item-body label input {
-  visibility: hidden;
-  display: block;
-  height: 0;
-  width: 0;
-  position: absolute;
-  overflow: hidden;
-}
-.section-item .item-body label span {
-  position: absolute;
-  top: 18px;
-  right: 15px;
-  font-size: 20px;
-  color: #2C2C2C;
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-}
-.section-item .item-body [type=checkbox]:checked + span:before {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 8px;
-  content: "\e90a";
-  font-size: 20px;
-  font-family: icomoon, sans-serif;
-  opacity: 1;
-  cursor: pointer;
+  top: 20px;
+  right: 20px;
 }
 .section-item .item-footer .item-price {
   font-size: 20px;
@@ -481,6 +447,26 @@ a {
   background: #F8F8F8;
   content: "\e900";
   padding-top: 110px;
+}
+
+.checkbox-follow {
+  line-height: 1;
+  cursor: pointer;
+}
+.checkbox-follow input {
+  visibility: hidden;
+  display: block;
+  height: 0;
+  width: 0;
+  position: absolute;
+  overflow: hidden;
+}
+.checkbox-follow .icon {
+  font-size: 20px;
+  color: #000000;
+}
+.checkbox-follow [type=checkbox]:checked + .icon:before {
+  content: "\e909";
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */

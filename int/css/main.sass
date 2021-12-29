@@ -46,44 +46,10 @@ a
 		text-align: left
 		background: $mainBackground
 
-		.icon
+		.checkbox-follow
 			position: absolute
-			top: 5px
-			right: 7px
-			font-size: 20px
-			color: $mainText
-
-		label
-			display: block
-
-			input
-				visibility: hidden
-				display: block
-				height: 0
-				width: 0
-				position: absolute
-				overflow: hidden
-
-			span
-				position: absolute
-				top: 18px
-				right: 15px
-				font-size: 20px
-				color: #2C2C2C
-				cursor: pointer
-				width: 50px
-				height: 50px
-
-		[type=checkbox]:checked + span:before
-			display: block
-			position: absolute
-			top: 0
-			right: 8px
-			content: "\e90a"
-			font-size: 20px
-			font-family: icomoon, sans-serif
-			opacity: 1
-			cursor: pointer
+			top: 20px
+			right: 20px
 
 	.item-footer
 
@@ -141,16 +107,21 @@ a
 
 	padding-top: 110px
 
+.checkbox-follow
+	line-height: 1
+	cursor: pointer
 
+	input
+		visibility: hidden
+		display: block
+		height: 0
+		width: 0
+		position: absolute
+		overflow: hidden
 
+	.icon
+		font-size: 20px
+		color: $darkenColor
 
-
-
-
-
-
-
-
-
-
-
+	[type=checkbox]:checked + .icon:before
+		content: "\e909"
