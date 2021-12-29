@@ -466,7 +466,8 @@ a {
   color: #000000;
 }
 .checkbox-follow [type=checkbox]:checked + .icon:before {
-  content: "\e909";
+  content: "\e90a";
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
