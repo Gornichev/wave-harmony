@@ -539,4 +539,15 @@ a {
   max-height: 328px;
 }
 
+.section-mailing {
+  background: #F8F8F8;
+  padding: 30px 0;
+}
+.section-mailing .wrapper-mailing {
+  display: flex;
+}
+.section-mailing .wrapper-mailing .mailing-img {
+  max-height: 50px;
+}
+
 /*# sourceMappingURL=%D1%81ommon.css.map */
