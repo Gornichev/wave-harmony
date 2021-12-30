@@ -465,7 +465,10 @@ a {
 }
 
 .section-best {
-  padding-top: 100px;
+  padding-top: 77px;
+}
+.section-best .best-header {
+  margin-bottom: 25px;
 }
 .section-best .title-wrapper {
   max-width: 560px;
@@ -478,7 +481,7 @@ a {
   font-size: 23px;
   color: #21A5B5;
   position: relative;
-  top: -12px;
+  top: 12px;
   left: -43px;
 }
 .section-best .section-best-wrapper .section-best-text {
@@ -487,10 +490,31 @@ a {
   font-family: "Futura-PT-Book", sans-serif;
   color: #2C2C2C;
 }
+.section-best .section-best-group {
+  text-align: left;
+  margin-bottom: 90px;
+  max-width: 290px;
+}
+.section-best .section-best-group .best-title {
+  font-size: 20px;
+  line-height: 20px;
+  color: #2C2C2C;
+  font-family: "Futura-PT-Medium", sans-serif;
+  margin-bottom: 13px;
+}
+.section-best .section-best-group .best-text {
+  font-size: 18px;
+  line-height: 25px;
+  color: #2C2C2C;
+  font-family: "Futura-PT-Book", sans-serif;
+}
+.section-best .wave-wrapper {
+  margin-bottom: 86px;
+}
 .section-best .wave-wrapper .best-wave-element {
   background-image: url("../img/decore-wave-one.png");
   background-repeat: repeat-x;
-  background-position: left top;
+  background-position: left bottom;
   min-height: 60px;
   max-width: 620px;
   display: block;
