@@ -58,3 +58,41 @@
 .icon-horizontal:before {
   content: "\e905";
 }
+.icon-facebook .path1:before {
+  content: "\e900";
+  color: rgb(211, 211, 211);
+}
+.icon-facebook .path2:before {
+  content: "\e901";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-facebook .path3:before {
+  content: "\e902";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-facebook .path4:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-instagram .path1:before {
+  content: "\e904";
+  color: rgb(0, 0, 0);
+}
+.icon-instagram .path2:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-instagram .path3:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-instagram .path4:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
