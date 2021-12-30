@@ -220,11 +220,10 @@
   align-items: flex-end;
   justify-content: center;
   border-radius: 16px;
-  min-height: 510px;
 }
 .swiper.trust-slider .swiper-slide .trust-card {
   background: #ffffff;
-  padding: 127px 110px;
+  padding: 145px 110px;
   text-align: left;
   border-radius: 80px;
 }
@@ -286,6 +285,7 @@
   width: 10px;
   background: #F0F0F0;
   opacity: 1 !important;
+  right: 32px;
 }
 .swiper.in-trust-slider .swiper-scrollbar-drag {
   background: #CFCFCF;
@@ -440,7 +440,7 @@ a {
   margin-bottom: 120px;
 }
 .section-trust .section-trust-header {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .checkbox-follow {

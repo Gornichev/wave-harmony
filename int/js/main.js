@@ -33,7 +33,7 @@ const slider = new Swiper(".in-trust-slider", {
     slidesPerView: 3,
     freeMode: true,
     watchSlidesProgress: true,
-    direction: "horizontal",
+    direction: "vertical",
     scrollbar: {
         el: ".swiper-scrollbar",
         hide: true,
