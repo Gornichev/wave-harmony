@@ -487,5 +487,13 @@ a {
   font-family: "Futura-PT-Book", sans-serif;
   color: #2C2C2C;
 }
+.section-best .wave-wrapper .best-wave-element {
+  background-image: url("../img/decore-wave-one.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  min-height: 60px;
+  max-width: 620px;
+  display: block;
+}
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
