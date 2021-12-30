@@ -521,4 +521,22 @@ a {
   display: block;
 }
 
+.section-gallery {
+  padding-top: 110px;
+}
+.section-gallery .gallery-header {
+  margin-bottom: 60px;
+}
+.section-gallery .gallery-header .gallery-title-wrapper {
+  max-width: 530px;
+}
+.section-gallery .wrapper-img-gallery-big {
+  margin-bottom: 30px;
+  max-height: 685px;
+}
+.section-gallery .wrapper-img-gallery {
+  margin-bottom: 30px;
+  max-height: 328px;
+}
+
 /*# sourceMappingURL=%D1%81ommon.css.map */
