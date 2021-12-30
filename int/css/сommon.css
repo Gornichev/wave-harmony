@@ -510,13 +510,14 @@ a {
 }
 .section-best .wave-wrapper {
   margin-bottom: 86px;
+  max-width: 620px;
 }
 .section-best .wave-wrapper .best-wave-element {
   background-image: url("../img/decore-wave-one.png");
   background-repeat: repeat-x;
   background-position: left bottom;
-  min-height: 60px;
-  max-width: 620px;
+  height: 60px;
+  margin-right: auto;
   display: block;
 }
 
