@@ -345,6 +345,40 @@
   margin-bottom: 20px;
   display: block;
 }
+.footer .footer-list .footer-link {
+  font-size: 16px;
+  font-family: "Futura-PT-Book", sans-serif;
+  line-height: 22px;
+  color: #444444;
+  margin: 0 0 12px 0;
+  display: block;
+}
+.footer .footer-list .footer-mail {
+  font-size: 18px;
+  font-family: "Futura-PT-Medium", sans-serif;
+  line-height: 25px;
+  color: #444444;
+  margin-bottom: 15px;
+  display: block;
+}
+.footer .footer-list .footer-phone {
+  font-size: 18px;
+  font-family: "Futura-PT-Medium", sans-serif;
+  line-height: 25px;
+  color: #21A5B5;
+  margin-bottom: 20px;
+  display: block;
+}
+.footer .footer-list .footer-group {
+  margin-bottom: 30px;
+}
+.footer .footer-list .footer-group .footer-social {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: #F1F1F1;
+  margin-right: 10px;
+}
 
 .btn-light {
   background: none;
