@@ -197,6 +197,14 @@
   width: 54px;
   color: #21A5B5;
   padding: 0;
+  -webkit-transition: all 0.12s linear;
+  -moz-transition: all 0.12s linear;
+  -o-transition: all 0.12s linear;
+  transition: all 0.12s linear;
+}
+.swiper-card .button-control .swiper-button:hover {
+  background: linear-gradient(90deg, #28BFD1 0%, #85CFD1 100%);
+  color: #ffffff;
 }
 .swiper-card .button-control .swiper-button:after {
   font-size: 12px;
@@ -364,16 +372,33 @@
   color: #21A5B5 100% #71B2B4 100%;
   font-family: "Futura-PT-Medium", sans-serif;
   border-color: #21A5B5;
+  -webkit-transition: all 0.12s linear;
+  -moz-transition: all 0.12s linear;
+  -o-transition: all 0.12s linear;
+  transition: all 0.12s linear;
+}
+.btn-outline-info:hover {
+  background: linear-gradient(90deg, #28BFD1 0%, #85CFD1 100%);
+  color: #ffffff;
 }
 
 .btn-gradient-primary {
   border: 1px solid transparent;
+  background: linear-gradient(90deg, #21A5B5 0%, #71B2B4 100%);
+  color: #ffffff;
+  -webkit-transition: all 0.12s linear;
+  -moz-transition: all 0.12s linear;
+  -o-transition: all 0.12s linear;
+  transition: all 0.12s linear;
+}
+.btn-gradient-primary:hover {
   background: linear-gradient(90deg, #28BFD1 0%, #85CFD1 100%);
   color: #ffffff;
 }
 
 .btn-primary {
   background: linear-gradient(90deg, #21A5B5 0%, #71B2B4 100%);
+  color: #ffffff;
 }
 
 body {

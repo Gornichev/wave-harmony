@@ -23,14 +23,31 @@
 	color: $gradientColor
 	font-family: 'Futura-PT-Medium',sans-serif
 	border-color: $gradientColorOne
+	-webkit-transition: all .12s linear
+	-moz-transition: all .12s linear
+	-o-transition: all .12s linear
+	transition: all .12s linear
+
+	&:hover
+		background: linear-gradient(90deg, #28BFD1 0%, #85CFD1 100%)
+		color: $mainColor
 
 .btn-gradient-primary
 	border: 1px solid transparent
-	background: linear-gradient(90deg, #28BFD1 0%, #85CFD1 100%)
+	background: linear-gradient(90deg, #21A5B5 0%, #71B2B4 100%)
 	color: $mainColor
+	-webkit-transition: all .12s linear
+	-moz-transition: all .12s linear
+	-o-transition: all .12s linear
+	transition: all .12s linear
+
+	&:hover
+		background: linear-gradient(90deg, #28BFD1 0%, #85CFD1 100%)
+		color: $mainColor
 
 .btn-primary
 	background: linear-gradient(90deg, #21A5B5 0%, #71B2B4 100%)
+	color: $mainColor
 
 
 
