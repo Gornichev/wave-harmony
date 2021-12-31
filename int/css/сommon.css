@@ -321,6 +321,23 @@
   padding-right: 0 !important;
 }
 
+.footer {
+  padding-top: 80px;
+}
+.footer .footer-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer .footer-list .footer-list-title {
+  font-family: "Futura-PT-Book", sans-serif;
+  font-size: 24px;
+  line-height: 33px;
+  color: #2C2C2C;
+  margin-bottom: 20px;
+  display: block;
+}
+
 .btn-light {
   background: none;
   color: #ffffff;
@@ -334,6 +351,15 @@
   line-height: 20px;
 }
 
+.btn-sm {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  padding: 18px;
+  font-size: 11px;
+  text-align: center;
+}
+
 .btn-outline-info {
   color: #21A5B5 100% #71B2B4 100%;
   font-family: "Futura-PT-Medium", sans-serif;
@@ -344,6 +370,10 @@
   border: 1px solid transparent;
   background: linear-gradient(90deg, #28BFD1 0%, #85CFD1 100%);
   color: #ffffff;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #21A5B5 0%, #71B2B4 100%);
 }
 
 body {
@@ -523,12 +553,20 @@ a {
 
 .section-gallery {
   padding-top: 110px;
+  margin-bottom: 84px;
 }
 .section-gallery .gallery-header {
   margin-bottom: 60px;
 }
 .section-gallery .gallery-header .gallery-title-wrapper {
   max-width: 530px;
+}
+.section-gallery .gallery-header .gallery-title-wrapper .gallery-title-text {
+  font-size: 20px;
+  line-height: 28px;
+  font-family: "Futura-PT-Book", sans-serif;
+  color: #444444;
+  margin-bottom: 10px;
 }
 .section-gallery .wrapper-img-gallery-big {
   margin-bottom: 30px;
@@ -545,9 +583,34 @@ a {
 }
 .section-mailing .wrapper-mailing {
   display: flex;
+  align-items: center;
 }
 .section-mailing .wrapper-mailing .mailing-img {
   max-height: 50px;
+}
+.section-mailing .wrapper-mailing .mailing-text {
+  font-size: 20px;
+  line-height: 28px;
+  font-family: "Futura-PT-Book", sans-serif;
+  color: #2C2C2C;
+  margin: 0 0 0 30px;
+}
+.section-mailing .mailing-group {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.section-mailing .mailing-group .form-control {
+  max-width: 360px;
+  border-radius: 15px;
+  border: 1px solid #E3E3E3;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: "Futura-PT-Book", sans-serif;
+  padding: 16px;
+}
+.section-mailing .mailing-group .btn {
+  margin-left: 15px;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
