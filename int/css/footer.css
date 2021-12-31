@@ -1,0 +1,39 @@
+.btn-light {
+  background: none;
+  color: #ffffff;
+  font-family: "Futura-PT-Book", sans-serif;
+}
+
+.btn-lg {
+  padding: 16px 30px;
+  border-radius: 15px;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.btn-sm {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  padding: 18px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.btn-outline-info {
+  color: #21A5B5 100% #71B2B4 100%;
+  font-family: "Futura-PT-Medium", sans-serif;
+  border-color: #21A5B5;
+}
+
+.btn-gradient-primary {
+  border: 1px solid transparent;
+  background: linear-gradient(90deg, #28BFD1 0%, #85CFD1 100%);
+  color: #ffffff;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #21A5B5 0%, #71B2B4 100%);
+}
+
+/*# sourceMappingURL=footer.css.map */
