@@ -332,18 +332,18 @@
 .footer {
   padding-top: 80px;
 }
-.footer .footer-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.footer .footer-list .footer-list-title {
+.footer .footer-list-title {
   font-family: "Futura-PT-Book", sans-serif;
   font-size: 24px;
   line-height: 33px;
   color: #2C2C2C;
   margin-bottom: 20px;
   display: block;
+}
+.footer .footer-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .footer .footer-list .footer-link {
   font-size: 16px;
@@ -384,9 +384,6 @@
   background: #F1F1F1;
   margin-right: 10px;
 }
-.footer .wrapper-list {
-  padding-top: 55px;
-}
 
 .btn-light {
   background: none;
@@ -425,9 +422,8 @@
 }
 
 .btn-gradient-primary {
-  border: 1px solid transparent;
-  background: linear-gradient(90deg, #21A5B5 0%, #71B2B4 100%);
-  color: #ffffff;
+  border: 1px solid #21A5B5;
+  color: #21A5B5;
   -webkit-transition: all 0.12s linear;
   -moz-transition: all 0.12s linear;
   -o-transition: all 0.12s linear;
@@ -495,6 +491,15 @@ a {
   position: absolute;
   top: 20px;
   right: 20px;
+}
+.section-item .item-body img {
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+.section-item .item-body img:hover {
+  transform: scale(1.08);
 }
 .section-item .item-footer .item-price {
   font-size: 20px;
