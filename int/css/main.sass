@@ -262,6 +262,9 @@ a
 			line-height: 25px
 
 //section-breadcrumb
+.section-breadcrumb
+	padding-top: 40px
+
 
 //section-about
 .section-about
@@ -287,11 +290,20 @@ a
 				left: 0
 				top: 70px
 
+		.about-header-text
+			font-family: Futura-PT-Book,sans-serif
+			font-size: 18px
+			line-height: 25px
+			margin: 0
+
+
+
 	.about-card
 		padding: 80px 60px
 		background: $primaryOpacityColor
 		position: relative
 		margin-bottom: 30px
+		border-radius: 50px
 
 		.card-element
 			background: $mainColor
@@ -300,10 +312,28 @@ a
 			border-radius: 100%
 			position: absolute
 			z-index: 101
-			right: 0
-			top: 0
+			right: 30px
+			top: 30px
 			padding: 11px
 			text-align: center
+
+		.card-title
+			font-size: 24px
+			line-height: 28px
+			color: $mainText
+			font-family: Futura-PT-Medium, sans-serif
+			margin-bottom: 10px
+
+		.card-text
+			font-size: 18px
+			line-height: 25px
+			color: $mainText
+			font-family: Futura-PT-Book, sans-serif
+
+	.background-card
+		background: $successColor
+
+
 
 
 

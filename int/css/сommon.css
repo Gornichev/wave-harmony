@@ -30,12 +30,24 @@
   color: #2C2C2C;
   margin-left: 30px;
 }
+.header .icon-group .icon-heat {
+  opacity: 1;
+  width: 34px;
+  height: 28px;
+  display: block;
+}
+.header .icon-group .icon-heat:hover:before {
+  content: "\e912";
+  font-size: 28px;
+  width: 34px;
+  height: 28px;
+  display: block;
+}
 
 .navbar {
   background: #ffffff;
   padding-top: 30px;
   padding-bottom: 40px;
-  margin-bottom: 40px;
 }
 .navbar .nav .nav-link {
   font-size: 18px;
@@ -692,6 +704,10 @@ a {
   line-height: 25px;
 }
 
+.section-breadcrumb {
+  padding-top: 40px;
+}
+
 .section-about {
   padding-top: 80px;
   padding-bottom: 220px;
@@ -715,11 +731,18 @@ a {
   left: 0;
   top: 70px;
 }
+.section-about .about-header .about-header-text {
+  font-family: Futura-PT-Book, sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0;
+}
 .section-about .about-card {
   padding: 80px 60px;
   background: rgba(222, 242, 244, 0.8);
   position: relative;
   margin-bottom: 30px;
+  border-radius: 50px;
 }
 .section-about .about-card .card-element {
   background: #ffffff;
@@ -728,10 +751,26 @@ a {
   border-radius: 100%;
   position: absolute;
   z-index: 101;
-  right: 0;
-  top: 0;
+  right: 30px;
+  top: 30px;
   padding: 11px;
   text-align: center;
+}
+.section-about .about-card .card-title {
+  font-size: 24px;
+  line-height: 28px;
+  color: #2C2C2C;
+  font-family: Futura-PT-Medium, sans-serif;
+  margin-bottom: 10px;
+}
+.section-about .about-card .card-text {
+  font-size: 18px;
+  line-height: 25px;
+  color: #2C2C2C;
+  font-family: Futura-PT-Book, sans-serif;
+}
+.section-about .background-card {
+  background: rgba(234, 244, 238, 0.8);
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
