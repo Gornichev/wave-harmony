@@ -719,6 +719,7 @@ a {
   padding: 80px 60px;
   background: rgba(222, 242, 244, 0.8);
   position: relative;
+  margin-bottom: 30px;
 }
 .section-about .about-card .card-element {
   background: #ffffff;
