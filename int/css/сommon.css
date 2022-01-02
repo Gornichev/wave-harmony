@@ -696,14 +696,17 @@ a {
   padding-top: 80px;
   padding-bottom: 220px;
 }
-.section-about .about-title {
+.section-about .about-header {
+  margin-bottom: 90px;
+}
+.section-about .about-header .about-title {
   font-size: 38px;
   line-height: 53px;
   font-family: "Futura-PT-Book", sans-serif;
   color: #2C2C2C;
   position: relative;
 }
-.section-about .about-title:before {
+.section-about .about-header .about-title:before {
   content: "";
   position: absolute;
   background: url("../img/wave-mini.png") no-repeat;
@@ -711,6 +714,23 @@ a {
   height: 21px;
   left: 0;
   top: 70px;
+}
+.section-about .about-card {
+  padding: 80px 60px;
+  background: rgba(222, 242, 244, 0.8);
+  position: relative;
+}
+.section-about .about-card .card-element {
+  background: #ffffff;
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 101;
+  right: 0;
+  top: 0;
+  padding: 11px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
