@@ -31,7 +31,6 @@
   margin-left: 30px;
 }
 .header .icon-group .icon-heat {
-  opacity: 1;
   width: 34px;
   height: 28px;
   display: block;
@@ -771,6 +770,13 @@ a {
 }
 .section-about .background-card {
   background: rgba(234, 244, 238, 0.8);
+}
+
+.section-blog {
+  padding-top: 80px;
+}
+.section-blog .section-blog-header {
+  margin-bottom: 60px;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
