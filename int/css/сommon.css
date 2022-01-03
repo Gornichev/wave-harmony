@@ -480,6 +480,14 @@ a {
   margin-bottom: 10px;
 }
 
+.title-page {
+  font-size: 38px;
+  line-height: 53px;
+  font-family: "Futura-PT-Book", sans-serif;
+  color: #2C2C2C;
+  position: relative;
+}
+
 .section-item {
   position: relative;
   margin-bottom: 230px;
@@ -777,6 +785,54 @@ a {
 }
 .section-blog .section-blog-header {
   margin-bottom: 60px;
+}
+
+.section-contact {
+  padding-top: 80px;
+}
+.section-contact .contact-wrapper-title {
+  margin-bottom: 50px;
+}
+.section-contact .contact-card {
+  border: 1px solid #F0F0F0;
+  border-radius: 40px;
+  padding: 60px 50px 60px 60px;
+  list-style: none;
+  margin: 0;
+  position: relative;
+}
+.section-contact .contact-card .icon {
+  color: #21A5B5;
+  fill: #0dcaf0;
+}
+.section-contact .contact-card .contact-card-title {
+  font-family: Futura-PT-Medium, sans-serif;
+  color: #2C2C2C;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+.section-contact .contact-card .contact-element {
+  position: absolute;
+  height: 38px;
+  width: 38px;
+  border-radius: 12px;
+  background: #EEF6F1;
+  text-align: center;
+  top: 30px;
+  right: 30px;
+  font-size: 18px;
+  padding: 10px;
+}
+.section-contact .contact-card .contact-card-text {
+  font-family: Futura-PT-Book, sans-serif;
+  color: #2C2C2C;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 7px;
+}
+.section-contact .contact-card .contact-social-group {
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
