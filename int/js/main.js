@@ -63,3 +63,10 @@ const intro = new Swiper(".trust-slider", {
     //     disableOnInteraction: false,
     // },
 });
+
+// collapse
+
+const myCollapsible = document.getElementById('myCollapsible')
+myCollapsible.addEventListener('hidden.bs.collapse', function () {
+
+})
