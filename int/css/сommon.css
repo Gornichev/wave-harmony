@@ -67,7 +67,6 @@
   width: 0;
   height: 2px;
   background-color: #21A5B5;
-  bottom: -5px;
   opacity: 0.4;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -81,7 +80,7 @@
   width: 0;
 }
 .navbar .nav .nav-item:last-child {
-  margin: 0;
+  margin-right: 0;
 }
 .navbar .catalog-active-color {
   background: #FFECC8;
