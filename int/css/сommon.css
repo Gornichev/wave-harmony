@@ -922,11 +922,13 @@ a {
   line-height: 26px;
   color: #2C2C2C;
 }
-.section-partners .wrapper-img-partner {
+.section-partners .wrapper-img-partners {
   position: relative;
   overflow: hidden;
+  max-width: 310px;
+  max-height: 170px;
 }
-.section-partners .wrapper-img-partner .partner-img-element {
+.section-partners .wrapper-img-partners .partners-img-element {
   position: absolute;
   right: 0;
   top: 38.24%;
@@ -937,7 +939,10 @@ a {
   font-size: 18px;
   line-height: 25px;
 }
-.section-partners .partner-number {
+.section-partners .wrapper-img-partners .partners-img {
+  margin-left: 7px;
+}
+.section-partners .partners-number {
   font-size: 19px;
   line-height: 26px;
   font-family: "Futura-PT-Book", sans-serif;
