@@ -53,16 +53,40 @@
   color: #2B2A28;
   font-family: "Futura-PT-Book", sans-serif;
   padding: 5px 15px;
+  position: relative;
 }
 .navbar .nav .active {
-  background: #FFECC8;
-  border-radius: 10px;
+  color: #21A5B5;
 }
 .navbar .nav .nav-item {
   margin-right: 30px;
 }
+.navbar .nav .nav-item:after {
+  display: block;
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #21A5B5;
+  bottom: -5px;
+  opacity: 0.4;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: width 0.3s ease-in-out;
+}
+.navbar .nav .nav-item:hover:after {
+  width: 90%;
+}
+.navbar .nav .nav-item:first-child:hover:after {
+  width: 0;
+}
 .navbar .nav .nav-item:last-child {
   margin: 0;
+}
+.navbar .catalog-active-color {
+  background: #FFECC8;
+  border-radius: 10px;
+  padding: 5px 15px;
 }
 
 .swiper-intro {
@@ -885,6 +909,7 @@ a {
   color: #21A5B5;
   margin-left: 10px;
   font-size: 10px;
+  transform: rotateX(-180deg);
 }
 .section-contact .contact-card .card {
   border: none;
