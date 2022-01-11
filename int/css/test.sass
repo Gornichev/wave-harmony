@@ -29,13 +29,34 @@
 .masonry-box
 	display: flex
 	justify-content: space-between
+	align-content: space-between
+	height: 960px
+	counter-reset: items
+	flex-flow: column wrap
 
 	.blog-card
+		position: relative
 		width: 25%
 		border-radius: 15px
 		background: $mainColor
 		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07)
 		max-width: 320px
+
+		&:before
+			counter-increment: items
+			content: counter(items)
+
+		&:nth-of-type(4n+1)
+			order: 1
+
+		&:nth-of-type(4n+2)
+			order: 2
+
+		&:nth-of-type(4n+3)
+			order: 3
+
+		&:nth-of-type(4n)
+			order: 4
 
 		.blog-body
 			padding: 25px 20px

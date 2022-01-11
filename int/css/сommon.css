@@ -29,11 +29,22 @@
   font-size: 28px;
   color: #2C2C2C;
   margin-left: 30px;
+  position: relative;
 }
 .header .icon-group .icon-heat {
   width: 34px;
   height: 28px;
   display: block;
+}
+.header .icon-group .icon-heat:after {
+  width: 6px;
+  height: 6px;
+  background: red;
+  border-radius: 100%;
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: -3px;
 }
 .header .icon-group .icon-heat:hover:before {
   content: "\e912";
@@ -42,11 +53,21 @@
   height: 28px;
   display: block;
 }
+.header .icon-group .icon-bag:after {
+  width: 6px;
+  height: 6px;
+  background: red;
+  border-radius: 100%;
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: -3px;
+}
 
 .navbar {
   background: #ffffff;
-  padding-top: 30px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .navbar .nav .nav-link {
   font-size: 18px;
@@ -119,13 +140,34 @@
 .masonry-box {
   display: flex;
   justify-content: space-between;
+  align-content: space-between;
+  height: 960px;
+  counter-reset: items;
+  flex-flow: column wrap;
 }
 .masonry-box .blog-card {
+  position: relative;
   width: 25%;
   border-radius: 15px;
   background: #ffffff;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
   max-width: 320px;
+}
+.masonry-box .blog-card:before {
+  counter-increment: items;
+  content: counter(items);
+}
+.masonry-box .blog-card:nth-of-type(4n+1) {
+  order: 1;
+}
+.masonry-box .blog-card:nth-of-type(4n+2) {
+  order: 2;
+}
+.masonry-box .blog-card:nth-of-type(4n+3) {
+  order: 3;
+}
+.masonry-box .blog-card:nth-of-type(4n) {
+  order: 4;
 }
 .masonry-box .blog-card .blog-body {
   padding: 25px 20px;
@@ -197,13 +239,13 @@
 }
 .swiper-intro .swiper-slide .swiper-tool-tip-position-3 {
   position: absolute;
-  top: 42%;
-  left: 76%;
+  top: 280px;
+  left: 1150px;
 }
 .swiper-intro .swiper-slide .swiper-tool-tip-position-4 {
   position: absolute;
-  top: 76%;
-  left: 83%;
+  top: 530px;
+  left: 1250px;
 }
 .swiper-intro .swiper-slide .icon {
   font-size: 6px;
@@ -471,6 +513,7 @@
 
 .footer {
   padding-top: 80px;
+  padding-bottom: 70px;
 }
 .footer .footer-list-title {
   font-family: "Futura-PT-Book", sans-serif;
@@ -494,7 +537,7 @@
   display: block;
 }
 .footer .footer-list .footer-link .icon {
-  font-size: 16px;
+  font-size: 18px;
   color: #21A5B5;
   margin-left: 8px;
 }
@@ -581,7 +624,8 @@
 
 .btn-gradient-primary {
   border: 1px solid #21A5B5;
-  color: #21A5B5;
+  color: #ffffff;
+  background: #21A5B5;
   -webkit-transition: all 0.12s linear;
   -moz-transition: all 0.12s linear;
   -o-transition: all 0.12s linear;
@@ -718,6 +762,7 @@ a {
 
 .section-best {
   padding-top: 85px;
+  background: #F8F8F8;
 }
 .section-best .best-header {
   margin-bottom: 25px;
