@@ -146,6 +146,7 @@
   height: 6px;
   margin: 0;
   background: rgba(255, 255, 255, 0.25);
+  opacity: 1;
 }
 .swiper-intro .swiper-pagination-bullet-active {
   background: #ffffff;
