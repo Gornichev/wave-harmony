@@ -692,9 +692,6 @@ a {
   -o-transition: all 0.5s linear;
   transition: all 0.5s linear;
 }
-.section-item .item-body img:hover {
-  transform: scale(1.08);
-}
 .section-item .item-footer .item-price {
   font-size: 20px;
   line-height: 28px;
@@ -756,7 +753,7 @@ a {
   color: #000000;
 }
 .checkbox-follow [type=checkbox]:checked + .icon:before {
-  content: "\e90a";
+  content: "\e912";
   font-size: 20px;
 }
 
