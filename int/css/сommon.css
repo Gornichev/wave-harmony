@@ -677,7 +677,6 @@ a {
   margin-bottom: 0;
 }
 .section-item .item-body {
-  position: relative;
   text-align: left;
   background: #F8F8F8;
 }
@@ -691,6 +690,9 @@ a {
   -moz-transition: all 0.5s linear;
   -o-transition: all 0.5s linear;
   transition: all 0.5s linear;
+}
+.section-item .item-body img:hover {
+  transform: scale(1.1);
 }
 .section-item .item-footer .item-price {
   font-size: 20px;
@@ -751,6 +753,8 @@ a {
 .checkbox-follow .icon {
   font-size: 20px;
   color: #000000;
+  position: relative;
+  z-index: 102;
 }
 .checkbox-follow [type=checkbox]:checked + .icon:before {
   content: "\e912";
