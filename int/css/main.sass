@@ -485,9 +485,11 @@ a
 			max-width: 320px
 			min-height: 500px
 			transition: box-shadow 0.25s
+			overflow: hidden
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07)
 
 			&:hover
-				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07)
+				box-shadow: 0 10px 20px -3px rgb(0 0 0 / 35%)
 
 
 			.blog-card-header
@@ -495,10 +497,20 @@ a
 
 				img
 					min-height: 229px
+					-webkit-transition: all 0.5s linear
+					-moz-transition: all 0.5s linear
+					-o-transition: all 0.5s linear
+					transition: all 0.5s linear
+					position: relative
+					z-index: 103
+
+					&:hover
+						transform: scale(1.1)
 
 				.blog-card-img-element
 					font-family: Futura-PT-Medium,sans-serif
 					position: absolute
+					z-index: 104
 					top: 15px
 					right: 15px
 					background: $mainColor
@@ -527,14 +539,14 @@ a
 					&:hover
 						color: inherit
 
-					//&:after
-					//	position: absolute
-					//	top: 0
-					//	left: 0
-					//	right: 0
-					//	bottom: 0
-					//	content: ""
-					//	z-index: 102
+					&:after
+						position: absolute
+						top: 0
+						left: 0
+						right: 0
+						bottom: 0
+						content: ""
+						z-index: 102
 
 			.blog-card-footer
 
