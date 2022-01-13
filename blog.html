@@ -66,78 +66,126 @@
     <!--    section-breadcrumb-->
     <section class="section-blog">
         <div class="container">
-            <div class="section-blog-header responsive-tabs">
-                <div class="row">
+            <div class="section-blog-header">
+                <div class="row align-items-center">
                     <div class="col">
                         <h3 class="title-blog">Блог о серфинге</h3>
                     </div>
                     <div class="col-auto">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Все</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="spot-tab" data-bs-toggle="tab" data-bs-target="#spot" type="button" role="tab" aria-controls="spot" aria-selected="false">Споты</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="board-tab" data-bs-toggle="tab" data-bs-target="#board" type="button" role="tab" aria-controls="board" aria-selected="false">Доски</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="people-tab" data-bs-toggle="tab" data-bs-target="#people" type="button" role="tab" aria-controls="people" aria-selected="false">Люди</button>
-                            </li>
-
+                        <ul class="blog-categories-list">
+                            <li><a href="#" class="btn bt btn-xs btn-light-list btn-active-categories">Все</a></li>
+                            <li><a href="#" class="btn btn-light-list btn-xs">Споты</a></li>
+                            <li><a href="#" class="btn btn-light-list btn-xs">Доски</a></li>
+                            <li><a href="#" class="btn btn-light-list btn-xs">Люди</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                       <div class="row">
-                           <div class="col-4">
-                                <div class="blog-card">
-                                    <div class="blog-card-header">
-                                        <img class="blog-card-img img-fluid" src="int/img/blog-cards/img-card1.jpg" alt="">
-                                        <div class="blog-card-img-element"></div>
-                                    </div>
-                                    <div class="blog-body">
-                                        <h5 class="blog-card-title">Модели занялись серфингом в нарисованных купальниках</h5>
-                                        <p class="blog-card-text"> Американские модели Йован Гонсалес, Тауйма Холл, Кристин Ли и Морган Слиф занялись серфингом на одном из пля...</p>
-                                    </div>
-                                    <div class="blog-card-footer">
-                                        <a href="#">#Люди</a>
-                                        <a href="#">#2021</a>
-                                    </div>
-                                </div>
-                           </div>
-                           <div class="col-4">
-
-                           </div>
-                           <div class="col-4">
-
-                           </div>
-                           <div class="col-4">
-
-                           </div>
-                       </div>
-
+            </div>
+            <div class="masonry-box">
+                <div class="row row-padding-20">
+                    <div class="col-3">
+                        <div class="blog-card mb-40">
+                            <div class="blog-card-header">
+                                <img class="blog-card-img img-fluid" src="int/img/blog-cards/img-card1.jpg" alt="">
+                                <div class="blog-card-img-element">06 май</div>
+                            </div>
+                            <div class="blog-body">
+                                <h5 class="text-section mb-10">Модели занялись серфингом в нарисованных купальниках</h5>
+                                <a href="#" class="mini-text-section mb-20"> Американские модели Йован Гонсалес, Тауйма Холл, Кристин Ли и Морган Слиф занялись серфингом на одном из пля...</a>
+                            </div>
                         </div>
-
-                    <div class="tab-pane fade" id="spot" role="tabpanel" aria-labelledby="spot-tab">...
-                        <h4>fdfsdfdsf</h4>
-                        <h4>fdfsdfdsf</h4>
                     </div>
-
-                    <div class="tab-pane fade" id="board" role="tabpanel" aria-labelledby="board-tab">...
-                            dgfdhfgjhgjkkjhljkhljhljh
+                    <div class="col-3">
+                        <div class="blog-card mb-40">
+                            <div class="blog-card-header">
+                                <img class="blog-card-img img-fluid" src="int/img/blog-cards/img-card3.jpg" alt="">
+                                <div class="blog-card-img-element">14 апрель</div>
+                            </div>
+                            <div class="blog-body">
+                                <h2 class="text-section mb-10">Серфинг в России: Где ловить волну?</h2>
+                                <a class="mini-text-section mb-20" href="#">Ловить волну по-русски – как это? Серфинг в России – это калька с заокеанской экстремальной забавы или же увл...</a>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="tab-pane fade" id="people" role="tabpanel" aria-labelledby="people-tab">...
-                        <h4>fdfsdfdsf</h4>
+                    <div class="col-3 mb-40">
+                        <div class="blog-card">
+                            <div class="blog-card-header">
+                                <img class="blog-card-img img-fluid" src="int/img/blog-cards/img-card2.jpg" alt="">
+                                <div class="blog-card-img-element">09 апрель</div>
+                            </div>
+                            <div class="blog-body">
+                                <h2 class="text-section mb-10">Разновидности досок для серфинга</h2>
+                                <a class="mini-text-section mb-20" href="#">Серфинг является новым видом спорта для России, мест для занятий немного, но экстремальные спортсмены не унывают, пытаясь организовывать отды...</a>
+                            </div>
+                        </div>
                     </div>
-
+                    <div class="col-3 mb-40">
+                        <div class="blog-card">
+                            <div class="blog-card-header">
+                                <img class="blog-card-img img-fluid" src="int/img/blog-cards/img-card4.jpg" alt="">
+                                <div class="blog-card-img-element">28 март</div>
+                            </div>
+                            <div class="blog-body">
+                                <h2 class="text-section mb-10">13 главных правил серфинга </h2>
+                                <a class="mini-text-section mb-20" href="#">Правила серфинга, о которых стоит помнить каждому, от новичка до профи.</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-padding-20">
+                    <div class="col-3">
+                        <div class="blog-card">
+                            <div class="blog-card-header">
+                                <img class="blog-card-img img-fluid" src="int/img/blog-cards/img-card5.jpg" alt="">
+                                <div class="blog-card-img-element">21 март</div>
+                            </div>
+                            <div class="blog-body">
+                                <h5 class="text-section mb-10">Серфер онлайн: 7 полезных сайтов для серферов</h5>
+                                <a href="#" class="mini-text-section mb-20"> Американские модели Йован Гонсалес, Тауйма Холл, Кристин Ли и Морган Слиф занялись серфингом на одном из пля...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="blog-card">
+                            <div class="blog-card-header">
+                                <img class="blog-card-img img-fluid" src="int/img/blog-cards/img-card6.jpg" alt="">
+                                <div class="blog-card-img-element">02 март</div>
+                            </div>
+                            <div class="blog-body">
+                                <h2 class="text-section mb-10">Пошив купальников по вашим меркам</h2>
+                                <a class="mini-text-section mb-20" href="#">Мы знаем, что каждая девушка хочет быть неотразимой на пляже, на волне или просто на отдыхe. Но, выбрать купаль...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="blog-card">
+                            <div class="blog-card-header">
+                                <img class="blog-card-img img-fluid" src="int/img/blog-cards/img-card7.jpg" alt="">
+                                <div class="blog-card-img-element">30 февраль</div>
+                            </div>
+                            <div class="blog-body">
+                                <h2 class="text-section mb-10">5 интересных фактов о серфинге, про которые вы не знали</h2>
+                                <a class="mini-text-section mb-20" href="#">В 2011 году 13-кратным чемпионом по серфингу Гари Саафедром был установлен мировой рекорд: самое длительное официальн...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="blog-card">
+                            <div class="blog-card-header">
+                                <img class="blog-card-img img-fluid" src="int/img/blog-cards/img-card8.jpg" alt="">
+                                <div class="blog-card-img-element">04 январь</div>
+                            </div>
+                            <div class="blog-body">
+                                <h2 class="text-section mb-10">Лайфхак: как защищать себя от солнца</h2>
+                                <a class="mini-text-section mb-20" href="#">Солнце и серфинг - мы научим вас совмещать приятное с полезным без вреда для вашего здоровья</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
 <!--    pagination-->
     <div class="pagination">
         <nav aria-label="Page navigation example">
