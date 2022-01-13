@@ -75,6 +75,13 @@
   font-family: "Futura-PT-Book", sans-serif;
   padding: 5px 15px;
   position: relative;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: width 0.3s ease-in-out;
+}
+.navbar .nav .nav-link:hover {
+  color: #21A5B5;
 }
 .navbar .nav .active {
   color: #21A5B5;
@@ -1120,6 +1127,57 @@ a {
 
 .section-pagination {
   padding: 50px 0 120px;
+}
+.section-pagination .pagination {
+  margin: 0;
+  padding: 0;
+}
+.section-pagination .btn {
+  width: 44px;
+  height: 44px;
+  text-align: center;
+}
+.section-pagination .page-item {
+  width: 44px;
+  height: 44px;
+  margin: 0 13px 0 0;
+}
+.section-pagination .page-item:first-child {
+  padding: 0;
+}
+.section-pagination .page-item:last-child {
+  padding: 0;
+}
+.section-pagination .page-item .icon {
+  color: #ffffff;
+}
+.section-pagination .page-link {
+  border: none;
+  text-align: center;
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  color: #848484;
+}
+.section-pagination .page-link:hover {
+  border-radius: 15px;
+}
+.section-pagination .active-pagination {
+  background: #F8F8F8;
+  color: #21A5B5;
+  display: block;
+  border-radius: 15px;
+}
+.section-pagination .page-item:last-child .page-link {
+  border-radius: 15px;
+  font-size: 10px;
+  line-height: 23px;
+}
+.section-pagination .page-item:first-child .page-link {
+  border-radius: 15px;
+  font-size: 10px;
+  line-height: 23px;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
