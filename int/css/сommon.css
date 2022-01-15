@@ -429,6 +429,10 @@
   margin-bottom: 7px;
 }
 
+.margin-auto {
+  margin: 0 auto;
+}
+
 .title {
   font-family: "Futura-PT-Medium", sans-serif;
   font-size: 44px;
