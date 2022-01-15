@@ -1237,4 +1237,54 @@ a {
   margin-left: 16px;
 }
 
+.section-delivery {
+  padding-top: 80px;
+}
+.section-delivery .delivery-text {
+  font-family: Futura-PT-Book, sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  color: #444444;
+  max-width: 526px;
+  margin: 0;
+}
+.section-delivery .section-delivery-cards .delivery-card {
+  display: block;
+  padding: 26px 43px 29px 35px;
+  border-radius: 25px;
+  border: 1px solid #F0F0F0;
+  text-align: left;
+  position: relative;
+}
+.section-delivery .section-delivery-cards .delivery-card:hover {
+  border: 1px solid #21A5B5;
+}
+.section-delivery .section-delivery-cards .delivery-card .delivery-card-title {
+  font-family: Futura-PT-Medium, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2C2C2C;
+}
+.section-delivery .section-delivery-cards .delivery-card .delivery-card-text {
+  font-family: Futura-PT-Book, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2C2C2C;
+  max-width: 220px;
+}
+.section-delivery .section-delivery-cards .delivery-card .delivery-card-element {
+  position: absolute;
+  right: 43px;
+  top: 43px;
+  width: 44px;
+  height: 44px;
+  display: block;
+  background: #F8F8F8;
+  border-radius: 15px;
+  text-align: center;
+  padding: 17px;
+  font-size: 10px;
+  color: #21A5B5;
+}
+
 /*# sourceMappingURL=%D1%81ommon.css.map */
