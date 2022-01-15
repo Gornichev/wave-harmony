@@ -534,6 +534,15 @@
   margin-right: 10px;
 }
 
+.menu {
+  position: absolute;
+  z-index: 101;
+  display: none;
+}
+.menu:hover {
+  display: block;
+}
+
 .btn-light {
   background: none;
   color: #ffffff;
