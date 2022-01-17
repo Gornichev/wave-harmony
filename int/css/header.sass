@@ -70,32 +70,82 @@
 
 .navbar
 	background: $mainColor
-	padding-top: 20px
-	padding-bottom: 20px
+	padding-top: 0
+	padding-bottom: 0
+	border-bottom: 1px solid rgba($darkenColor, .1)
+
+	.nav-link
+		font-size: 18px
+		color: $darkColor
+		font-family: 'Futura-PT-Book',sans-serif
+		padding: 5px 15px
+		position: relative
+		-webkit-transition: all .3s linear
+		-moz-transition: all .3s linear
+		-o-transition: all .3s linear
+		transition: all .3s linear
+
+		&:hover
+			color: $gradientColorOne
+
+	.nav-item-menu
+		z-index: 102
+
+		.menu
+			position: absolute
+			z-index: 102
+			width: 100%
+			background: $mainColor
+			top: 100%
+			right: 0
+			left: 0
+			bottom: auto
+			padding: 80px 260px
+			visibility: hidden
+			-webkit-transition: all 0.3s linear
+			-moz-transition: all 0.3s linear
+			-o-transition: all 0.3s linear
+			transition: all 0.3s linear
+			opacity: 0
+			transform: translateY(10px)
+
+		&:hover
+
+			.catalog-active-color
+				background-color: $gradientColorOne
+
+			.nav-link
+				color: $mainColor
+
+			.menu
+				visibility: visible
+				opacity: 1
+				transform: translateY(1px)
 
 	.nav
 
-		.nav-link
-			font-size: 18px
-			color: $darkColor
-			font-family: 'Futura-PT-Book',sans-serif
-			padding: 5px 15px
-			position: relative
-			-webkit-transition: all .3s linear
-			-moz-transition: all .3s linear
-			-o-transition: all .3s linear
-			transition: width .3s ease-in-out
-
-			&:hover
-				color: $gradientColorOne
-
-		.active
-			color: $gradientColorOne
-
 		.nav-item
 			margin-right: 30px
+			padding-top: 20px
+			padding-bottom: 20px
+
+			&.active .nav-link
+				color: $gradientColorOne
+
+			&:first-child .nav-link:hover:after
+				width: 0
+
+			&:last-child
+				margin-right: 0
+
+		.nav-link
+			position: relative
 
 			&:after
+				position: absolute
+				top: 100%
+				left: 0
+				z-index: 101
 				display: block
 				content: ""
 				width: 0
@@ -105,16 +155,10 @@
 				-webkit-transition: all .3s linear
 				-moz-transition: all .3s linear
 				-o-transition: all .3s linear
-				transition: width .3s ease-in-out
+				transition: all .3s linear
 
 			&:hover:after
 				width: 90%
-
-			&:first-child:hover:after
-				width: 0
-
-			&:last-child
-				margin-right: 0
 
 	.catalog-active-color
 		background: $activeColor

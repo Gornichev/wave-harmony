@@ -66,10 +66,11 @@
 
 .navbar {
   background: #ffffff;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.navbar .nav .nav-link {
+.navbar .nav-link {
   font-size: 18px;
   color: #2B2A28;
   font-family: "Futura-PT-Book", sans-serif;
@@ -78,18 +79,65 @@
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
-  transition: width 0.3s ease-in-out;
+  transition: all 0.3s linear;
 }
-.navbar .nav .nav-link:hover {
+.navbar .nav-link:hover {
   color: #21A5B5;
 }
-.navbar .nav .active {
-  color: #21A5B5;
+.navbar .nav-item-menu {
+  z-index: 102;
+}
+.navbar .nav-item-menu .menu {
+  position: absolute;
+  z-index: 102;
+  width: 100%;
+  background: #ffffff;
+  top: 100%;
+  right: 0;
+  left: 0;
+  bottom: auto;
+  padding: 80px 260px;
+  visibility: hidden;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  opacity: 0;
+  transform: translateY(10px);
+}
+.navbar .nav-item-menu:hover .catalog-active-color {
+  background-color: #21A5B5;
+}
+.navbar .nav-item-menu:hover .nav-link {
+  color: #ffffff;
+}
+.navbar .nav-item-menu:hover .menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(1px);
 }
 .navbar .nav .nav-item {
   margin-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-.navbar .nav .nav-item:after {
+.navbar .nav .nav-item.active .nav-link {
+  color: #21A5B5;
+}
+.navbar .nav .nav-item:first-child .nav-link:hover:after {
+  width: 0;
+}
+.navbar .nav .nav-item:last-child {
+  margin-right: 0;
+}
+.navbar .nav .nav-link {
+  position: relative;
+}
+.navbar .nav .nav-link:after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 101;
   display: block;
   content: "";
   width: 0;
@@ -99,16 +147,10 @@
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
-  transition: width 0.3s ease-in-out;
+  transition: all 0.3s linear;
 }
-.navbar .nav .nav-item:hover:after {
+.navbar .nav .nav-link:hover:after {
   width: 90%;
-}
-.navbar .nav .nav-item:first-child:hover:after {
-  width: 0;
-}
-.navbar .nav .nav-item:last-child {
-  margin-right: 0;
 }
 .navbar .catalog-active-color {
   background: #FFECC8;
@@ -182,13 +224,13 @@
 }
 .swiper-intro .swiper-slide .swiper-tool-tip-position-3 {
   position: absolute;
-  top: 280px;
-  left: 1150px;
+  top: 35%;
+  left: 72%;
 }
 .swiper-intro .swiper-slide .swiper-tool-tip-position-4 {
   position: absolute;
-  top: 530px;
-  left: 1250px;
+  top: 70%;
+  left: 70%;
 }
 .swiper-intro .swiper-slide .icon {
   font-size: 6px;
@@ -532,30 +574,6 @@
   border-radius: 100%;
   background: #F1F1F1;
   margin-right: 10px;
-}
-
-.nav-item-menu {
-  z-index: 102;
-}
-
-.nav-item-menu:hover .menu {
-  visibility: visible;
-  display: block;
-}
-
-.menu {
-  position: absolute;
-  z-index: 102;
-  width: 100%;
-  background: #ffffff;
-  top: 75px;
-  left: 0;
-  padding: 80px 260px;
-  visibility: hidden;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: width 0.3s ease-in-out;
 }
 
 .btn-light {
@@ -1309,6 +1327,37 @@ a {
   padding: 17px;
   font-size: 10px;
   color: #21A5B5;
+}
+
+.section-intro {
+  position: relative;
+}
+.section-intro::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  z-index: 101;
+  height: 64px;
+  width: 3840px;
+  background: url("../img/mockup/wave.svg") repeat-x left bottom;
+  animation: waves 30s linear infinite;
+}
+
+@-webkit-keyframes waves {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes waves {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
