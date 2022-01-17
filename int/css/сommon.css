@@ -534,6 +534,10 @@
   margin-right: 10px;
 }
 
+.nav-item-menu:hover .menu {
+  opacity: 1;
+}
+
 .menu {
   position: absolute;
   z-index: 101;
@@ -543,9 +547,6 @@
   left: 0;
   opacity: 0;
   display: block;
-}
-.menu:hover {
-  opacity: 1;
 }
 
 .btn-light {
