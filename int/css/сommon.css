@@ -537,10 +537,15 @@
 .menu {
   position: absolute;
   z-index: 101;
-  display: none;
+  width: 100%;
+  background: #ffffff;
+  top: 75px;
+  left: 0;
+  opacity: 0;
+  display: block;
 }
 .menu:hover {
-  display: block;
+  opacity: 1;
 }
 
 .btn-light {
