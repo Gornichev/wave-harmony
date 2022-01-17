@@ -198,9 +198,8 @@
   font-family: "Futura-PT-Book", sans-serif;
 }
 .swiper-intro .swiper-slide {
-  position: relative;
   min-height: 700px;
-  background-image: url("../img/bg-grad-full.jpg");
+  background-image: url("../img/bg-grad-full-1.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -212,27 +211,30 @@
   object-fit: cover;
   min-width: 335px;
 }
-.swiper-intro .swiper-slide .swiper-tool-tip {
-  position: absolute;
-  top: 34%;
-  left: 51%;
+.swiper-intro .swiper-slide .wrapper-tip-tool {
+  position: relative;
 }
-.swiper-intro .swiper-slide .swiper-tool-tip-position-2 {
+.swiper-intro .swiper-slide .wrapper-tip-tool .swiper-tool-tip {
   position: absolute;
-  top: 80%;
-  left: 49%;
+  top: 232px;
+  left: 34%;
 }
-.swiper-intro .swiper-slide .swiper-tool-tip-position-3 {
+.swiper-intro .swiper-slide .wrapper-tip-tool .swiper-tool-tip-position-2 {
   position: absolute;
-  top: 35%;
-  left: 72%;
-}
-.swiper-intro .swiper-slide .swiper-tool-tip-position-4 {
-  position: absolute;
-  top: 70%;
+  top: 300px;
   left: 70%;
 }
-.swiper-intro .swiper-slide .icon {
+.swiper-intro .swiper-slide .wrapper-tip-tool .swiper-tool-tip-position-3 {
+  position: absolute;
+  top: 576px;
+  left: 30%;
+}
+.swiper-intro .swiper-slide .wrapper-tip-tool .swiper-tool-tip-position-4 {
+  position: absolute;
+  top: 530px;
+  left: 80%;
+}
+.swiper-intro .swiper-slide .wrapper-tip-tool .icon {
   font-size: 6px;
   width: 24px;
   background: #ffffff;
@@ -243,7 +245,7 @@
   opacity: 0.8;
   -webkit-transition: 0.5s ease;
 }
-.swiper-intro .swiper-slide .icon-plus:hover {
+.swiper-intro .swiper-slide .wrapper-tip-tool .icon-plus:hover {
   opacity: 0;
   transition: 0.5s;
 }
@@ -1331,13 +1333,14 @@ a {
 
 .section-intro {
   position: relative;
+  overflow: hidden;
 }
 .section-intro::after {
   content: "";
   position: absolute;
-  top: 100%;
+  top: 90%;
   z-index: 101;
-  height: 64px;
+  height: 70px;
   width: 3840px;
   background: url("../img/mockup/wave.svg") repeat-x left bottom;
   animation: waves 30s linear infinite;

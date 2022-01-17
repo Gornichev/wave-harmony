@@ -702,13 +702,14 @@ a
 
 .section-intro
 	position: relative
+	overflow: hidden
 
 	&::after
 		content: ""
 		position: absolute
-		top: 100%
+		top: 90%
 		z-index: 101
-		height: 64px
+		height: 70px
 		width: 3840px
 		background: url("../img/mockup/wave.svg") repeat-x left bottom
 		animation: waves 30s linear infinite
@@ -718,10 +719,8 @@ a
 	from
 		transform: none
 
-
 	to
 		transform: translateX(-50%)
-
 
 @keyframes waves
 
