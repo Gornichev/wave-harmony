@@ -1,15 +1,22 @@
 @import "variables"
 
-.nav-item-menu:hover .menu
-	opacity: 1
+.nav-item-menu
+	z-index: 102
 
+.nav-item-menu:hover .menu
+	visibility: visible
+	display: block
 
 .menu
 	position: absolute
-	z-index: 101
+	z-index: 102
 	width: 100%
 	background: $mainColor
 	top: 75px
 	left: 0
-	opacity: 0
-	display: block
+	padding: 80px 260px
+	visibility: hidden
+	-webkit-transition: all 0.3s linear
+	-moz-transition: all 0.3s linear
+	-o-transition: all 0.3s linear
+	transition: width 0.3s ease-in-out
