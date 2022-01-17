@@ -68,6 +68,7 @@
 				top: -3px
 				right: -3px
 
+
 .navbar
 	background: $mainColor
 	padding-top: 0
@@ -87,6 +88,9 @@
 
 		&:hover
 			color: $gradientColorOne
+
+	.active
+		color: $gradientColorOne
 
 	.nav-item-menu
 		z-index: 102
@@ -122,6 +126,16 @@
 				opacity: 1
 				transform: translateY(1px)
 
+			.menu-hover-group
+				list-style: none
+				margin: 0
+				padding: 0
+
+				.menu-hover-title
+					font-family: Futura-PT-Demi,sans-serif
+					font-size: 14px
+					line-height: 19px
+					color: $mainText
 	.nav
 
 		.nav-item

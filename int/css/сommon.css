@@ -84,6 +84,9 @@
 .navbar .nav-link:hover {
   color: #21A5B5;
 }
+.navbar .active {
+  color: #21A5B5;
+}
 .navbar .nav-item-menu {
   z-index: 102;
 }
@@ -115,6 +118,17 @@
   visibility: visible;
   opacity: 1;
   transform: translateY(1px);
+}
+.navbar .nav-item-menu:hover .menu-hover-group {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar .nav-item-menu:hover .menu-hover-group .menu-hover-title {
+  font-family: Futura-PT-Demi, sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  color: #2C2C2C;
 }
 .navbar .nav .nav-item {
   margin-right: 30px;
