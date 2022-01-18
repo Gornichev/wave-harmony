@@ -702,6 +702,10 @@ a {
   max-width: 1424px;
 }
 
+.container-lg {
+  max-width: 1224px;
+}
+
 .container-sm {
   max-width: 800px;
 }
@@ -1323,7 +1327,7 @@ a {
   font-size: 18px;
   line-height: 25px;
   color: #444444;
-  max-width: 526px;
+  max-width: 470px;
   margin: 0;
 }
 .section-delivery .section-delivery-cards .nav-tabs .nav-link {
