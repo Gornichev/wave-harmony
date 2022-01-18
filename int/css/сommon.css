@@ -1326,6 +1326,11 @@ a {
   max-width: 526px;
   margin: 0;
 }
+.section-delivery .section-delivery-cards .nav-tabs .nav-link {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
 .section-delivery .section-delivery-cards .delivery-card {
   display: block;
   padding: 26px 43px 29px 35px;
@@ -1333,6 +1338,8 @@ a {
   border: 1px solid #F0F0F0;
   text-align: left;
   position: relative;
+  min-width: 390px;
+  max-height: 130px;
 }
 .section-delivery .section-delivery-cards .delivery-card:hover {
   border: 1px solid #21A5B5;
