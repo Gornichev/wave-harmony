@@ -1426,7 +1426,7 @@ a {
   background: #ffffff;
 }
 .accordion-item .accordion-header .accordion-button:after {
-  display: none;
+  color: #1a1e21;
 }
 .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
   color: #1a1e21;
