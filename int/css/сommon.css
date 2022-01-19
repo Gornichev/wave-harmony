@@ -712,8 +712,36 @@ a {
 
 .section-intro {
   margin-bottom: 80px;
+  position: relative;
+  overflow: hidden;
+}
+.section-intro::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  z-index: 101;
+  height: 70px;
+  width: 3840px;
+  background: url("../img/mockup/wave.svg") repeat-x left bottom;
+  animation: waves 30s linear infinite;
 }
 
+@-webkit-keyframes waves {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes waves {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
 .section-item {
   position: relative;
   margin-bottom: 230px;
@@ -1330,6 +1358,9 @@ a {
   max-width: 470px;
   margin: 0;
 }
+.section-delivery .section-delivery-cards .nav-tabs {
+  border: none;
+}
 .section-delivery .section-delivery-cards .nav-tabs .nav-link {
   border: none;
   padding: 0;
@@ -1376,36 +1407,43 @@ a {
   color: #21A5B5;
 }
 
-.section-intro {
+.accordion-item {
+  border: none;
+  margin-bottom: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.accordion-item .accordion-header {
   position: relative;
-  overflow: hidden;
 }
-.section-intro::after {
-  content: "";
+.accordion-item .accordion-header .accordion-button {
+  font-family: "Futura-PT-Medium", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  color: #2C2C2C;
+  padding: 15px;
+  background: #ffffff;
+}
+.accordion-item .accordion-header .accordion-button:before {
+  color: #21A5B5;
+  border: 1px solid #0dcaf0;
+  border-radius: 100%;
+  padding: 10px;
+  line-height: 23px;
+  width: 40px;
+  height: 40px;
   position: absolute;
-  top: 90%;
-  z-index: 101;
-  height: 70px;
-  width: 3840px;
-  background: url("../img/mockup/wave.svg") repeat-x left bottom;
-  animation: waves 30s linear infinite;
+  z-index: 102;
 }
-
-@-webkit-keyframes waves {
-  from {
-    transform: none;
-  }
-  to {
-    transform: translateX(-50%);
-  }
+.accordion-item .accordion-header .accordion-button:focus {
+  box-shadow: none;
+  color: #21A5B5;
 }
-@keyframes waves {
-  from {
-    transform: none;
-  }
-  to {
-    transform: translateX(-50%);
-  }
+.accordion-item .accordion-body {
+  font-family: "Futura-PT-Book", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 15px 35px 15px 15px;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
