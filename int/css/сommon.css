@@ -1425,11 +1425,19 @@ a {
   padding: 15px;
   background: #ffffff;
 }
-.accordion-item .accordion-header .accordion-button:after {
-  color: #1a1e21;
-}
-.accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
-  color: #1a1e21;
+.accordion-item .accordion-header .accordion-button::after {
+  content: "\e905";
+  font-family: "icomoon", sans-serif;
+  font-size: 10px;
+  background-image: none;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #21A5B5;
+  border-radius: 100%;
+  text-align: center;
+  color: #21A5B5;
+  line-height: 30px;
+  padding: 6px;
 }
 .accordion-item .accordion-header .accordion-button:focus {
   box-shadow: none;

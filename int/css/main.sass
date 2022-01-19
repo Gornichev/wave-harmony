@@ -759,12 +759,19 @@ a
 			padding: 15px
 			background: $mainColor
 
-			&:after
-				color: #1a1e21
-
-
-			&:not(.collapsed)::after
-				color: #1a1e21
+			&::after
+				content: "\e905"
+				font-family: 'icomoon', sans-serif
+				font-size: 10px
+				background-image: none
+				width: 40px
+				height: 40px
+				border: 1px	solid $gradientColorOne
+				border-radius: 100%
+				text-align: center
+				color: $gradientColorOne
+				line-height: 30px
+				padding: 6px
 
 			&:focus
 				box-shadow: none
