@@ -1367,6 +1367,9 @@ a {
   padding: 0;
   margin: 0;
 }
+.section-delivery .section-delivery-cards .nav-tabs .nav-link .active .delivery-card-element {
+  content: none;
+}
 .section-delivery .section-delivery-cards .delivery-card {
   display: block;
   padding: 26px 43px 29px 35px;
