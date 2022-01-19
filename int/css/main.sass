@@ -759,17 +759,11 @@ a
 			padding: 15px
 			background: $mainColor
 
+			&:after
+				display: none
 
-			&:before
-				color: $gradientColorOne
-				border: 1px solid #0dcaf0
-				border-radius: 100%
-				padding: 10px
-				line-height: 23px
-				width: 40px
-				height: 40px
-				position: absolute
-				z-index: 102
+			&:not(.collapsed)::after
+				color: #1a1e21
 
 			&:focus
 				box-shadow: none

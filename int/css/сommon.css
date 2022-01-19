@@ -1425,16 +1425,11 @@ a {
   padding: 15px;
   background: #ffffff;
 }
-.accordion-item .accordion-header .accordion-button:before {
-  color: #21A5B5;
-  border: 1px solid #0dcaf0;
-  border-radius: 100%;
-  padding: 10px;
-  line-height: 23px;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  z-index: 102;
+.accordion-item .accordion-header .accordion-button:after {
+  display: none;
+}
+.accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+  color: #1a1e21;
 }
 .accordion-item .accordion-header .accordion-button:focus {
   box-shadow: none;
