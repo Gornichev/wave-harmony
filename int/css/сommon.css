@@ -143,6 +143,9 @@
   color: #444444;
   display: block;
 }
+.navbar .nav-item-menu .menu-hover-group .menu-hover-link:hover {
+  color: #21A5B5;
+}
 .navbar .nav-item-menu .wrapper-img-menu img {
   margin-left: 20px;
 }
@@ -973,6 +976,9 @@ a {
   margin-left: 15px;
 }
 
+.section-breadcrumb .breadcrumb {
+  margin: 0;
+}
 .section-breadcrumb .breadcrumb a {
   color: #2C2C2C;
   font-size: 18px;
@@ -1453,6 +1459,10 @@ a {
   font-size: 16px;
   line-height: 22px;
   padding: 15px 35px 15px 15px;
+}
+
+.section-size {
+  padding-top: 80px;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */

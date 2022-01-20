@@ -1,3 +1,13 @@
-
+.nav-tabs {
+  border: none;
+}
+.nav-tabs .nav-link {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-tabs .nav-link.active .icon:before {
+  content: "\e90c";
+}
 
 /*# sourceMappingURL=tabs.css.map */
