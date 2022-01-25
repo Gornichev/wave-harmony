@@ -1513,16 +1513,24 @@ a {
 }
 
 .section-size-table {
-  border: 1px solid #F0F0F0;
   padding: 70px;
+  border-radius: 30px;
+  border: 1px solid #F0F0F0;
 }
-.section-size-table .size-table-header {
+.section-size-table .table-size {
+  margin: auto;
+  width: 100%;
+}
+.section-size-table .table-size th {
+  padding: 10px;
+}
+.section-size-table .table-size .size-table-header {
   font-family: "Futura-PT-Medium", sans-serif;
   font-size: 19px;
   line-height: 24px;
   color: #2C2C2C;
 }
-.section-size-table .size-table-body {
+.section-size-table .table-size .size-table-body {
   font-family: "Futura-PT-Book", sans-serif;
   font-size: 19px;
   line-height: 24px;
