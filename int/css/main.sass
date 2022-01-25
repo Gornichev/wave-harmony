@@ -834,13 +834,25 @@ a
 	padding: 70px
 	border-radius: 30px
 	border: 1px solid $ultraLightColor
+	margin-bottom: 100px
 
-	.table-size
+	.table-size-list
 		margin: auto
 		width: 100%
 
+		tr
+			-webkit-transition: all 0.5s linear
+			-moz-transition: all 0.5s linear
+			-o-transition: all 0.5s linear
+			transition: all 0.5s linear
+
+		tr:hover
+			background: $whiteLightColor
+
 		th
 			padding: 10px
+			text-align: center
+			font-weight: 500
 
 		.size-table-header
 			font-family: "Futura-PT-Medium", sans-serif
@@ -853,6 +865,15 @@ a
 			font-size: 19px
 			line-height: 24px
 			color: $mainText
+
+
+
+			tr:nth-child(n+2)
+				border-top: 1px dashed $whiteLightColor
+
+
+
+
 
 
 

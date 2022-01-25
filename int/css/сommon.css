@@ -1516,25 +1516,40 @@ a {
   padding: 70px;
   border-radius: 30px;
   border: 1px solid #F0F0F0;
+  margin-bottom: 100px;
 }
-.section-size-table .table-size {
+.section-size-table .table-size-list {
   margin: auto;
   width: 100%;
 }
-.section-size-table .table-size th {
-  padding: 10px;
+.section-size-table .table-size-list tr {
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
-.section-size-table .table-size .size-table-header {
+.section-size-table .table-size-list tr:hover {
+  background: #F1F1F1;
+}
+.section-size-table .table-size-list th {
+  padding: 10px;
+  text-align: center;
+  font-weight: 500;
+}
+.section-size-table .table-size-list .size-table-header {
   font-family: "Futura-PT-Medium", sans-serif;
   font-size: 19px;
   line-height: 24px;
   color: #2C2C2C;
 }
-.section-size-table .table-size .size-table-body {
+.section-size-table .table-size-list .size-table-body {
   font-family: "Futura-PT-Book", sans-serif;
   font-size: 19px;
   line-height: 24px;
   color: #2C2C2C;
+}
+.section-size-table .table-size-list .size-table-body tr:nth-child(n+2) {
+  border-top: 1px dashed #F1F1F1;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
