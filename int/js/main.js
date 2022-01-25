@@ -58,9 +58,9 @@ const intro = new Swiper(".trust-slider", {
     thumbs: {
         swiper: slider,
     },
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
 });
 

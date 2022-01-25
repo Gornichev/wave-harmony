@@ -1462,7 +1462,71 @@ a {
 }
 
 .section-size {
-  padding-top: 80px;
+  padding-top: 100px;
+}
+.section-size .section-size-header {
+  margin-bottom: 160px;
+}
+.section-size .section-size-header .section-size-header-text {
+  font-family: "Futura-PT-Book", sans-serif;
+  font-size: 19px;
+  line-height: 26px;
+  margin: 0;
+}
+
+.section-size-cards {
+  margin-bottom: 100px;
+}
+.section-size-cards .section-size-card {
+  width: 100%;
+}
+.section-size-cards .section-size-card .section-size-card-header {
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  height: 420px;
+  background: linear-gradient(#f1f1f1, #f1f1f1) left bottom 400px;
+  margin-bottom: 25px;
+}
+.section-size-cards .section-size-card .section-size-card-header .size-card-title {
+  position: absolute;
+  left: 0;
+  top: -50px;
+  font-size: 22px;
+  line-height: 31px;
+  font-family: "Futura-PT-Medium", sans-serif;
+}
+.section-size-cards .section-size-card .section-size-card-header .size-card-img {
+  position: absolute;
+  top: 41%;
+  left: 50%;
+  height: 500px;
+  width: auto;
+  max-width: none;
+  transform: translate(-50%, -50%);
+}
+.section-size-cards .section-size-card .section-size-card-body .size-card-text {
+  display: block;
+  font-size: 19px;
+  line-height: 26px;
+  font-family: "Futura-PT-Book", sans-serif;
+}
+
+.section-size-table {
+  border: 1px solid #F0F0F0;
+  padding: 70px;
+}
+.section-size-table .size-table-header {
+  font-family: "Futura-PT-Medium", sans-serif;
+  font-size: 19px;
+  line-height: 24px;
+  color: #2C2C2C;
+}
+.section-size-table .size-table-body {
+  font-family: "Futura-PT-Book", sans-serif;
+  font-size: 19px;
+  line-height: 24px;
+  color: #2C2C2C;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
