@@ -1532,9 +1532,11 @@ a {
   background: #F1F1F1;
 }
 .section-size-table .table-size-list th {
-  padding: 10px;
-  text-align: center;
+  padding: 12px 0 30px 10px;
   font-weight: 500;
+}
+.section-size-table .table-size-list th:first-child {
+  padding-right: 60px;
 }
 .section-size-table .table-size-list .size-table-header {
   font-family: "Futura-PT-Medium", sans-serif;
@@ -1550,6 +1552,23 @@ a {
 }
 .section-size-table .table-size-list .size-table-body tr:nth-child(n+2) {
   border-top: 1px dashed #F1F1F1;
+}
+
+.section-size-mini-text {
+  font-family: "Futura-PT-Book", sans-serif;
+  font-size: 19px;
+  line-height: 27px;
+  color: #2C2C2C;
+  margin-bottom: 100px;
+  display: block;
+}
+
+.background-text {
+  background-color: #FFECC8;
+}
+
+.banner-section-size {
+  margin-bottom: 120px;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
