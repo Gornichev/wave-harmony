@@ -572,7 +572,7 @@
 
 .footer {
   padding-top: 80px;
-  padding-bottom: 70px;
+  padding-bottom: 80px;
 }
 .footer .footer-list-title {
   font-family: "Futura-PT-Book", sans-serif;
@@ -1517,6 +1517,7 @@ a {
   border-radius: 30px;
   border: 1px solid #F0F0F0;
   margin-bottom: 100px;
+  overflow-x: scroll;
 }
 .section-size-table .table-size-list {
   margin: auto;
@@ -1569,6 +1570,9 @@ a {
 
 .banner-section-size {
   margin-bottom: 120px;
+}
+.banner-section-size img {
+  max-width: 420px;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
