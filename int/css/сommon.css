@@ -700,6 +700,17 @@
   color: #ffffff;
 }
 
+.cert-value-btn {
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: 1px solid #F0F0F0;
+  color: #2C2C2C;
+}
+
+.cert-value-btn-active {
+  background: #21A5B5;
+}
+
 body {
   font-family: "Futura PT", sans-serif;
   background-color: #ffffff;
@@ -1573,6 +1584,18 @@ a {
 }
 .banner-section-size img {
   max-width: 420px;
+}
+
+.section-certificate .certificate-form-wrapper {
+  padding-top: 80px;
+}
+.section-certificate .certificate-form-wrapper .certificate-variant {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+.section-certificate .certificate-form-wrapper .certificate-variant .cert-value {
+  margin-right: 15px;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */

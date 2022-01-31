@@ -5,8 +5,8 @@ const swiperIntro = new Swiper(".swiper-intro", {
     },
 });
 // Tooltip
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 // Slider-item
@@ -64,3 +64,23 @@ const intro = new Swiper(".trust-slider", {
     },
 });
 
+const certVariants = document.querySelector('.certificate-variant')
+const certValElem = document.getElementById('certValue')
+const certValueControl = document.getElementById('certificateValue')
+
+certVariants.addEventListener('click', e => {
+    const _this = e.target.closest('.cert-value-btn');
+    if (!this) return;
+    const activeBtn = document.querySelector('.cert-value-btn-active');
+    const disabledBtn = document.querySelector('.cert-value-btn:disabled');
+
+    if (activeBtn) activeBtn.classList.remove('cert-value-btn-active');
+    if (disabledBtn) disabledBtn.removeAttribute('disabled');
+
+    _this.classList.add('cert-value__button--active');
+    if (_this.innerText === 'Р”СЂСѓРіРѕР№') return askVal();
+
+    certValElem.innerText = _this.innerText;
+    certValueControl.value = _this.innerText;
+    _this.setAttribute('disabled', true);
+})
