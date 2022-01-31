@@ -1593,13 +1593,18 @@ a {
 }
 
 .section-certificate .certificate-form-wrapper {
-  padding-top: 80px;
+  padding: 80px 40px 0;
+}
+.section-certificate .certificate-form-wrapper .certificate-title {
+  max-width: 405px;
 }
 .section-certificate .certificate-form-wrapper .certificate-text {
   font-family: "Futura-PT-Book", sans-serif;
   font-size: 19px;
   line-height: 24px;
   color: #2C2C2C;
+  max-width: 535px;
+  margin-bottom: 20px;
 }
 .section-certificate .certificate-form-wrapper .certificate-value-title {
   font-family: "Futura-PT-Book", sans-serif;
@@ -1622,6 +1627,9 @@ a {
 }
 .section-certificate .certificate-form-wrapper .certificate-variant .cert-value {
   margin-right: 15px;
+}
+.section-certificate .certificate-form-wrapper .form-label {
+  border-radius: 15px;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
