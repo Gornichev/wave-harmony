@@ -703,12 +703,18 @@
 .cert-value-btn {
   padding: 12px 20px;
   border-radius: 5px;
-  border: 1px solid #F0F0F0;
+  border: 2px solid #F0F0F0;
   color: #2C2C2C;
+  font-size: 15px;
+  line-height: 12px;
+  background: #ffffff;
 }
 
 .cert-value-btn-active {
   background: #21A5B5;
+  font-size: 15px;
+  line-height: 12px;
+  color: #ffffff;
 }
 
 body {
@@ -1588,6 +1594,26 @@ a {
 
 .section-certificate .certificate-form-wrapper {
   padding-top: 80px;
+}
+.section-certificate .certificate-form-wrapper .certificate-text {
+  font-family: "Futura-PT-Book", sans-serif;
+  font-size: 19px;
+  line-height: 24px;
+  color: #2C2C2C;
+}
+.section-certificate .certificate-form-wrapper .certificate-value-title {
+  font-family: "Futura-PT-Book", sans-serif;
+  font-size: 19px;
+  line-height: 24px;
+  color: #2C2C2C;
+  margin-bottom: 10px;
+}
+.section-certificate .certificate-form-wrapper span {
+  display: inline;
+  margin: 0 5px;
+  color: #21A5B5;
+  font-size: 15px;
+  line-height: 12px;
 }
 .section-certificate .certificate-form-wrapper .certificate-variant {
   list-style: none;

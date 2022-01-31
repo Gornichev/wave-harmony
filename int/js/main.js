@@ -64,6 +64,8 @@ const intro = new Swiper(".trust-slider", {
     },
 });
 
+// Certificate-btn
+
 const certVariants = document.querySelector('.certificate-variant')
 const certValElem = document.getElementById('certValue')
 const certValueControl = document.getElementById('certificateValue')
@@ -77,10 +79,12 @@ certVariants.addEventListener('click', e => {
     if (activeBtn) activeBtn.classList.remove('cert-value-btn-active');
     if (disabledBtn) disabledBtn.removeAttribute('disabled');
 
-    _this.classList.add('cert-value__button--active');
+    _this.classList.add('cert-value-btn-active');
     if (_this.innerText === 'Р”СЂСѓРіРѕР№') return askVal();
 
     certValElem.innerText = _this.innerText;
     certValueControl.value = _this.innerText;
     _this.setAttribute('disabled', true);
 })
+
+// Certificate-btn
