@@ -1592,6 +1592,12 @@ a {
   max-width: 420px;
 }
 
+.section-certificate {
+  padding-bottom: 110px;
+}
+.section-certificate .certificate-img-wrapper {
+  text-align: center;
+}
 .section-certificate .certificate-form-wrapper {
   padding: 80px 40px 0;
 }
@@ -1624,12 +1630,41 @@ a {
   list-style: none;
   display: flex;
   padding: 0;
+  margin-bottom: 40px;
 }
 .section-certificate .certificate-form-wrapper .certificate-variant .cert-value {
   margin-right: 15px;
 }
-.section-certificate .certificate-form-wrapper .form-label {
-  border-radius: 15px;
+.section-certificate .certificate-forms .form-control {
+  border-radius: 7px;
+  border: 0.5px solid #CFCFCF;
+  padding: 17px;
+  font-size: 14px;
+  line-height: 14px;
+  color: #848484;
+  max-height: 52px;
+  margin-bottom: 20px;
+}
+.section-certificate .certificate-forms .form-control:focus {
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid #2B2A28;
+}
+.section-certificate .certificate-forms .form-label {
+  font-size: 16px;
+  line-height: 14px;
+  margin-bottom: 15px;
+  color: #2C2C2C;
+}
+.section-certificate .certificate-forms .cert-danger-element {
+  color: #FF0000FF;
+}
+.section-certificate .certificate-forms .btn {
+  padding: 15px 40px;
+  max-width: 188px;
+  border-radius: 7px;
+}
+.section-certificate .certificate-forms .certificate-textarea {
+  min-height: 130px;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */

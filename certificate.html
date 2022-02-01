@@ -111,12 +111,12 @@
     <section class="section-certificate">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-lg-6">
                     <div class="certificate-img-wrapper">
                         <img src="int/img/certificate/card.certificate.png" alt="">
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div class="certificate-form-wrapper">
                         <h1 class="certificate-title title-page mb-15">Электронный подарочный сертификат</h1>
                         <p class="certificate-text">Вы можете создать электронный подарочный сертификат на покупку продукции в нашем интернет-магазине, введите желаемую сумму подарка (от 500 рублей) и укажите данные счастливого получателя</p>
@@ -130,9 +130,21 @@
                             <li class="cert-value"><button type="button" class="cert-value-btn">6000</button></li>
                             <li class="cert-value"><button type="button" class="cert-value-btn">7000</button></li>
                         </ul>
-                        <input id="certificateValue" type="hidden" name="certificateSumm" value="500">
-                        <label for="exampleFormControlInput1" class="form-label">Email address
-                        <input type="email" class="form-control"  placeholder="name@example.com"></label>
+                        <div class="certificate-forms">
+                            <label for="exampleFormControlInput2" class="form-label">Вaш e-mail<span class="cert-danger-element">*</span></label>
+                            <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="Вaш e-mail">
+
+                                <label for="exampleFormControlInput3" class="form-label">E-Mail получателя<span class="cert-danger-element">*</span></label>
+                                <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="E-Mail получателя">
+
+                                <label for="exampleFormControlInput4" class="form-label">Телефон получателя<span class="cert-danger-element">*</span></label>
+                                <input type="email" class="form-control" id="exampleFormControlInput4" placeholder="Телефон получателя">
+
+                            <label for="exampleFormControlTextarea1" class="form-label">Поздравление</label>
+                            <textarea class="certificate-textarea form-control" id="exampleFormControlTextarea1" rows="3">Введите текст поздравления который увидит получатель</textarea>
+
+                            <button type="submit" class="btn btn-primary btn-lg">Оформить</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -153,7 +165,6 @@
                     <div class="mailing-group">
                         <label for="exampleFormControlInput1" class="form-label"></label>
                         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Введите ваш E-mail">
-
                     </div>
                 </div>
             </div>

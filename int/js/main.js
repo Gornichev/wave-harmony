@@ -73,6 +73,7 @@ const certValueControl = document.getElementById('certificateValue')
 certVariants.addEventListener('click', e => {
     const _this = e.target.closest('.cert-value-btn');
     if (!this) return;
+
     const activeBtn = document.querySelector('.cert-value-btn-active');
     const disabledBtn = document.querySelector('.cert-value-btn:disabled');
 

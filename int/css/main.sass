@@ -889,6 +889,10 @@ a
 		max-width: 420px
 
 .section-certificate
+	padding-bottom: 110px
+
+	.certificate-img-wrapper
+		text-align: center
 
 	.certificate-form-wrapper
 		padding: 80px 40px 0
@@ -922,9 +926,44 @@ a
 			list-style: none
 			display: flex
 			padding: 0
+			margin-bottom: 40px
 
 			.cert-value
 				margin-right: 15px
 
+	.certificate-forms
+
+		.form-control
+			border-radius: 7px
+			border: 0.5px solid $minimalColor
+			padding: 17px
+			font-size: 14px
+			line-height: 14px
+			color: $pasiiveColor
+			max-height: 52px
+			margin-bottom: 20px
+
+			&:focus
+				box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2)
+				border: 1px solid $darkColor
+
 		.form-label
-			border-radius: 15px
+			font-size: 16px
+			line-height: 14px
+			margin-bottom: 15px
+			color: $mainText
+
+		.cert-danger-element
+			color: $dangerColor
+
+		.btn
+			padding: 15px 40px
+			max-width: 188px
+			border-radius: 7px
+
+		.certificate-textarea
+			min-height: 130px
+
+
+
+
