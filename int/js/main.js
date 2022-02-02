@@ -71,9 +71,9 @@ const searchBtn = document.getElementById('searchBtn')
 
 
 searchIcon.addEventListener('click', function (){
-    searchBtn.classList.toggle('hidden-panel')
-
+    searchBtn.classList.toggle('show')
 })
+
 
 // Certificate-btn
 

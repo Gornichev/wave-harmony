@@ -30,11 +30,18 @@
 		li
 			position: relative
 
+			& + li
+				margin-left: 30px
+
 		.icon
 			font-size: 28px
 			color: $mainText
-			margin-left: 30px
 			position: relative
+
+		.icon-find
+			z-index: 101
+			padding-left: 5px
+			background-color: $mainColor
 
 		.icon-heat
 			width: 34px
@@ -77,8 +84,7 @@
 			right: 0
 			width: 180px
 			transition: 0.5s
-			opacity: 1
-			transform: translateX(100%)
+			overflow: hidden
 
 			.form-control
 				border: none
@@ -87,13 +93,19 @@
 				font-family: 'Futura-PT-Book',sans-serif
 				font-size: 17px
 				color: $mainlightColor
+				opacity: 0
+				transform: translateX(100%)
+				transition: 0.5s
+				padding-left: 0
 
 				&:focus
 					box-shadow: none
 
-			&.hidden-panel
-				opacity: 0
-				transform: translateX(0)
+			&.show
+
+				.form-control
+					opacity: 1
+					transform: translateX(0)
 
 
 .navbar
