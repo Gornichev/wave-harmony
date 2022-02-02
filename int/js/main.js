@@ -64,37 +64,22 @@ const intro = new Swiper(".trust-slider", {
     },
 });
 
+
+const searchIcon = document.getElementById('searchIcon')
+const searchBtn = document.getElementById('searchBtn')
+
+
+
+searchIcon.addEventListener('click', function (){
+    searchBtn.classList.toggle('hidden-panel')
+
+})
+
 // Certificate-btn
 
-const certVariants = document.querySelector('.certificate-variant')
-const certValElem = document.getElementById('certValue')
-const certValueControl = document.getElementById('certificateValue')
-
-certVariants.addEventListener('click', e => {
-    const _this = e.target.closest('.cert-value-btn');
-    if (!this) return;
-
-    const activeBtn = document.querySelector('.cert-value-btn-active');
-    const disabledBtn = document.querySelector('.cert-value-btn:disabled');
-
-    if (activeBtn) activeBtn.classList.remove('cert-value-btn-active');
-    if (disabledBtn) disabledBtn.removeAttribute('disabled');
-
-    _this.classList.add('cert-value-btn-active');
-    if (_this.innerText === 'Р”СЂСѓРіРѕР№') return askVal();
-
-    certValElem.innerText = _this.innerText;
-    certValueControl.value = _this.innerText;
-    _this.setAttribute('disabled', true);
-})
 
 // Certificate-btn
 
 // searchBtn
 
-const searchIcon = document.getElementById('searchIcon')
-const searchBtn = document.getElementById('searchBtn')
-searchIcon.addEventListener('click', function (){
-    searchBtn.classList.toggle('hidden-panel')
 
-})
