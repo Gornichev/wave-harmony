@@ -26,6 +26,7 @@
 		color: $darkColor
 
 	.icon-group
+		position: relative
 
 		.icon
 			font-size: 28px
@@ -68,6 +69,25 @@
 				top: -3px
 				right: -3px
 
+		.search-panel
+			position: absolute
+			top: -18px
+			left: -120px
+			transition: 0.5s
+			opacity: 1
+			width: 100%
+
+			.form-control
+				border: none
+				border-bottom: 1px solid $darkenColor
+				border-radius: 0
+				font-family: 'Futura-PT-Book',sans-serif
+				font-size: 17px
+				color: $mainlightColor
+
+		.hidden-panel
+			opacity: 0
+			width: 0
 
 .navbar
 	background: $mainColor

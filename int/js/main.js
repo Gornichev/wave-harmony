@@ -89,3 +89,12 @@ certVariants.addEventListener('click', e => {
 })
 
 // Certificate-btn
+
+// searchBtn
+
+const searchIcon = document.getElementById('searchIcon')
+const searchBtn = document.getElementById('searchBtn')
+searchIcon.addEventListener('click', function (e){
+    searchBtn.classList.toggle('hidden-panel')
+
+})

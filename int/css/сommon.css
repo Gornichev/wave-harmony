@@ -25,6 +25,9 @@
   font-family: "Futura-PT-Book", sans-serif;
   color: #2B2A28;
 }
+.header .icon-group {
+  position: relative;
+}
 .header .icon-group .icon {
   font-size: 28px;
   color: #2C2C2C;
@@ -62,6 +65,26 @@
   position: absolute;
   top: -3px;
   right: -3px;
+}
+.header .icon-group .search-panel {
+  position: absolute;
+  top: -18px;
+  left: -120px;
+  transition: 0.5s;
+  opacity: 1;
+  width: 100%;
+}
+.header .icon-group .search-panel .form-control {
+  border: none;
+  border-bottom: 1px solid #000000;
+  border-radius: 0;
+  font-family: "Futura-PT-Book", sans-serif;
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.3);
+}
+.header .icon-group .hidden-panel {
+  opacity: 0;
+  width: 0;
 }
 
 .navbar {

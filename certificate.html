@@ -21,7 +21,20 @@
                 </div>
                 <div class="col-auto">
                     <ul class="list-unstyled d-flex icon-group">
-                        <li><a href="#"><i class="icon icon-find"></i></a></li>
+                        <li><div id="searchBtn" class="search-panel hidden-panel">
+                            <label for="exampleDataList" class="form-label"></label>
+                            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Я ищу...">
+                            <datalist id="datalistOptions">
+                                <option value="Купальник">
+                                <option value="Доставка">
+                                <option value="Доски">
+                                <option value="море">
+                                <option value="печенье:))">
+                            </datalist>
+                        </div></li>
+                        <li><a href="#"><i id="searchIcon" class="icon icon-find"></i></a>
+
+                        </li>
                         <li><a href="#"><i class="icon icon-heat"></i><span class="dot danger"></span></a></li>
                         <li><a href="#"><i class="icon icon-bag"></i><span class="dot danger"></span></a></li>
                     </ul>
