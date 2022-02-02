@@ -28,11 +28,18 @@
 .header .icon-group li {
   position: relative;
 }
+.header .icon-group li + li {
+  margin-left: 30px;
+}
 .header .icon-group .icon {
   font-size: 28px;
   color: #2C2C2C;
-  margin-left: 30px;
   position: relative;
+}
+.header .icon-group .icon-find {
+  z-index: 101;
+  padding-left: 5px;
+  background-color: #ffffff;
 }
 .header .icon-group .icon-heat {
   width: 34px;
@@ -72,8 +79,7 @@
   right: 0;
   width: 180px;
   transition: 0.5s;
-  opacity: 1;
-  transform: translateX(100%);
+  overflow: hidden;
 }
 .header .icon-group .search-panel .form-control {
   border: none;
@@ -82,12 +88,16 @@
   font-family: "Futura-PT-Book", sans-serif;
   font-size: 17px;
   color: rgba(255, 255, 255, 0.3);
+  opacity: 0;
+  transform: translateX(100%);
+  transition: 0.5s;
+  padding-left: 0;
 }
 .header .icon-group .search-panel .form-control:focus {
   box-shadow: none;
 }
-.header .icon-group .search-panel.hidden-panel {
-  opacity: 0;
+.header .icon-group .search-panel.show .form-control {
+  opacity: 1;
   transform: translateX(0);
 }
 
