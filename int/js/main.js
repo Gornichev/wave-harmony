@@ -64,21 +64,14 @@ const intro = new Swiper(".trust-slider", {
     },
 });
 
-
 const searchIcon = document.getElementById('searchIcon')
 const searchBtn = document.getElementById('searchBtn')
-
 
 
 searchIcon.addEventListener('click', function (){
     searchBtn.classList.toggle('hidden-panel')
 
 })
-
-// Certificate-btn
-
-
-// Certificate-btn
 
 // searchBtn
 
