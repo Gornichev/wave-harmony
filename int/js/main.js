@@ -64,22 +64,25 @@ const intro = new Swiper(".trust-slider", {
     },
 });
 
-
 const searchIcon = document.getElementById('searchIcon')
 const searchBtn = document.getElementById('searchBtn')
+const searchBar =document.querySelector('.search-bar')
 
+// searchIcon.addEventListener('click',  function (){
+//     searchBtn.classList.toggle('show')
+//
+// })
 
+document.addEventListener('click', (e) => {
+    const click = e.composedPath().includes(searchBar)
+    // console.log(e.composedPath())
+    // console.log(click)
+    if(click){
+        searchBtn.classList.add('show')
+    }
 
-searchIcon.addEventListener('click', function (){
-    searchBtn.classList.toggle('hidden-panel')
-
+    if ( !click ) {
+        searchBtn.classList.remove('show')
+    }
 })
-
-// Certificate-btn
-
-
-// Certificate-btn
-
-// searchBtn
-
 

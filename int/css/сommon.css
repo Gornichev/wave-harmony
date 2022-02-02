@@ -40,6 +40,7 @@
   z-index: 101;
   padding-left: 5px;
   background-color: #ffffff;
+  cursor: pointer;
 }
 .header .icon-group .icon-heat {
   width: 34px;
@@ -99,6 +100,7 @@
 .header .icon-group .search-panel.show .form-control {
   opacity: 1;
   transform: translateX(0);
+  color: #000000;
 }
 
 .navbar {
