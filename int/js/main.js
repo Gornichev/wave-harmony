@@ -4,11 +4,13 @@ const swiperIntro = new Swiper(".swiper-intro", {
         clickable: true,
     },
 });
+
 // Tooltip
 const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
 })
+
 // Slider-item
 const SwiperItem = new Swiper(".swiper-card", {
     slidesPerView: 4,
@@ -68,15 +70,10 @@ const searchIcon = document.getElementById('searchIcon')
 const searchBtn = document.getElementById('searchBtn')
 const searchBar =document.querySelector('.search-bar')
 
-// searchIcon.addEventListener('click',  function (){
-//     searchBtn.classList.toggle('show')
-//
-// })
 
 document.addEventListener('click', (e) => {
     const click = e.composedPath().includes(searchBar)
-    // console.log(e.composedPath())
-    // console.log(click)
+
     if(click){
         searchBtn.classList.add('show')
     }
