@@ -625,6 +625,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  position: relative;
 }
 .footer .footer-list .footer-link {
   font-size: 16px;
@@ -654,6 +655,18 @@
   color: #21A5B5;
   margin-bottom: 20px;
   display: block;
+}
+.footer .footer-list .btn-top {
+  position: absolute;
+  right: 100px;
+  bottom: -80px;
+  padding: 10px 20px;
+}
+.footer .footer-list .icon-down-stroke {
+  transform: rotateX(-180deg);
+  display: inline-flex;
+  color: #21A5B5;
+  margin-left: 20px;
 }
 .footer .footer-list .footer-group {
   margin-bottom: 30px;
