@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Certificate</title>
+    <title>Blog</title>
     <!--    Swiper-->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <!--    Swiper-->
@@ -109,61 +109,7 @@
     </div>
 </nav>
 <!--    section-breadcrumb-->
-    <section class="section-breadcrumb">
-        <div class="container">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Подарочные Сертификаты</li>
-                </ol>
-            </nav>
-        </div>
-    </section>
-    <!--    section-breadcrumb-->
-<!--    section-certificate-->
-    <section class="section-certificate">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="certificate-img-wrapper">
-                        <img src="int/img/certificate/card.certificate.png" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="certificate-form-wrapper">
-                        <h1 class="certificate-title title-page mb-15">Электронный подарочный сертификат</h1>
-                        <p class="certificate-text">Вы можете создать электронный подарочный сертификат на покупку продукции в нашем интернет-магазине, введите желаемую сумму подарка (от 500 рублей) и укажите данные счастливого получателя</p>
-                        <h3 class="certificate-value-title">Номиналы<span class="certificate-value-element"><span id="certValue">1000</span>рублей</span></h3>
-                        <ul class="certificate-variant">
-                            <li class="cert-value"><button type="button" class="cert-value-btn cert-value-btn-active">1000</button></li>
-                            <li class="cert-value"><button type="button" class="cert-value-btn">2000</button></li>
-                            <li class="cert-value"><button type="button" class="cert-value-btn">3000</button></li>
-                            <li class="cert-value"><button type="button" class="cert-value-btn">4000</button></li>
-                            <li class="cert-value"><button type="button" class="cert-value-btn">5000</button></li>
-                            <li class="cert-value"><button type="button" class="cert-value-btn">6000</button></li>
-                            <li class="cert-value"><button type="button" class="cert-value-btn">7000</button></li>
-                        </ul>
-                        <div class="certificate-forms">
-                            <label for="exampleFormControlInput2" class="form-label">Вaш e-mail<span class="cert-danger-element">*</span></label>
-                            <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="Вaш e-mail">
 
-                                <label for="exampleFormControlInput3" class="form-label">E-Mail получателя<span class="cert-danger-element">*</span></label>
-                                <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="E-Mail получателя">
-
-                                <label for="exampleFormControlInput4" class="form-label">Телефон получателя<span class="cert-danger-element">*</span></label>
-                                <input type="email" class="form-control" id="exampleFormControlInput4" placeholder="Телефон получателя">
-
-                            <label for="exampleFormControlTextarea1" class="form-label">Поздравление</label>
-                            <textarea class="certificate-textarea form-control" id="exampleFormControlTextarea1" rows="3">Введите текст поздравления который увидит получатель</textarea>
-
-                            <button type="submit" class="btn btn-primary btn-lg">Оформить</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--    section-certificate-->
     <section class="section-mailing">
         <div class="mailing-background"></div>
         <div class="container">
@@ -178,6 +124,7 @@
                     <div class="mailing-group">
                         <label for="exampleFormControlInput1" class="form-label"></label>
                         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Введите ваш E-mail">
+
                     </div>
                 </div>
             </div>
@@ -261,30 +208,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="int/js/main.js"></script>
-    <script>
-        const certVariants = document.querySelector('.certificate-variant')
-        const certValElem = document.getElementById('certValue')
-        const certValueControl = document.getElementById('certificateValue')
-
-        certVariants.addEventListener('click', e => {
-            const _this = e.target.closest('.cert-value-btn');
-            if (!this) return;
-
-            const activeBtn = document.querySelector('.cert-value-btn-active');
-            const disabledBtn = document.querySelector('.cert-value-btn:disabled');
-
-            if (activeBtn) activeBtn.classList.remove('cert-value-btn-active');
-            if (disabledBtn) disabledBtn.removeAttribute('disabled');
-
-            _this.classList.add('cert-value-btn-active');
-            if (_this.innerText === 'Р”СЂСѓРіРѕР№') return askVal();
-
-            certValElem.innerText = _this.innerText;
-            certValueControl.value = _this.innerText;
-            _this.setAttribute('disabled', true);
-        })
-
-    </script>
 </body>
 </html>
 
