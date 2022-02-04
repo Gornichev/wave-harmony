@@ -68,7 +68,7 @@ const intro = new Swiper(".trust-slider", {
 
 const searchIcon = document.getElementById('searchIcon')
 const searchBtn = document.getElementById('searchBtn')
-const searchBar =document.querySelector('.search-bar')
+const searchBar = document.querySelector('.search-bar')
 
 
 document.addEventListener('click', (e) => {

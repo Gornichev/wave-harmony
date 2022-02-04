@@ -972,6 +972,56 @@ a
 	.catalog-dropdowns-box
 		display: flex
 		list-style: none
+		margin: 0
+		padding: 0
+
+		.dropdown
+
+			.icon
+				display: inherit
+
+				.rotate
+					transform: rotate(180deg)
+
+			.btn
+				border: none
+				color: $mainText
+				background: none
+
+				&:focus
+					box-shadow: none
+
+			.dropdown-toggle::after
+				display: none
+
+			.dropdown-toggle::before
+				content: "\e905"
+				font-size: 16px
+
+
+.columns-number-box
+	display: flex
+
+	.columns-numbers-title
+		font-size: 17px
+		line-height: 22px
+		font-family: "Futura-PT-Book", sans-serif
+		color: $mainText
+		margin-right: 7px
+
+	.columns-numbers
+		list-style: none
+		display: flex
+		padding: 0
+		margin: 0
+
+		.columns-number
+			margin-left: 8px
+			color: $mainText
+
+		.active
+			color: $pasiiveColor
+
 
 
 
