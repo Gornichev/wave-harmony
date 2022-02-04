@@ -50,14 +50,22 @@
 		.btn-top
 			position: absolute
 			right: 100px
-			bottom: -80px
+			bottom: -100px
 			padding: 10px 20px
+			font-size: 15px
 
-		.icon-down-stroke
-			transform: rotateX(-180deg)
-			display:  inline-flex
+			&:focus
+				box-shadow: none
+			&:hover
+				color: $dangerColor
+
+		.icon-next
+			display:  block
 			color: $gradientColorOne
-			margin-left: 20px
+			margin-bottom: 15px
+			animation: spin 3s infinite linear
+			font-size: 25px
+			padding-bottom: 5px
 
 		.footer-group
 			margin-bottom: 30px
@@ -68,6 +76,16 @@
 				border-radius: 100%
 				background: $whiteLightColor
 				margin-right: 10px
+
+@keyframes spin
+	0%
+		transform: translate3d(0, -40%, 0)
+
+	50%
+		transform: translate3d(0, 100%, 0)
+
+	100%
+		transform: translate3d(0, -40%, 0)
 
 
 

@@ -659,14 +659,23 @@
 .footer .footer-list .btn-top {
   position: absolute;
   right: 100px;
-  bottom: -80px;
+  bottom: -100px;
   padding: 10px 20px;
+  font-size: 15px;
 }
-.footer .footer-list .icon-down-stroke {
-  transform: rotateX(-180deg);
-  display: inline-flex;
+.footer .footer-list .btn-top:focus {
+  box-shadow: none;
+}
+.footer .footer-list .btn-top:hover {
+  color: #FF0000FF;
+}
+.footer .footer-list .icon-next {
+  display: block;
   color: #21A5B5;
-  margin-left: 20px;
+  margin-bottom: 15px;
+  animation: spin 3s infinite linear;
+  font-size: 25px;
+  padding-bottom: 5px;
 }
 .footer .footer-list .footer-group {
   margin-bottom: 30px;
@@ -679,6 +688,17 @@
   margin-right: 10px;
 }
 
+@keyframes spin {
+  0% {
+    transform: translate3d(0, -40%, 0);
+  }
+  50% {
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate3d(0, -40%, 0);
+  }
+}
 .btn-light {
   background: none;
   color: #ffffff;
@@ -1718,6 +1738,14 @@ a {
 }
 .section-certificate .certificate-forms .certificate-textarea {
   min-height: 130px;
+}
+
+.section-catalog {
+  padding-top: 60px;
+}
+.section-catalog .catalog-dropdowns-box {
+  display: flex;
+  list-style: none;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
