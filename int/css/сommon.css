@@ -1756,6 +1756,7 @@ a {
   border: none;
   color: #2C2C2C;
   background: none;
+  padding: 10px;
 }
 .section-catalog .catalog-dropdowns-box .dropdown .btn:focus {
   box-shadow: none;
@@ -1763,10 +1764,12 @@ a {
 .section-catalog .catalog-dropdowns-box .dropdown .dropdown-toggle::after {
   display: none;
 }
-.section-catalog .catalog-dropdowns-box .dropdown .icon-down-stroke {
+.section-catalog .catalog-dropdowns-box .dropdown .icon {
   font-size: 11px;
+  margin-left: 7px;
 }
-.section-catalog .catalog-dropdowns-box .dropdown .icon-down-stroke .rotate {
+
+.rotate .icon-down-stroke {
   transform: rotate(180deg);
 }
 
