@@ -980,9 +980,6 @@ a
 			.icon
 				display: inherit
 
-				.rotate
-					transform: rotate(180deg)
-
 			.btn
 				border: none
 				color: $mainText
@@ -994,10 +991,11 @@ a
 			.dropdown-toggle::after
 				display: none
 
-			.dropdown-toggle::before
-				content: "\e905"
-				font-size: 16px
+			.icon-down-stroke
+				font-size: 11px
 
+				.rotate
+					transform: rotate(180deg)
 
 .columns-number-box
 	display: flex
@@ -1021,9 +1019,3 @@ a
 
 		.active
 			color: $pasiiveColor
-
-
-
-
-
-
