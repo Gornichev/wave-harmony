@@ -1741,7 +1741,7 @@ a {
 }
 
 .section-catalog {
-  padding-top: 60px;
+  padding-top: 80px;
 }
 .section-catalog .catalog-dropdowns-box {
   display: flex;
@@ -1757,6 +1757,8 @@ a {
   color: #2C2C2C;
   background: none;
   padding: 10px;
+  font-size: 15px;
+  margin-right: 10px;
 }
 .section-catalog .catalog-dropdowns-box .dropdown .btn:focus {
   box-shadow: none;
@@ -1795,6 +1797,11 @@ a {
 }
 .columns-number-box .columns-numbers .active {
   color: #848484;
+}
+
+.catalog-content .sidebar {
+  position: sticky;
+  width: 200px;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
