@@ -96,3 +96,13 @@ buttonToggle.forEach(function (item){
     })
 })
 
+const categoriesTitle = document.querySelectorAll('.categories-title')
+
+categoriesTitle.forEach(function (item){
+
+        item.addEventListener('click', function (){
+
+        this.nextElementSibling.classList.toggle('show-list')
+    })
+
+})
