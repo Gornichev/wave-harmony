@@ -70,7 +70,6 @@ const searchIcon = document.getElementById('searchIcon')
 const searchBtn = document.getElementById('searchBtn')
 const searchBar = document.querySelector('.search-bar')
 
-
 document.addEventListener('click', (e) => {
     const click = e.composedPath().includes(searchBar)
 
@@ -83,12 +82,10 @@ document.addEventListener('click', (e) => {
     }
 })
 
-
 const  buttonToggle = document.querySelectorAll('.btn-toggle')
 const  iconStroke = document.querySelectorAll('.icon-down-stroke')
 
 buttonToggle.forEach(function (item){
-
 
         item.addEventListener('click', function (){
 
@@ -97,12 +94,15 @@ buttonToggle.forEach(function (item){
 })
 
 const categoriesTitle = document.querySelectorAll('.categories-title')
+const list = document.querySelectorAll('[data-content]')
+
 
 categoriesTitle.forEach(function (item){
 
         item.addEventListener('click', function (){
 
         this.nextElementSibling.classList.toggle('show-list')
-    })
+
+        })
 
 })

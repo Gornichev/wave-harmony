@@ -693,7 +693,7 @@
     transform: translate3d(0, -40%, 0);
   }
   50% {
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 90%, 0);
   }
   100% {
     transform: translate3d(0, -40%, 0);
@@ -1740,19 +1740,20 @@ a {
   min-height: 130px;
 }
 
-.section-catalog {
+.section-catalog-header {
   padding-top: 80px;
+  margin-bottom: 15px;
 }
-.section-catalog .catalog-dropdowns-box {
+.section-catalog-header .catalog-dropdowns-box {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.section-catalog .catalog-dropdowns-box .dropdown .icon {
+.section-catalog-header .catalog-dropdowns-box .dropdown .icon {
   display: inherit;
 }
-.section-catalog .catalog-dropdowns-box .dropdown .btn {
+.section-catalog-header .catalog-dropdowns-box .dropdown .btn {
   border: none;
   color: #2C2C2C;
   background: none;
@@ -1760,13 +1761,13 @@ a {
   font-size: 15px;
   margin-right: 10px;
 }
-.section-catalog .catalog-dropdowns-box .dropdown .btn:focus {
+.section-catalog-header .catalog-dropdowns-box .dropdown .btn:focus {
   box-shadow: none;
 }
-.section-catalog .catalog-dropdowns-box .dropdown .dropdown-toggle::after {
+.section-catalog-header .catalog-dropdowns-box .dropdown .dropdown-toggle::after {
   display: none;
 }
-.section-catalog .catalog-dropdowns-box .dropdown .icon {
+.section-catalog-header .catalog-dropdowns-box .dropdown .icon {
   font-size: 11px;
   margin-left: 7px;
 }
@@ -1799,14 +1800,19 @@ a {
   color: #848484;
 }
 
+.catalog-content {
+  border-top: 1px solid #F0F0F0;
+  padding: 35px 0 120px;
+  max-height: 1223px;
+}
 .catalog-content .sidebar {
   position: sticky;
-  width: 200px;
+  width: 220px;
 }
 
 .categories-sections .categories-section .categories-title {
   display: block;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 19px;
   font-family: "Futura-PT-Demi", sans-serif;
   cursor: pointer;
@@ -1816,8 +1822,115 @@ a {
 .categories-sections .categories-section .categories-list {
   display: none;
 }
+.categories-sections .categories-section .categories-list a {
+  color: #2C2C2C;
+  font-family: Futura-PT-Book, sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+}
+.categories-sections .categories-section .categories-list a:hover {
+  border-bottom: 1px solid #2B2A28;
+}
+.categories-sections .categories-section .categories-list .active {
+  border-bottom: 1px solid #2B2A28;
+}
+.categories-sections .categories-section .categories-list .categories-item {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
 .categories-sections .categories-section .categories-list.show-list {
   display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.section-product-cards {
+  position: relative;
+  font-size: inherit;
+  margin-bottom: 230px;
+}
+.section-product-cards .swiper-slide {
+  overflow: hidden;
+  height: 513px;
+  cursor: pointer;
+  min-width: 270px;
+  margin-bottom: 40px;
+}
+.section-product-cards .swiper-slide .item-body .item-element {
+  position: absolute;
+  background: #FF0000FF;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 7px;
+  left: 15px;
+  top: 15px;
+  border-radius: 10px;
+}
+.section-product-cards .item-header {
+  margin-bottom: 57px;
+}
+.section-product-cards .item-header .section-item-text {
+  font-family: "Futura-PT-Book", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  color: #444444;
+  margin-bottom: 0;
+}
+.section-product-cards .item-body {
+  text-align: left;
+  font-size: inherit;
+  background: #F8F8F8;
+}
+.section-product-cards .item-body .checkbox-follow {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.section-product-cards .item-body img {
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+.section-product-cards .item-body img:hover {
+  transform: scale(1.1);
+}
+.section-product-cards .item-footer .item-price {
+  font-size: 20px;
+  line-height: 28px;
+  color: #2C2C2C;
+  font-family: "Futura-PT-Demi", sans-serif;
+}
+.section-product-cards .item-footer .item-name {
+  font-size: 20px;
+  line-height: 28px;
+  color: #2C2C2C;
+  font-family: "Futura-PT-Book", sans-serif;
+  margin-bottom: 5px;
+}
+.section-product-cards .item-footer .item-size {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+.section-product-cards .item-footer .item-size li:after {
+  content: "|";
+  width: 1px;
+  height: 7px;
+  color: #E3E3E3;
+  margin: 0 7px;
+}
+.section-product-cards .item-footer .item-size li:last-child:after {
+  display: none;
+}
+.section-product-cards .item-footer .item-size .item-size-link {
+  font-size: 16px;
+  line-height: 23px;
+  color: #2C2C2C;
+  font-family: "Futura-PT-Book", sans-serif;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */

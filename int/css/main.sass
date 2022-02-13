@@ -60,7 +60,6 @@ a
 	.item-header
 		margin-bottom: 57px
 
-
 		.section-item-text
 			font-family: 'Futura-PT-Book', sans-serif
 			font-size: 20px
@@ -966,8 +965,9 @@ a
 			min-height: 130px
 
 //section-catalog
-.section-catalog
+.section-catalog-header
 	padding-top: 80px
+	margin-bottom: 15px
 
 	.catalog-dropdowns-box
 		display: flex
@@ -1027,10 +1027,13 @@ a
 			color: $pasiiveColor
 
 .catalog-content
+	border-top: 1px solid $ultraLightColor
+	padding: 35px 0 120px
+	max-height: 1223px
 
 	.sidebar
 		position: sticky
-		width: 200px
+		width: 220px
 
 .categories-sections
 
@@ -1038,22 +1041,127 @@ a
 
 		.categories-title
 			display: block
-			font-size: 14px
+			font-size: 17px
 			line-height: 19px
 			font-family: 'Futura-PT-Demi',sans-serif
 			cursor: pointer
 			padding: 6px 0
 			margin-bottom: 10px
 
-
-
 		.categories-list
 			display: none
 
+			a
+				color: $mainText
+				font-family: Futura-PT-Book,sans-serif
+				font-size: 17px
+				line-height: 24px
+
+				&:hover
+					border-bottom: 1px solid $darkColor
+
+			.active
+				border-bottom: 1px solid $darkColor
+
+			.categories-item
+				padding-left: 20px
+				margin-bottom: 10px
+
 			&.show-list
 				display: block
+				margin: 0
+				padding: 0
+				list-style: none
 
+.section-product-cards
+	position: relative
+	font-size: inherit
+	margin-bottom: 230px
 
+	.swiper-slide
+		overflow: hidden
+		height: 513px
+		cursor: pointer
+		min-width: 270px
+		margin-bottom: 40px
 
+		.item-body
 
+			.item-element
+				position: absolute
+				background: $dangerColor
+				color: $mainColor
+				font-size: 18px
+				line-height: 18px
+				padding: 7px
+				left: 15px
+				top: 15px
+				border-radius: 10px
 
+	.item-header
+		margin-bottom: 57px
+
+		.section-item-text
+			font-family: 'Futura-PT-Book', sans-serif
+			font-size: 20px
+			line-height: 28px
+			color: $secondColor
+			margin-bottom: 0
+
+	.item-body
+		text-align: left
+		font-size: inherit
+		background: $mainBackground
+
+		.checkbox-follow
+			position: absolute
+			top: 20px
+			right: 20px
+
+		img
+			-webkit-transition: all 0.5s linear
+			-moz-transition: all 0.5s linear
+			-o-transition: all 0.5s linear
+			transition: all 0.5s linear
+
+			&:hover
+				transform: scale(1.1)
+
+	.item-footer
+
+		.item-price
+			font-size: 20px
+			line-height: 28px
+			color: $mainText
+			font-family: 'Futura-PT-Demi',sans-serif
+
+		.item-name
+			font-size: 20px
+			line-height: 28px
+			color: $mainText
+			font-family: "Futura-PT-Book", sans-serif
+			margin-bottom: 5px
+
+		.item-size
+			margin: 0
+			padding: 0
+			display: flex
+			list-style: none
+
+			li
+
+				&:after
+					content: "|"
+					width: 1px
+					height: 7px
+					color: $lightColor
+					margin: 0 7px
+
+				&:last-child:after
+					display: none
+
+			.item-size-link
+				font-size: 16px
+				line-height: 23px
+				color: $mainText
+				font-family: "Futura-PT-Book", sans-serif
