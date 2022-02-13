@@ -976,6 +976,34 @@ a
 		padding: 0
 
 		.dropdown
+			position: relative
+
+			.dropdown-menu
+				-webkit-transition: all 0.1s linear
+				-moz-transition: all 0.1s linear
+				-o-transition: all 0.1s linear
+				transition: all 0.1s linear
+				border: none
+				box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2)
+				padding: 0
+				min-width: 200px
+
+				.dropdown-title
+					font-size: 17px
+					font-family: "Futura-PT-Medium", sans-serif
+					padding: 20px
+					border-bottom: 1px solid $opasityColor
+					font-weight: 500
+
+				.dropdown-item
+					padding: 10px 20px
+
+				.icon-close
+					font-size: 14px
+					position: absolute
+					right: 20px
+					top: 28px
+					cursor: pointer
 
 			.icon
 				display: inherit
@@ -1002,6 +1030,10 @@ a
 
 	.icon-down-stroke
 		transform: rotate(180deg)
+		-webkit-transition: all 0.3s linear
+		-moz-transition: all 0.3s linear
+		-o-transition: all 0.3s linear
+		transition: all 0.3s linear
 
 .columns-number-box
 	display: flex
