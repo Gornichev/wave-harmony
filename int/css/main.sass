@@ -961,6 +961,9 @@ a
 			max-width: 188px
 			border-radius: 7px
 
+			&:focus
+				box-shadow: none
+
 		.certificate-textarea
 			min-height: 130px
 
@@ -986,7 +989,7 @@ a
 				border: none
 				box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2)
 				padding: 0
-				min-width: 200px
+				min-width: 280px
 
 				.dropdown-title
 					font-size: 17px
@@ -998,12 +1001,44 @@ a
 				.dropdown-item
 					padding: 10px 20px
 
+					&:hover
+						background: $mainColor
+
+				.form-check
+					font-size: 17px
+					font-family: "Futura-PT-Book", sans-serif
+					line-height: 26px
+					color: $mainText
+
+					.form-check-input:checked
+						background-color: $gradientColorOne
+						box-shadow: none
+						border-color: $pasiiveColor
+
+				.button-wrapper
+					padding: 10px 20px
+
+					.btn-submit
+						font-size: 16px
+						color: $mainColor
+						width: 100%
+						padding: 12px 20px
+						border: none
+
+						&:active
+							box-shadow: none
+							border: none
+
 				.icon-close
-					font-size: 14px
+					font-size: 15px
 					position: absolute
 					right: 20px
-					top: 28px
+					top: 25px
 					cursor: pointer
+					color: $pasiiveColor
+
+					&:hover
+						color: $darkenColor
 
 			.icon
 				display: inherit

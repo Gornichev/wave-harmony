@@ -1736,6 +1736,9 @@ a {
   max-width: 188px;
   border-radius: 7px;
 }
+.section-certificate .certificate-forms .btn:focus {
+  box-shadow: none;
+}
 .section-certificate .certificate-forms .certificate-textarea {
   min-height: 130px;
 }
@@ -1761,7 +1764,7 @@ a {
   border: none;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   padding: 0;
-  min-width: 200px;
+  min-width: 280px;
 }
 .section-catalog-header .catalog-dropdowns-box .dropdown .dropdown-menu .dropdown-title {
   font-size: 17px;
@@ -1773,12 +1776,44 @@ a {
 .section-catalog-header .catalog-dropdowns-box .dropdown .dropdown-menu .dropdown-item {
   padding: 10px 20px;
 }
+.section-catalog-header .catalog-dropdowns-box .dropdown .dropdown-menu .dropdown-item:hover {
+  background: #ffffff;
+}
+.section-catalog-header .catalog-dropdowns-box .dropdown .dropdown-menu .form-check {
+  font-size: 17px;
+  font-family: "Futura-PT-Book", sans-serif;
+  line-height: 26px;
+  color: #2C2C2C;
+}
+.section-catalog-header .catalog-dropdowns-box .dropdown .dropdown-menu .form-check .form-check-input:checked {
+  background-color: #21A5B5;
+  box-shadow: none;
+  border-color: #848484;
+}
+.section-catalog-header .catalog-dropdowns-box .dropdown .dropdown-menu .button-wrapper {
+  padding: 10px 20px;
+}
+.section-catalog-header .catalog-dropdowns-box .dropdown .dropdown-menu .button-wrapper .btn-submit {
+  font-size: 16px;
+  color: #ffffff;
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+}
+.section-catalog-header .catalog-dropdowns-box .dropdown .dropdown-menu .button-wrapper .btn-submit:active {
+  box-shadow: none;
+  border: none;
+}
 .section-catalog-header .catalog-dropdowns-box .dropdown .dropdown-menu .icon-close {
-  font-size: 14px;
+  font-size: 15px;
   position: absolute;
   right: 20px;
-  top: 28px;
+  top: 25px;
   cursor: pointer;
+  color: #848484;
+}
+.section-catalog-header .catalog-dropdowns-box .dropdown .dropdown-menu .icon-close:hover {
+  color: #000000;
 }
 .section-catalog-header .catalog-dropdowns-box .dropdown .icon {
   display: inherit;
