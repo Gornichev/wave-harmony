@@ -1835,6 +1835,10 @@ a {
 .section-catalog-header .catalog-dropdowns-box .dropdown .icon {
   font-size: 11px;
   margin-left: 7px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .rotate .icon-down-stroke {
@@ -1872,7 +1876,6 @@ a {
 .catalog-content {
   border-top: 1px solid #F0F0F0;
   padding: 35px 0 120px;
-  max-height: 1223px;
 }
 .catalog-content .sidebar {
   position: sticky;
@@ -1917,7 +1920,6 @@ a {
 .section-product-cards {
   position: relative;
   font-size: inherit;
-  margin-bottom: 230px;
 }
 .section-product-cards .swiper-slide {
   overflow: hidden;
