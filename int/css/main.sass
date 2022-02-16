@@ -1105,12 +1105,12 @@ a
 		position: sticky
 		width: 220px
 
-.categories-sections
-
 	.categories-section
+		list-style: none
+		padding: 0
+		margin: 0
 
 		.categories-title
-			display: block
 			font-size: 17px
 			line-height: 19px
 			font-family: 'Futura-PT-Demi',sans-serif
@@ -1118,30 +1118,26 @@ a
 			padding: 6px 0
 			margin-bottom: 10px
 
-		//.categories-list
-		//	display: none
+			.categories-list
+				list-style: none
+				margin: 0
+				padding: 20px
 
-			a
-				color: $mainText
-				font-family: Futura-PT-Book,sans-serif
-				font-size: 17px
-				line-height: 24px
+				a
+					color: $mainText
+					font-family: Futura-PT-Book,sans-serif
+					font-size: 17px
+					line-height: 24px
 
-				&:hover
+					&:hover
+						border-bottom: 1px solid $darkColor
+
+				.active
 					border-bottom: 1px solid $darkColor
 
-			.active
-				border-bottom: 1px solid $darkColor
-
 			.categories-item
-				padding-left: 20px
 				margin-bottom: 10px
 
-			&.show-list
-				display: block
-				margin: 0
-				padding: 0
-				list-style: none
 
 .section-product-cards
 	position: relative

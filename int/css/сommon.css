@@ -1882,14 +1882,37 @@ a {
   position: sticky;
   width: 220px;
 }
-
-.categories-sections .categories-section .categories-title {
-  display: block;
+.catalog-content .categories-section {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.catalog-content .categories-section .categories-title {
   font-size: 17px;
   line-height: 19px;
   font-family: "Futura-PT-Demi", sans-serif;
   cursor: pointer;
   padding: 6px 0;
+  margin-bottom: 10px;
+}
+.catalog-content .categories-section .categories-title .categories-list {
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+}
+.catalog-content .categories-section .categories-title .categories-list a {
+  color: #2C2C2C;
+  font-family: Futura-PT-Book, sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+}
+.catalog-content .categories-section .categories-title .categories-list a:hover {
+  border-bottom: 1px solid #2B2A28;
+}
+.catalog-content .categories-section .categories-title .categories-list .active {
+  border-bottom: 1px solid #2B2A28;
+}
+.catalog-content .categories-section .categories-title .categories-item {
   margin-bottom: 10px;
 }
 
