@@ -266,6 +266,13 @@
                     </div>
                 </div>
             </div>
+            <ul class="filter-box">
+                <li class="filter-item "><a class="text-danger" href="#">Сбросить все</a></li>
+                <li class="filter-item"><a href="#">5000 - 7490 руб.<i class="icon icon-close"></i></a></li>
+                <li class="filter-item"><a href="#">XS,S<i class="icon icon-close"></i></a></li>
+                <li class="filter-item"><a href="#">Лонгслив, Комбинезон <i class="icon icon-close"></i></a></li>
+                <li class="filter-item"><a href="#">Цвет:<span class="color-element"></span><i class="icon icon-close"></i></a></li>
+            </ul>
         </div>
 </section>
 <section class="catalog-content">
@@ -273,68 +280,77 @@
         <div class="row">
             <div class="col-auto">
                 <div class="sidebar">
-                    <div class="categories-sections">
-                        <div class="categories-section">
-                            <span class="categories-title" data-tab="tab-1">Купальники</span>
-                            <ul class="categories-list show-list" data-content>
-                                <li class="categories-item"><a class="active" href="#">Все</a></li>
-                                <li class="categories-item"><a href="#">Для серфинга</a></li>
-                                <li class="categories-item"><a href="#"> Слитные</a></li>
-                                <li class="categories-item"><a href="#">Раздельные</a></li>
-                                <li class="categories-item"><a href="#">С рукавам</a></li>
-                                <li class="categories-item"><a href="#">Все</a></li>
-                                <li class="categories-item"><a href="#">Все</a></li>
-                            </ul>
-                        </div>
-                        <div class="categories-section">
-                            <span class="categories-title" data-tab="tab-2">Новая коллекция</span>
-                            <ul class="categories-list" data-content>
-                                <li class="categories-item"><a href="#">Все</a></li>
-                                <li class="categories-item"><a href="#">Для серфинга</a></li>
-                                <li class="categories-item"><a href="#"> Слитные</a></li>
-                                <li class="categories-item"><a href="#">Раздельные</a></li>
-                                <li class="categories-item"><a href="#">С рукавам</a></li>
-                                <li class="categories-item"><a href="#">Все</a></li>
-                                <li class="categories-item"><a href="#">Все</a></li>
-                            </ul>
-                        </div>
-                        <div class="categories-section">
-                            <span class="categories-title" data-tab="tab-3">Комбинезоны</span>
-                            <ul class="categories-list" data-content>
-                                <li class="categories-item"><a href="#">Все</a></li>
-                                <li class="categories-item"><a href="#">Для серфинга</a></li>
-                                <li class="categories-item"><a href="#"> Слитные</a></li>
-                                <li class="categories-item"><a href="#">Раздельные</a></li>
-                                <li class="categories-item"><a href="#">С рукавам</a></li>
-                                <li class="categories-item"><a href="#">Все</a></li>
-                                <li class="categories-item"><a href="#">Все</a></li>
-                            </ul>
-                        </div>
-                        <div class="categories-section">
-                            <span class="categories-title show-list">Косметика</span>
-                            <ul class="categories-list" data-content>
-                                <li class="categories-item"><a href="#">Все</a></li>
-                                <li class="categories-item"><a href="#">Для серфинга</a></li>
-                                <li class="categories-item"><a href="#"> Слитные</a></li>
-                                <li class="categories-item"><a href="#">Раздельные</a></li>
-                                <li class="categories-item"><a href="#">С рукавам</a></li>
-                                <li class="categories-item"><a href="#">Все</a></li>
-                                <li class="categories-item"><a href="#">Все</a></li>
-                            </ul>
-                        </div>
-                        <div class="categories-section">
-                            <span class="categories-title text-danger show-list">Распродажа до -40%</span>
-                            <ul class="categories-list" data-content>
-                                <li class="categories-item"><a href="#">Все</a></li>
-                                <li class="categories-item"><a href="#">Для серфинга</a></li>
-                                <li class="categories-item"><a href="#"> Слитные</a></li>
-                                <li class="categories-item"><a href="#">Раздельные</a></li>
-                                <li class="categories-item"><a href="#">С рукавам</a></li>
-                                <li class="categories-item"><a href="#">Все</a></li>
-                                <li class="categories-item"><a href="#">Все</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    <ul class="categories-section">
+                        <li class="categories-section-item categories-title" data-tab="tab-1">Купальники
+                            <div data-tab-content id="tab-1">
+                                <ul class="categories-list">
+                                    <li class="categories-item"><a class="active" href="#">Все</a></li>
+                                    <li class="categories-item"><a href="#">Для серфинга</a></li>
+                                    <li class="categories-item"><a href="#"> Слитные</a></li>
+                                    <li class="categories-item"><a href="#">Раздельные</a></li>
+                                    <li class="categories-item"><a href="#">С рукавам</a></li>
+                                    <li class="categories-item"><a href="#">Без рукавов</a></li>
+                                    <li class="categories-item"><a href="#">С чашечками</a></li>
+                                    <li class="categories-item"><a href="#"> С шортиками</a></li>
+                                    <li class="categories-item"><a href="#"> Для беременных</a></li>
+                                    <li class="categories-item"><a href="#">Солнцезащитные</a></li>
+                                    <li class="categories-item"><a href="#">Лосины и легинсы</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categories-section-item categories-title" data-tab="tab-2">Новая коллекция
+                            <div class="hidden" data-tab-content id="tab-2">
+                                <ul class="categories-list" >
+                                    <li class="categories-item"><a href="#"> Не Все</a></li>
+                                    <li class="categories-item"><a href="#">Для серфинга</a></li>
+                                    <li class="categories-item"><a href="#"> Слитные</a></li>
+                                    <li class="categories-item"><a href="#">Раздельные</a></li>
+                                    <li class="categories-item"><a href="#">С рукавам</a></li>
+                                    <li class="categories-item"><a href="#">Все</a></li>
+                                    <li class="categories-item"><a href="#">Все</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categories-section-item categories-title" data-tab="tab-3">Комбинезоны
+                            <div class="hidden" data-tab-content id="tab-3">
+                                <ul class="categories-list">
+                                    <li class="categories-item"><a href="#">Все</a></li>
+                                    <li class="categories-item"><a href="#">Для серфинга</a></li>
+                                    <li class="categories-item"><a href="#"> Слитные</a></li>
+                                    <li class="categories-item"><a href="#">Раздельные</a></li>
+                                    <li class="categories-item"><a href="#">С рукавам</a></li>
+                                    <li class="categories-item"><a href="#">Все</a></li>
+                                    <li class="categories-item"><a href="#">Все</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categories-section-item categories-title" data-tab="tab-4">Косметика
+                            <div class="hidden" data-tab-content id="tab-4">
+                                <ul class="categories-list">
+                                    <li class="categories-item"><a href="#">Все</a></li>
+                                    <li class="categories-item"><a href="#">Для серфинга</a></li>
+                                    <li class="categories-item"><a href="#"> Слитные</a></li>
+                                    <li class="categories-item"><a href="#">Раздельные</a></li>
+                                    <li class="categories-item"><a href="#">С рукавам</a></li>
+                                    <li class="categories-item"><a href="#">Все</a></li>
+                                    <li class="categories-item"><a href="#">Все</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="categories-section-item text-danger categories-title" data-tab="tab-5">Распродажа до -40%
+                            <div class="hidden" data-tab-content id="tab-5">
+                                <ul class="categories-list">
+                                    <li class="categories-item"><a href="#">Все</a></li>
+                                    <li class="categories-item"><a href="#">Для серфинга</a></li>
+                                    <li class="categories-item"><a href="#"> Слитные</a></li>
+                                    <li class="categories-item"><a href="#">Раздельные</a></li>
+                                    <li class="categories-item"><a href="#">С рукавам</a></li>
+                                    <li class="categories-item"><a href="#">Все</a></li>
+                                    <li class="categories-item"><a href="#">Все</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="col">

@@ -975,7 +975,7 @@ a
 	.catalog-dropdowns-box
 		display: flex
 		list-style: none
-		margin: 0
+		margin-bottom: 15px
 		padding: 0
 
 		.dropdown
@@ -1097,9 +1097,43 @@ a
 		.active
 			color: $pasiiveColor
 
+.filter-box
+	list-style: none
+	padding: 0
+	margin: 0
+	display: flex
+
+	.filter-item
+		padding: 7px 15px
+		border: 1px solid $lightColor
+		margin-right: 7px
+		font-family: "Futura-PT-Book", sans-serif
+		font-size: 16px
+		line-height: 20px
+		border-radius: 10px
+
+		a
+			color: $mainText
+			display: flex
+			align-items: center
+
+		&:last-child
+			margin: 0
+
+	.icon
+		margin-left: 10px
+
+	.color-element
+		background: $dangerColor
+		border-radius: 100%
+		width: 11px
+		height: 11px
+		display: block
+		margin-left: 3px
+
 .catalog-content
 	border-top: 1px solid $ultraLightColor
-	padding: 35px 0 120px
+	padding: 35px 0 80px
 
 	.sidebar
 		position: sticky
@@ -1115,7 +1149,6 @@ a
 			line-height: 19px
 			font-family: 'Futura-PT-Demi',sans-serif
 			cursor: pointer
-			padding: 6px 0
 			margin-bottom: 10px
 
 			.categories-list

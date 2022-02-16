@@ -96,23 +96,9 @@ buttonToggle.forEach(function (item){
     })
 })
 
-// const categoriesTitle = document.querySelectorAll('.categories-title')
-// const list = document.querySelectorAll('[data-content]')
-//
-// categoriesTitle.forEach(function (item){
-//
-//         item.addEventListener('click', function (){
-//
-//         this.nextElementSibling.classList.toggle('show-list')
-//
-//         })
-//
-// })
-
 const tabHeaders = document.querySelectorAll('.categories-section-item');
-
 const contentBoxes = document.querySelectorAll('[data-tab-content]');
-console.log(contentBoxes)
+
 
 tabHeaders.forEach(function (item) {
     item.addEventListener('click', function () {
