@@ -362,6 +362,7 @@
   position: relative;
   background-color: #ffffff;
   min-height: 183px;
+  text-align: left;
   -webkit-transition: all 0.12s linear;
   -moz-transition: all 0.12s linear;
   -o-transition: all 0.12s linear;
@@ -1891,31 +1892,6 @@ a {
   padding: 6px 0;
   margin-bottom: 10px;
 }
-.categories-sections .categories-section .categories-list {
-  display: none;
-}
-.categories-sections .categories-section .categories-list a {
-  color: #2C2C2C;
-  font-family: Futura-PT-Book, sans-serif;
-  font-size: 17px;
-  line-height: 24px;
-}
-.categories-sections .categories-section .categories-list a:hover {
-  border-bottom: 1px solid #2B2A28;
-}
-.categories-sections .categories-section .categories-list .active {
-  border-bottom: 1px solid #2B2A28;
-}
-.categories-sections .categories-section .categories-list .categories-item {
-  padding-left: 20px;
-  margin-bottom: 10px;
-}
-.categories-sections .categories-section .categories-list.show-list {
-  display: block;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
 
 .section-product-cards {
   position: relative;
@@ -1939,6 +1915,12 @@ a {
   top: 15px;
   border-radius: 10px;
 }
+.section-product-cards .height-2column {
+  height: 620px;
+}
+.section-product-cards .height-3column {
+  height: 620px;
+}
 .section-product-cards .item-header {
   margin-bottom: 57px;
 }
@@ -1950,7 +1932,7 @@ a {
   margin-bottom: 0;
 }
 .section-product-cards .item-body {
-  text-align: left;
+  text-align: center;
   font-size: inherit;
   background: #F8F8F8;
 }
@@ -2002,6 +1984,10 @@ a {
   line-height: 23px;
   color: #2C2C2C;
   font-family: "Futura-PT-Book", sans-serif;
+}
+
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */

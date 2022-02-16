@@ -96,16 +96,37 @@ buttonToggle.forEach(function (item){
     })
 })
 
+// const categoriesTitle = document.querySelectorAll('.categories-title')
+// const list = document.querySelectorAll('[data-content]')
+//
+// categoriesTitle.forEach(function (item){
+//
+//         item.addEventListener('click', function (){
+//
+//         this.nextElementSibling.classList.toggle('show-list')
+//
+//         })
+//
+// })
 
-const categoriesTitle = document.querySelectorAll('.categories-title')
-const list = document.querySelectorAll('[data-content]')
+const tabHeaders = document.querySelectorAll('.categories-section-item');
 
-categoriesTitle.forEach(function (item){
 
-        item.addEventListener('click', function (){
+// Нашли все контент боксы
+const contentBoxes = document.querySelectorAll('[data-tab-content]');
+console.log(contentBoxes)
 
-        this.nextElementSibling.classList.toggle('show-list')
+tabHeaders.forEach(function (item) {
+    item.addEventListener('click', function () {
 
-        })
+        // 1. Скрыть все content box
+        contentBoxes.forEach(function (item) {
+            item.classList.add('hidden');
+        });
 
+        // 2. Выбрать нужный content box и показать его
+        const contentBox = document.querySelector('#' + this.dataset.tab);
+        contentBox.classList.remove('hidden');
+
+    })
 })
