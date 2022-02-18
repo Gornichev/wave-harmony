@@ -96,6 +96,7 @@ buttonToggle.forEach(function (item){
     })
 })
 
+// Tabs
 const tabHeaders = document.querySelectorAll('.categories-section-item');
 const contentBoxes = document.querySelectorAll('[data-tab-content]');
 
@@ -112,3 +113,21 @@ tabHeaders.forEach(function (item) {
 
     })
 })
+
+// Swiper fool card
+
+const swiper = new Swiper(".swiper-full-card", {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    slidesPerGroup: 2,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
