@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?x4cqjg');
-  src:  url('fonts/icomoon.eot?x4cqjg#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?x4cqjg') format('truetype'),
-    url('fonts/icomoon.woff?x4cqjg') format('woff'),
-    url('fonts/icomoon.svg?x4cqjg#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?p98ru0');
+  src:  url('fonts/icomoon.eot?p98ru0#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?p98ru0') format('truetype'),
+    url('fonts/icomoon.woff?p98ru0') format('woff'),
+    url('fonts/icomoon.svg?p98ru0#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,14 +25,32 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-share:before {
+  content: "\e901";
+}
 .icon-burger-menu:before {
   content: "\e906";
+}
+.icon-link-1:before {
+  content: "\e902";
 }
 .icon-close:before {
   content: "\e90a";
 }
+.icon-insta:before {
+  content: "\e917";
+}
+.icon-telegram:before {
+  content: "\e918";
+}
+.icon-vk:before {
+  content: "\e919";
+}
 .icon-find:before {
   content: "\e900";
+}
+.icon-fb:before {
+  content: "\e91a";
 }
 .icon-down-stroke:before {
   content: "\e905";

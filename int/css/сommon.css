@@ -495,10 +495,39 @@
   opacity: 1 !important;
 }
 
-.swiper-full-card {
+.section-final-card {
+  padding-top: 60px;
+}
+.section-final-card .swiper-full-card:hover .swiper-button-next {
+  opacity: 1;
+}
+.section-final-card .swiper-full-card:hover .swiper-button-prev {
+  opacity: 1;
+}
+.section-final-card .swiper-full-card .swiper-pagination {
+  position: absolute;
+  bottom: 5px;
+  left: -345px;
+}
+.section-final-card .swiper-full-card .swiper-pagination-bullet {
+  border-radius: 0;
+  width: 15px;
+  height: 6px;
+  background: #E3E3E3;
+  opacity: 1;
+}
+.section-final-card .swiper-full-card .swiper-pagination-bullet-active {
+  background: #2C2C2C;
+}
+.section-final-card .swiper-wrapper .swiper-slide {
   position: relative;
 }
-.swiper-full-card .swiper-wrapper .item-element {
+.section-final-card .swiper-wrapper .checkbox-follow {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.section-final-card .swiper-wrapper .item-element {
   position: absolute;
   background: #FF0000FF;
   color: #ffffff;
@@ -509,38 +538,93 @@
   top: 15px;
   border-radius: 10px;
 }
-.swiper-full-card .swiper-button-next {
+.section-final-card .swiper-button-next {
   width: 45px;
   height: 80px;
-  background: rgba(227, 227, 227, 0.8);
+  background: rgba(227, 227, 227, 0.6);
   border-radius: 15px 0 0 15px;
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
-.swiper-full-card .swiper-button-prev {
+.section-final-card .swiper-button-next:hover {
+  background: #E3E3E3;
+}
+.section-final-card .swiper-button-prev {
   width: 45px;
   height: 80px;
-  background: rgba(227, 227, 227, 0.8);
+  background: rgba(227, 227, 227, 0.6);
   border-radius: 0 15px 15px 0;
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
-.swiper-full-card .swiper-button-next:after {
-  font-size: 17px;
-}
-.swiper-full-card .swiper-button-prev:after {
-  font-size: 17px;
-}
-.swiper-full-card .swiper-pagination {
-  position: absolute;
-  bottom: 5px;
-  left: -300px;
-}
-.swiper-full-card .swiper-pagination .swiper-pagination-bullet {
-  border-radius: 0;
-  width: 15px;
-  height: 6px;
+.section-final-card .swiper-button-prev:hover {
   background: #E3E3E3;
-  opacity: 1;
 }
-.swiper-full-card .swiper-pagination .swiper-pagination-bullet-active {
-  background: #2C2C2C;
+.section-final-card .swiper-button-next:after {
+  font-size: 17px;
+}
+.section-final-card .swiper-button-prev:after {
+  font-size: 17px;
+}
+
+.product-info .product-info-title {
+  font-family: "Futura-PT-Demi", sans-serif;
+  font-size: 25px;
+  line-height: 35px;
+}
+.product-info .share-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.product-info .share-box .icon {
+  font-size: 16px;
+  text-align: center;
+  line-height: 20px;
+  padding: 10px;
+  width: 40px;
+  display: block;
+  color: #2C2C2C;
+  background: #F8F8F8;
+  border-radius: 100%;
+}
+.product-info .share-box .icon:hover {
+  background: rgba(227, 227, 227, 0.6);
+  border-radius: 100%;
+}
+.product-info .share-box .btn {
+  padding: 0;
+}
+.product-info .share-box .share-panel {
+  left: -180px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+}
+.product-info .share-box .share-panel a {
+  display: block;
+  text-decoration: none;
+  border-radius: 100%;
+  background: rgba(227, 227, 227, 0.6);
+  margin-right: 5px;
+  width: 40px;
+  height: 40px;
+}
+.product-info .share-box .share-panel .icon {
+  font-size: 16px;
+  text-align: center;
+  line-height: 20px;
+  padding: 10px;
+  width: 40px;
+  display: block;
+  color: #2C2C2C;
 }
 
 .row-padding-10 {
@@ -748,6 +832,10 @@
     transform: translate3d(0, -40%, 0);
   }
 }
+.btn:focus {
+  box-shadow: none;
+}
+
 .btn-light {
   background: none;
   color: #ffffff;

@@ -267,10 +267,43 @@
 
 //swiper-full-card
 
-.swiper-full-card
-	position: relative
+.section-final-card
+	padding-top: 60px
+
+	.swiper-full-card
+
+		&:hover
+
+			.swiper-button-next
+				opacity: 1
+
+			.swiper-button-prev
+					opacity: 1
+
+		.swiper-pagination
+			position: absolute
+			bottom: 5px
+			left: -345px
+
+		.swiper-pagination-bullet
+			border-radius: 0
+			width: 15px
+			height: 6px
+			background: $lightColor
+			opacity: 1
+
+		.swiper-pagination-bullet-active
+			background: $mainText
 
 	.swiper-wrapper
+
+		.swiper-slide
+			position: relative
+
+		.checkbox-follow
+			position: absolute
+			top: 20px
+			right: 20px
 
 		.item-element
 			position: absolute
@@ -288,14 +321,28 @@
 		height: 80px
 		background: $lightBtnColor
 		border-radius: 15px 0 0 15px
-		//display: none
+		opacity: 0
+		-webkit-transition: all 0.3s linear
+		-moz-transition: all 0.3s linear
+		-o-transition: all 0.3s linear
+		transition: all 0.3s linear
+
+		&:hover
+			background: $lightColor
 
 	.swiper-button-prev
 		width: 45px
 		height: 80px
 		background: $lightBtnColor
 		border-radius: 0 15px 15px 0
-		//display: none
+		opacity: 0
+		-webkit-transition: all 0.3s linear
+		-moz-transition: all 0.3s linear
+		-o-transition: all 0.3s linear
+		transition: all 0.3s linear
+
+		&:hover
+			background: $lightColor
 
 	.swiper-button-next:after
 		font-size: 17px
@@ -303,20 +350,68 @@
 	.swiper-button-prev:after
 		font-size: 17px
 
+.product-info
 
-	.swiper-pagination
-		position: absolute
-		bottom: 5px
-		left: -300px
+	.product-info-title
+		font-family: "Futura-PT-Demi", sans-serif
+		font-size: 25px
+		line-height: 35px
 
-		.swiper-pagination-bullet
-			border-radius: 0
-			width: 15px
-			height: 6px
-			background: $lightColor
-			opacity: 1
+	.share-box
+		position: relative
+		display: flex
+		align-items: center
 
-		.swiper-pagination-bullet-active
-			background: $mainText
+		.icon
+			font-size: 16px
+			text-align: center
+			line-height: 20px
+			padding: 10px
+			width: 40px
+			display: block
+			color: $mainText
+			background: $mainBackground
+			border-radius: 100%
+
+			&:hover
+				background: $lightBtnColor
+				border-radius: 100%
+
+		.btn
+			padding: 0
+
+		.share-panel
+			left: -180px
+			position: absolute
+			display: flex
+			align-items: center
+			opacity: 0
+
+			a
+				display: block
+				text-decoration: none
+				border-radius: 100%
+				background: $lightBtnColor
+				margin-right: 5px
+				width: 40px
+				height: 40px
+
+
+			.icon
+				font-size: 16px
+				text-align: center
+				line-height: 20px
+				padding: 10px
+				width: 40px
+				display: block
+				color: $mainText
+
+
+
+
+
+
+
+
 
 
