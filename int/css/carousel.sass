@@ -351,19 +351,22 @@
 		font-size: 17px
 
 .product-info
+	overflow-x: hidden
 
 	.product-info-title
 		font-family: "Futura-PT-Demi", sans-serif
 		font-size: 25px
 		line-height: 35px
+		margin: 0
 
 	.share-box
 		position: relative
 		display: flex
 		align-items: center
 
+
 		.icon
-			font-size: 16px
+			font-size: 18px
 			text-align: center
 			line-height: 20px
 			padding: 10px
@@ -379,13 +382,20 @@
 
 		.btn
 			padding: 0
+			z-index: 102
 
 		.share-panel
 			left: -180px
 			position: absolute
 			display: flex
 			align-items: center
-			opacity: 0
+			transform: translateX(100%)
+			transition: 0.3s
+			padding-left: 20px
+			visibility: hidden
+			-webkit-transition: all 0.3s linear
+			-moz-transition: all 0.3s linear
+			-o-transition: all 0.3s linear
 
 			a
 				display: block
@@ -406,12 +416,11 @@
 				display: block
 				color: $mainText
 
+	.active
 
-
-
-
-
-
-
-
+		.share-panel
+			opacity: 1
+			visibility: visible
+			transform: translateX(0)
+			padding: 0
 

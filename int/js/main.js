@@ -119,7 +119,6 @@ tabHeaders.forEach(function (item) {
 const swiper = new Swiper(".swiper-full-card", {
     slidesPerView: 2,
     spaceBetween: 13,
-    slidesPerGroup: 2,
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {
@@ -132,5 +131,12 @@ const swiper = new Swiper(".swiper-full-card", {
     },
 });
 
-const btnShare = document.getElementById('btnShare')
 
+const btnShare = document.getElementById('btnShare')
+const shareBox = document.querySelector('.share-box');
+
+btnShare.addEventListener('click', function (){
+
+    shareBox.classList.toggle('active')
+
+})

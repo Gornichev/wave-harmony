@@ -573,10 +573,14 @@
   font-size: 17px;
 }
 
+.product-info {
+  overflow-x: hidden;
+}
 .product-info .product-info-title {
   font-family: "Futura-PT-Demi", sans-serif;
   font-size: 25px;
   line-height: 35px;
+  margin: 0;
 }
 .product-info .share-box {
   position: relative;
@@ -584,7 +588,7 @@
   align-items: center;
 }
 .product-info .share-box .icon {
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
   line-height: 20px;
   padding: 10px;
@@ -600,13 +604,20 @@
 }
 .product-info .share-box .btn {
   padding: 0;
+  z-index: 102;
 }
 .product-info .share-box .share-panel {
   left: -180px;
   position: absolute;
   display: flex;
   align-items: center;
-  opacity: 0;
+  transform: translateX(100%);
+  transition: 0.3s;
+  padding-left: 20px;
+  visibility: hidden;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
 }
 .product-info .share-box .share-panel a {
   display: block;
@@ -625,6 +636,12 @@
   width: 40px;
   display: block;
   color: #2C2C2C;
+}
+.product-info .active .share-panel {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  padding: 0;
 }
 
 .row-padding-10 {
