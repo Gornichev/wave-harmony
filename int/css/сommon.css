@@ -509,6 +509,24 @@
   top: 15px;
   border-radius: 10px;
 }
+.swiper-full-card .swiper-button-next {
+  width: 45px;
+  height: 80px;
+  background: rgba(227, 227, 227, 0.8);
+  border-radius: 15px 0 0 15px;
+}
+.swiper-full-card .swiper-button-prev {
+  width: 45px;
+  height: 80px;
+  background: rgba(227, 227, 227, 0.8);
+  border-radius: 0 15px 15px 0;
+}
+.swiper-full-card .swiper-button-next:after {
+  font-size: 17px;
+}
+.swiper-full-card .swiper-button-prev:after {
+  font-size: 17px;
+}
 .swiper-full-card .swiper-pagination {
   position: absolute;
   bottom: 5px;
