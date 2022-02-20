@@ -645,12 +645,14 @@
 }
 .product-info .product-info-group {
   display: flex;
+  margin-bottom: 10px;
 }
 .product-info .product-info-group .product-info-text {
   font-family: "Futura-PT-Book", sans-serif;
   font-size: 20px;
   line-height: 28px;
   color: #2C2C2C;
+  margin: 0;
 }
 .product-info .product-info-group .product-info-status {
   color: #0CA41B;
