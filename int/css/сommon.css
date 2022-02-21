@@ -504,6 +504,23 @@
 .section-final-card .swiper-full-card:hover .swiper-button-prev {
   opacity: 1;
 }
+.section-final-card .swiper-full-card .checkbox-follow {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.section-final-card .swiper-full-card .item-element {
+  position: absolute;
+  background: #FF0000FF;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 7px;
+  left: 15px;
+  top: 15px;
+  border-radius: 10px;
+  z-index: 102;
+}
 .section-final-card .swiper-full-card .swiper-pagination {
   position: absolute;
   bottom: 5px;
@@ -519,24 +536,13 @@
 .section-final-card .swiper-full-card .swiper-pagination-bullet-active {
   background: #2C2C2C;
 }
+.section-final-card .swiper-wrapper img {
+  border-radius: 0;
+}
 .section-final-card .swiper-wrapper .swiper-slide {
   position: relative;
-}
-.section-final-card .swiper-wrapper .checkbox-follow {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-.section-final-card .swiper-wrapper .item-element {
-  position: absolute;
-  background: #FF0000FF;
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 18px;
-  padding: 7px;
-  left: 15px;
-  top: 15px;
-  border-radius: 10px;
+  width: 424px;
+  background: #F8F8F8;
 }
 .section-final-card .swiper-button-next {
   width: 45px;
@@ -544,6 +550,7 @@
   background: rgba(227, 227, 227, 0.6);
   border-radius: 15px 0 0 15px;
   opacity: 0;
+  right: 0;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
@@ -558,6 +565,7 @@
   background: rgba(227, 227, 227, 0.6);
   border-radius: 0 15px 15px 0;
   opacity: 0;
+  left: 0;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
@@ -574,13 +582,15 @@
 }
 
 .product-info {
-  overflow-x: hidden;
+  overflow: hidden;
+}
+.product-info .product-info-header {
+  border-bottom: 1px solid #F0F0F0;
 }
 .product-info .product-info-title {
   font-family: "Futura-PT-Demi", sans-serif;
   font-size: 25px;
   line-height: 35px;
-  margin-bottom: 10px;
 }
 .product-info .share-box {
   position: relative;
@@ -599,7 +609,6 @@
   border-radius: 100%;
 }
 .product-info .share-box .icon:hover {
-  background: rgba(227, 227, 227, 0.6);
   border-radius: 100%;
 }
 .product-info .share-box .btn {
@@ -645,6 +654,7 @@
 }
 .product-info .product-info-group {
   display: flex;
+  align-items: center;
   margin-bottom: 10px;
 }
 .product-info .product-info-group .product-info-text {
@@ -656,6 +666,26 @@
 }
 .product-info .product-info-group .product-info-status {
   color: #0CA41B;
+}
+.product-info .product-info-group .product-price {
+  font-size: 25px;
+  line-height: 35px;
+}
+.product-info .product-info-group .delete-text {
+  color: #848484;
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.product-rating a {
+  color: #21A5B5;
+  font-size: 13px;
+}
+.product-rating span {
+  margin-left: 5px;
+  font-size: 14px;
+  line-height: 19px;
+  font-family: "Futura-PT-Medium", sans-serif;
 }
 
 .row-padding-10 {

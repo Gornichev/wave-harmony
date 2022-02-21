@@ -280,6 +280,23 @@
 			.swiper-button-prev
 					opacity: 1
 
+		.checkbox-follow
+			position: absolute
+			top: 20px
+			right: 20px
+
+		.item-element
+			position: absolute
+			background: $dangerColor
+			color: $mainColor
+			font-size: 18px
+			line-height: 18px
+			padding: 7px
+			left: 15px
+			top: 15px
+			border-radius: 10px
+			z-index: 102
+
 		.swiper-pagination
 			position: absolute
 			bottom: 5px
@@ -296,25 +313,14 @@
 			background: $mainText
 
 	.swiper-wrapper
+		img
+
+			border-radius: 0
 
 		.swiper-slide
 			position: relative
-
-		.checkbox-follow
-			position: absolute
-			top: 20px
-			right: 20px
-
-		.item-element
-			position: absolute
-			background: $dangerColor
-			color: $mainColor
-			font-size: 18px
-			line-height: 18px
-			padding: 7px
-			left: 15px
-			top: 15px
-			border-radius: 10px
+			width: 424px
+			background: #F8F8F8
 
 	.swiper-button-next
 		width: 45px
@@ -322,6 +328,7 @@
 		background: $lightBtnColor
 		border-radius: 15px 0 0 15px
 		opacity: 0
+		right: 0
 		-webkit-transition: all 0.3s linear
 		-moz-transition: all 0.3s linear
 		-o-transition: all 0.3s linear
@@ -336,6 +343,7 @@
 		background: $lightBtnColor
 		border-radius: 0 15px 15px 0
 		opacity: 0
+		left: 0
 		-webkit-transition: all 0.3s linear
 		-moz-transition: all 0.3s linear
 		-o-transition: all 0.3s linear
@@ -351,16 +359,15 @@
 		font-size: 17px
 
 .product-info
-	overflow-x: hidden
+	overflow: hidden
 
-	.product-info-group
-
+	.product-info-header
+		border-bottom: 1px solid $ultraLightColor
 
 	.product-info-title
 		font-family: "Futura-PT-Demi", sans-serif
 		font-size: 25px
 		line-height: 35px
-		margin-bottom: 10px
 
 	.share-box
 		position: relative
@@ -379,7 +386,6 @@
 			border-radius: 100%
 
 			&:hover
-				background: $lightBtnColor
 				border-radius: 100%
 
 		.btn
@@ -428,6 +434,7 @@
 
 	.product-info-group
 		display: flex
+		align-items: center
 		margin-bottom: 10px
 
 		.product-info-text
@@ -439,5 +446,27 @@
 
 		.product-info-status
 			color: $greenColor
+
+		.product-price
+			font-size: 25px
+			line-height: 35px
+
+		.delete-text
+			color: $pasiiveColor
+			font-size: 18px
+			margin-left: 15px
+
+.product-rating
+
+	a
+		color: $gradientColorOne
+		font-size: 13px
+
+	span
+		margin-left: 5px
+		font-size: 14px
+		line-height: 19px
+		font-family: "Futura-PT-Medium", sans-serif
+
 
 
