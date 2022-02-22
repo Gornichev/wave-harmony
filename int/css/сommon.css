@@ -242,6 +242,45 @@
   content: "\e914";
 }
 
+.product-modal .btn {
+  color: #21A5B5;
+  padding: 0;
+}
+
+.modal-dialog {
+  max-width: 900px;
+}
+
+.modal-content {
+  padding: 40px;
+}
+.modal-content .modal-header {
+  padding: 0;
+  border: none;
+  margin-bottom: 30px;
+}
+.modal-content .modal-body {
+  padding: 0;
+  border: none;
+}
+.modal-content .modal-body .section-size-table {
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin-bottom: 50px;
+}
+.modal-content .modal-body .section-size-table .size-table-header {
+  font-size: 17px;
+}
+.modal-content .modal-body .section-size-table .size-table-body {
+  font-size: 16px;
+}
+.modal-content .modal-footer {
+  border: none;
+  border-radius: 0;
+  padding: 0;
+}
+
 .swiper-intro {
   width: 100%;
   height: 100%;
@@ -496,7 +535,7 @@
 }
 
 .section-final-card {
-  padding-top: 60px;
+  padding: 60px 0;
 }
 .section-final-card .swiper-full-card:hover .swiper-button-next {
   opacity: 1;
@@ -579,113 +618,6 @@
 }
 .section-final-card .swiper-button-prev:after {
   font-size: 17px;
-}
-
-.product-info {
-  overflow: hidden;
-}
-.product-info .product-info-header {
-  border-bottom: 1px solid #F0F0F0;
-}
-.product-info .product-info-title {
-  font-family: "Futura-PT-Demi", sans-serif;
-  font-size: 25px;
-  line-height: 35px;
-}
-.product-info .share-box {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-.product-info .share-box .icon {
-  font-size: 18px;
-  text-align: center;
-  line-height: 20px;
-  padding: 10px;
-  width: 40px;
-  display: block;
-  color: #2C2C2C;
-  background: #F8F8F8;
-  border-radius: 100%;
-}
-.product-info .share-box .icon:hover {
-  border-radius: 100%;
-}
-.product-info .share-box .btn {
-  padding: 0;
-  z-index: 102;
-}
-.product-info .share-box .share-panel {
-  left: -180px;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  transform: translateX(100%);
-  transition: 0.3s;
-  padding-left: 20px;
-  visibility: hidden;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-}
-.product-info .share-box .share-panel a {
-  display: block;
-  text-decoration: none;
-  border-radius: 100%;
-  background: rgba(227, 227, 227, 0.6);
-  margin-right: 5px;
-  width: 40px;
-  height: 40px;
-}
-.product-info .share-box .share-panel .icon {
-  font-size: 16px;
-  text-align: center;
-  line-height: 20px;
-  padding: 10px;
-  width: 40px;
-  display: block;
-  color: #2C2C2C;
-}
-.product-info .active .share-panel {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(0);
-  padding: 0;
-}
-.product-info .product-info-group {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-.product-info .product-info-group .product-info-text {
-  font-family: "Futura-PT-Book", sans-serif;
-  font-size: 20px;
-  line-height: 28px;
-  color: #2C2C2C;
-  margin: 0;
-}
-.product-info .product-info-group .product-info-status {
-  color: #0CA41B;
-}
-.product-info .product-info-group .product-price {
-  font-size: 25px;
-  line-height: 35px;
-}
-.product-info .product-info-group .delete-text {
-  color: #848484;
-  font-size: 18px;
-  margin-left: 15px;
-}
-
-.product-rating a {
-  color: #21A5B5;
-  font-size: 13px;
-}
-.product-rating span {
-  margin-left: 5px;
-  font-size: 14px;
-  line-height: 19px;
-  font-family: "Futura-PT-Medium", sans-serif;
 }
 
 .row-padding-10 {
@@ -2242,6 +2174,120 @@ a {
 
 .hidden {
   display: none;
+}
+
+.product-info {
+  overflow: hidden;
+}
+.product-info .product-info-header {
+  border-bottom: 1px solid #F0F0F0;
+}
+.product-info .product-info-title {
+  font-family: "Futura-PT-Demi", sans-serif;
+  font-size: 25px;
+  line-height: 35px;
+}
+.product-info .share-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.product-info .share-box .icon {
+  font-size: 18px;
+  text-align: center;
+  line-height: 20px;
+  padding: 10px;
+  width: 40px;
+  display: block;
+  color: #2C2C2C;
+  background: #F8F8F8;
+  border-radius: 100%;
+}
+.product-info .share-box .icon:hover {
+  border-radius: 100%;
+}
+.product-info .share-box .btn {
+  padding: 0;
+  z-index: 102;
+}
+.product-info .share-box .share-panel {
+  left: -180px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  transform: translateX(80%);
+  transition: 0.3s;
+  padding-left: 20px;
+  visibility: hidden;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.product-info .share-box .share-panel a {
+  display: block;
+  text-decoration: none;
+  border-radius: 100%;
+  background: rgba(227, 227, 227, 0.6);
+  margin-right: 5px;
+  width: 40px;
+  height: 40px;
+}
+.product-info .share-box .share-panel .icon {
+  font-size: 16px;
+  text-align: center;
+  line-height: 20px;
+  padding: 10px;
+  width: 40px;
+  display: block;
+  color: #2C2C2C;
+}
+.product-info .active .share-panel {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  padding: 0;
+}
+.product-info .product-info-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.product-info .product-info-group .product-info-text {
+  font-family: "Futura-PT-Book", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2C2C2C;
+  margin: 0;
+}
+.product-info .product-info-group .product-info-status {
+  color: #0CA41B;
+}
+.product-info .product-info-group .product-price {
+  font-size: 25px;
+  line-height: 35px;
+}
+.product-info .product-info-group .delete-text {
+  color: #848484;
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.product-rating a {
+  color: #21A5B5;
+  font-size: 13px;
+}
+.product-rating span {
+  margin-left: 5px;
+  font-size: 14px;
+  line-height: 19px;
+  font-family: "Futura-PT-Medium", sans-serif;
+}
+
+.product-info-sizing .product-info-sizing-title {
+  font-family: "Futura-PT-Book", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  color: #2C2C2C;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
