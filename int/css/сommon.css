@@ -279,6 +279,7 @@
   border: none;
   border-radius: 0;
   padding: 0;
+  display: block;
 }
 
 .swiper-intro {
@@ -537,6 +538,10 @@
 .section-final-card {
   padding: 60px 0;
 }
+.section-final-card .swiper {
+  margin: 0;
+  max-width: 857px;
+}
 .section-final-card .swiper-full-card:hover .swiper-button-next {
   opacity: 1;
 }
@@ -590,6 +595,8 @@
   border-radius: 15px 0 0 15px;
   opacity: 0;
   right: 0;
+  top: 300px;
+  color: #ffffff;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
@@ -602,9 +609,11 @@
   width: 45px;
   height: 80px;
   background: rgba(227, 227, 227, 0.6);
+  color: #ffffff;
   border-radius: 0 15px 15px 0;
   opacity: 0;
   left: 0;
+  top: 300px;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
@@ -2178,6 +2187,7 @@ a {
 
 .product-info {
   overflow: hidden;
+  padding-left: 18px;
 }
 .product-info .product-info-header {
   border-bottom: 1px solid #F0F0F0;
@@ -2196,7 +2206,7 @@ a {
   font-size: 18px;
   text-align: center;
   line-height: 20px;
-  padding: 10px;
+  padding: 15px;
   width: 40px;
   display: block;
   color: #2C2C2C;
@@ -2250,12 +2260,11 @@ a {
 .product-info .product-info-group {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
 }
 .product-info .product-info-group .product-info-text {
   font-family: "Futura-PT-Book", sans-serif;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 27px;
   color: #2C2C2C;
   margin: 0;
 }
@@ -2264,7 +2273,7 @@ a {
 }
 .product-info .product-info-group .product-price {
   font-size: 25px;
-  line-height: 35px;
+  line-height: 50px;
 }
 .product-info .product-info-group .delete-text {
   color: #848484;

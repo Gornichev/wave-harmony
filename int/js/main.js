@@ -141,3 +141,11 @@ btnShare.addEventListener('click', function (){
     shareBox.classList.toggle('active')
 
 })
+
+
+
+const cars = ['opel', 'mazda', 'wv', 'toyota']
+
+for (let i = 0; i < length; i++ ){
+console.log(cars[i])
+}
