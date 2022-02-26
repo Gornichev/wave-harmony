@@ -2302,13 +2302,6 @@ a {
   color: #2C2C2C;
 }
 
-.custom-select-show .custom-select-list {
-  visibility: visible;
-}
-.custom-select-show .btn {
-  padding: 15px 15px 0 15px;
-}
-
 .sizing-product-select .btn {
   width: 100%;
   text-align: left;
@@ -2322,8 +2315,6 @@ a {
   font-family: "icomoon", sans-serif;
   font-size: 10px;
   background-image: none;
-  width: 40px;
-  height: 40px;
   border-radius: 100%;
   text-align: center;
   padding: 6px;
@@ -2333,10 +2324,38 @@ a {
 .sizing-product-select .custom-select-list {
   list-style: none;
   margin: 0;
-  padding: 15px;
   visibility: hidden;
+  opacity: 0;
   border: 0.5px solid #CFCFCF;
   border-radius: 15px;
+  padding: 0;
+}
+
+.custom-select-show .custom-select-list {
+  visibility: visible;
+  opacity: 1;
+  border-radius: 0 0 15px 15px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.custom-select-show .custom-select-list .custom-select-item {
+  display: block;
+  padding: 10px 15px;
+}
+.custom-select-show .custom-select-list .custom-select-item:hover {
+  background: #F0F0F0;
+}
+.custom-select-show .btn {
+  border-radius: 15px 15px 0 0;
+}
+.custom-select-show .custom-select:after {
+  transform: rotateX(180deg);
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */

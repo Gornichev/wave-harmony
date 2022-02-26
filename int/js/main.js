@@ -100,7 +100,6 @@ buttonToggle.forEach(function (item){
 const tabHeaders = document.querySelectorAll('.categories-section-item');
 const contentBoxes = document.querySelectorAll('[data-tab-content]');
 
-
 tabHeaders.forEach(function (item) {
     item.addEventListener('click', function () {
 
@@ -134,7 +133,7 @@ const swiper = new Swiper(".swiper-full-card", {
 
 
 const btnShare = document.getElementById('btnShare')
-const shareBox = document.querySelector('.share-box');
+const shareBox = document.querySelector('.share-box')
 
 btnShare.addEventListener('click', function (){
 
@@ -144,4 +143,11 @@ btnShare.addEventListener('click', function (){
 
 
 const customToggle = document.querySelector('[data-select]')
+const customSelect = document.querySelector('.custom-select')
+
+
+customSelect.addEventListener('click',function (){
+
+    customToggle.classList.toggle('custom-select-show')
+})
 
