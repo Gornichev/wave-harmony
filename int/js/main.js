@@ -143,9 +143,5 @@ btnShare.addEventListener('click', function (){
 })
 
 
+const customToggle = document.querySelector('[data-select]')
 
-const cars = ['opel', 'mazda', 'wv', 'toyota']
-
-for (let i = 0; i < length; i++ ){
-console.log(cars[i])
-}
