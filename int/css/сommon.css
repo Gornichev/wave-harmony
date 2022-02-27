@@ -2331,14 +2331,16 @@ a {
   padding: 0;
 }
 
-.custom-select-show .custom-select-list {
-  visibility: visible;
-  opacity: 1;
-  border-radius: 0 0 15px 15px;
+.custom-select-show {
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
+}
+.custom-select-show .custom-select-list {
+  visibility: visible;
+  opacity: 1;
+  border-radius: 0 0 15px 15px;
 }
 .custom-select-show .custom-select-list .custom-select-item {
   display: block;

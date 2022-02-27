@@ -66,7 +66,6 @@ const intro = new Swiper(".trust-slider", {
     },
 });
 
-
 const searchIcon = document.getElementById('searchIcon')
 const searchBtn = document.getElementById('searchBtn')
 const searchBar = document.querySelector('.search-bar')
@@ -143,11 +142,19 @@ btnShare.addEventListener('click', function (){
 
 
 const customToggle = document.querySelector('[data-select]')
-const customSelect = document.querySelector('.custom-select')
+const customList = document.querySelector('.custom-select-list')
+const list = document.querySelector( '.custom-select')
 
-
-customSelect.addEventListener('click',function (){
+document.addEventListener( 'click', (e) => {
+    const withinBoundaries = e.composedPath().includes(list)
 
     customToggle.classList.toggle('custom-select-show')
-})
 
+    if ( ! withinBoundaries ) {
+        customToggle.classList.add('custom-select-show')
+    }
+    if ( ! withinBoundaries ) {
+        customToggle.classList.remove('custom-select-show')
+    }
+
+})
