@@ -146,15 +146,17 @@ const customList = document.querySelector('.custom-select-list')
 const list = document.querySelector( '.custom-select')
 
 document.addEventListener( 'click', (e) => {
-    const withinBoundaries = e.composedPath().includes(list)
+
+    const examinationList = e.composedPath().includes(list)
 
     customToggle.classList.toggle('custom-select-show')
 
-    if ( ! withinBoundaries ) {
+    if ( !
+        examinationList ) {
         customToggle.classList.add('custom-select-show')
     }
-    if ( ! withinBoundaries ) {
+    if ( !
+        examinationList ) {
         customToggle.classList.remove('custom-select-show')
     }
-
 })

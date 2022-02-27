@@ -1291,13 +1291,13 @@ a
 		align-items: center
 
 		.icon
-			font-size: 18px
+			font-size: 16px
 			text-align: center
 			line-height: 20px
-			padding: 15px
+			padding: 10px
 			width: 40px
 			display: block
-			color: $mainText
+			color: #2C2C2C
 			background: $mainBackground
 			border-radius: 100%
 
@@ -1434,6 +1434,27 @@ a
 		visibility: visible
 		opacity: 1
 		border-radius: 0 0 15px 15px
+		box-shadow: 0 3px 7px rgba(0,0,0,.07)
+
+		.custom-select-element
+			padding-right: 5px
+			border-right: 1px solid $opasityColor
+			position: relative
+
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				right: -0.5px
+				top: 50%
+				-webkit-transform: translateY(-50%)
+				transform: translateY(-50%)
+				width: 1px
+				background-color: #2c2c2c
+				height: 8px
+
+		.custom-select-element-two
+			padding-left: 5px
 
 		.custom-select-item
 			display: block
