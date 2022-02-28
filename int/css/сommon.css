@@ -64,14 +64,6 @@
   height: 28px;
   display: block;
 }
-.header .icon-group .mini-card {
-  position: absolute;
-  z-index: 102;
-  opacity: 0;
-}
-.header .icon-group .icon-bag:hover .mini-card {
-  opacity: 1;
-}
 .header .icon-group .icon-bag:after {
   width: 6px;
   height: 6px;
@@ -109,6 +101,23 @@
   opacity: 1;
   transform: translateX(0);
   color: #000000;
+}
+
+.mini-card-menu {
+  display: block;
+}
+.mini-card-menu .mini-card {
+  position: absolute;
+  z-index: 102;
+  opacity: 0;
+  right: 0;
+  top: 100%;
+  background: #ffffff;
+  padding-left: 15px;
+  flex-wrap: nowrap;
+}
+.mini-card-menu:hover .mini-card {
+  opacity: 1;
 }
 
 .navbar {

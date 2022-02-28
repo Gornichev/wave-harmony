@@ -66,17 +66,7 @@
 			height: 28px
 			display: block
 
-		.mini-card
-			position: absolute
-			z-index: 102
-			opacity: 0
-
 		.icon-bag
-
-			&:hover
-
-				.mini-card
-					opacity: 1
 
 			&:after
 				width: 6px
@@ -87,8 +77,6 @@
 				position: absolute
 				top: -3px
 				right: -3px
-
-
 
 		.search-panel
 			position: absolute
@@ -119,6 +107,24 @@
 					opacity: 1
 					transform: translateX(0)
 					color: $darkenColor
+
+.mini-card-menu
+	display: block
+
+	.mini-card
+		position: absolute
+		z-index: 102
+		opacity: 0
+		right: 0
+		top: 100%
+		background: $mainColor
+		padding-left: 15px
+		flex-wrap: nowrap
+
+	&:hover
+
+		.mini-card
+			opacity: 1
 
 .navbar
 	background: $mainColor
