@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?tdjw6u');
-  src:  url('fonts/icomoon.eot?tdjw6u#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?tdjw6u') format('truetype'),
-    url('fonts/icomoon.woff?tdjw6u') format('woff'),
-    url('fonts/icomoon.svg?tdjw6u#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?db1ysy');
+  src:  url('fonts/icomoon.eot?db1ysy#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?db1ysy') format('truetype'),
+    url('fonts/icomoon.woff?db1ysy') format('woff'),
+    url('fonts/icomoon.svg?db1ysy#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,11 +25,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Star-10:before {
+  content: "\e904";
+  color: #e3e3e3;
+}
 .icon-star:before {
   content: "\e903";
-}
-.icon-half-star:before {
-  content: "\e904";
 }
 .icon-share:before {
   content: "\e901";
@@ -51,6 +52,10 @@
 }
 .icon-vk:before {
   content: "\e919";
+}
+.icon-cart:before {
+  content: "\e91b";
+  color: #848484;
 }
 .icon-find:before {
   content: "\e900";

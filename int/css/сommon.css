@@ -109,6 +109,8 @@
   padding-top: 30px;
   position: absolute;
   z-index: 104;
+  opacity: 0;
+  visibility: hidden;
   right: 0;
   top: 100%;
   background: #ffffff;
@@ -153,19 +155,31 @@
   margin-bottom: 40px;
   display: block;
 }
+.mini-card-box-body .btn-cart-wrapper .icon {
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  line-height: 5px;
+  color: #848484;
+}
+.mini-card-box-body .btn-cart-wrapper .btn {
+  height: 30px;
+  border: 1px solid #F0F0F0;
+  border-radius: 10px;
+}
 
 .quantity-box {
   display: flex;
   align-items: center;
 }
 .quantity-box .btn {
-  width: 30px;
+  width: 32px;
   height: 30px;
   border: 1px solid #F0F0F0;
   border-radius: 10px;
 }
 .quantity-box .btn .icon {
-  font-size: 7px;
+  font-size: 6px;
   text-align: center;
   display: block;
   line-height: 17px;
