@@ -64,6 +64,9 @@
   height: 28px;
   display: block;
 }
+.header .icon-group .icon-bag {
+  padding-bottom: 20px;
+}
 .header .icon-group .icon-bag:after {
   width: 6px;
   height: 6px;
@@ -102,22 +105,33 @@
   transform: translateX(0);
   color: #000000;
 }
-
-.mini-card-menu {
-  display: block;
-}
-.mini-card-menu .mini-card {
+.header .mini-card {
+  padding-top: 30px;
   position: absolute;
-  z-index: 102;
-  opacity: 0;
+  z-index: 104;
   right: 0;
   top: 100%;
   background: #ffffff;
-  padding-left: 15px;
-  flex-wrap: nowrap;
+  min-width: 300px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
-.mini-card-menu:hover .mini-card {
+.header:hover .mini-card {
   opacity: 1;
+  visibility: visible;
+}
+
+.mini-card-group {
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
+  max-height: 187px;
+}
+.mini-card-group .mini-card-box {
+  border-bottom: 1px solid #F0F0F0;
+  padding: 15px 30px;
+}
+
+.mini-card-footer {
+  padding: 15px 30px;
 }
 
 .navbar {

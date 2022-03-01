@@ -67,6 +67,7 @@
 			display: block
 
 		.icon-bag
+			padding-bottom: 20px
 
 			&:after
 				width: 6px
@@ -108,23 +109,36 @@
 					transform: translateX(0)
 					color: $darkenColor
 
-.mini-card-menu
-	display: block
-
 	.mini-card
+		padding-top: 30px
 		position: absolute
-		z-index: 102
-		opacity: 0
+		z-index: 104
+		//opacity: 0
+		//visibility: hidden
 		right: 0
 		top: 100%
 		background: $mainColor
-		padding-left: 15px
-		flex-wrap: nowrap
+		min-width: 300px
+		transition: opacity .3s ease,visibility .3s ease
 
 	&:hover
 
 		.mini-card
 			opacity: 1
+			visibility: visible
+
+.mini-card-group
+	box-shadow: 0 4px 6px 0 rgb(0 0 0 / 20%)
+	overflow-y: scroll
+	max-height: 187px
+
+	.mini-card-box
+		border-bottom: 1px solid $ultraLightColor
+		padding: 15px 30px
+
+.mini-card-footer
+	padding: 15px 30px
+
 
 .navbar
 	background: $mainColor
