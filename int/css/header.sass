@@ -118,7 +118,7 @@
 		right: 0
 		top: 100%
 		background: $mainColor
-		min-width: 300px
+		min-width: 400px
 		transition: opacity .3s ease,visibility .3s ease
 
 	&:hover
@@ -130,11 +130,60 @@
 .mini-card-group
 	box-shadow: 0 4px 6px 0 rgb(0 0 0 / 20%)
 	overflow-y: scroll
-	max-height: 187px
+	max-height: 200px
 
 	.mini-card-box
 		border-bottom: 1px solid $ultraLightColor
 		padding: 15px 30px
+
+.mini-card-box-body
+
+	.mini-card-title
+		font-family: "Futura-PT-Medium", sans-serif
+		font-size: 18px
+		line-height: 23px
+		color: $gradientColorOne
+		margin-bottom: 10px
+		display: block
+
+	.mini-card-size
+		font-family: "Futura-PT-Book", sans-serif
+		font-size: 16px
+		line-height: 20px
+		color: $pasiiveColor
+		margin-bottom: 10px
+
+	.mini-card-price
+		font-family: "Futura-PT-Medium", sans-serif
+		font-size: 16px
+		line-height: 20px
+		color: $mainText
+		margin-bottom: 40px
+		display: block
+
+
+.quantity-box
+	display: flex
+	align-items: center
+
+	.btn
+		width: 30px
+		height: 30px
+		border: 1px solid $ultraLightColor
+		border-radius: 10px
+
+		.icon
+			font-size: 7px
+			text-align: center
+			display: block
+			line-height: 17px
+
+	.quantity-title
+		display: block
+		margin: 0 10px
+		font-size: 16px
+		line-height: 20px
+
 
 .mini-card-footer
 	padding: 15px 30px
