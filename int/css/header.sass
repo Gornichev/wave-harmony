@@ -128,13 +128,16 @@
 			visibility: visible
 
 .mini-card-group
+	overflow-y: hidden
+	max-height: 320px
+	padding: 0
 	box-shadow: 0 4px 6px 0 rgb(0 0 0 / 20%)
-	overflow-y: scroll
-	max-height: 200px
 
-	.mini-card-box
-		border-bottom: 1px solid $ultraLightColor
-		padding: 15px 30px
+	.mini-card-wrapper
+
+		.mini-card-box
+			border-bottom: 1px solid $ultraLightColor
+			padding: 15px 30px
 
 .mini-card-box-body
 
@@ -198,8 +201,16 @@
 		line-height: 20px
 
 .mini-card-footer
-	padding: 15px 30px
+	padding: 20px 30px
+	font-family: "Futura-PT-Medium", sans-serif
+	font-size: 18px
+	line-height: 23px
+	color: $mainText
 
+	.btn
+		font-size: 16px
+		width: 100%
+		font-family: "Futura-PT-Medium", sans-serif
 
 .navbar
 	background: $mainColor

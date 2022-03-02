@@ -123,11 +123,12 @@
 }
 
 .mini-card-group {
+  overflow-y: hidden;
+  max-height: 320px;
+  padding: 0;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
-  overflow-y: scroll;
-  max-height: 200px;
 }
-.mini-card-group .mini-card-box {
+.mini-card-group .mini-card-wrapper .mini-card-box {
   border-bottom: 1px solid #F0F0F0;
   padding: 15px 30px;
 }
@@ -192,7 +193,16 @@
 }
 
 .mini-card-footer {
-  padding: 15px 30px;
+  padding: 20px 30px;
+  font-family: "Futura-PT-Medium", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  color: #2C2C2C;
+}
+.mini-card-footer .btn {
+  font-size: 16px;
+  width: 100%;
+  font-family: "Futura-PT-Medium", sans-serif;
 }
 
 .navbar {
