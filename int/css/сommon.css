@@ -105,7 +105,8 @@
   transform: translateX(0);
   color: #000000;
 }
-.header .mini-card {
+
+.mini-card-menu .mini-card {
   padding-top: 30px;
   position: absolute;
   z-index: 104;
@@ -117,7 +118,7 @@
   min-width: 400px;
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
-.header:hover .mini-card {
+.mini-card-menu:hover .mini-card {
   opacity: 1;
   visibility: visible;
 }
