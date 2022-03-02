@@ -235,7 +235,7 @@
 }
 .navbar .nav-item-menu .menu {
   position: absolute;
-  z-index: 102;
+  z-index: 120;
   width: 100%;
   background: #ffffff;
   top: 100%;
