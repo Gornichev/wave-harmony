@@ -338,7 +338,7 @@ a
 			height: 44px
 			border-radius: 100%
 			position: absolute
-			z-index: 101
+			z-index: 99
 			right: 30px
 			top: 30px
 			padding: 11px
@@ -535,7 +535,7 @@ a
 					-o-transition: all 0.5s linear
 					transition: all 0.5s linear
 					position: relative
-					z-index: 103
+					z-index: 99
 
 					&:hover
 						transform: scale(1.1)
@@ -543,7 +543,7 @@ a
 				.blog-card-img-element
 					font-family: Futura-PT-Medium,sans-serif
 					position: absolute
-					z-index: 104
+					z-index: 99
 					top: 15px
 					right: 15px
 					background: $mainColor
@@ -1394,6 +1394,7 @@ a
 
 
 .sizing-product-select
+	position: relative
 
 	.btn
 		width: 100%
@@ -1402,6 +1403,7 @@ a
 		padding: 15px
 		border: 0.5px solid $minimalColor
 		border-radius: 15px
+		font-size: 15px
 
 		&:after
 			content: "\e905"
@@ -1418,11 +1420,14 @@ a
 		list-style: none
 		margin: 0
 		visibility: hidden
+		display: none
 		opacity: 0
 		border: 0.5px solid $minimalColor
 		border-radius: 15px
 		padding: 0
-
+		top: 53px
+		right: 0
+		width: 100%
 
 .custom-select-show
 	-webkit-transition: all .3s linear
@@ -1431,10 +1436,13 @@ a
 	transition: all .3s linear
 
 	.custom-select-list
+		position: absolute
 		visibility: visible
 		opacity: 1
+		display: block
 		border-radius: 0 0 15px 15px
 		box-shadow: 0 3px 7px rgba(0,0,0,.07)
+		background: $mainColor
 
 		.custom-select-element
 			padding-right: 5px
