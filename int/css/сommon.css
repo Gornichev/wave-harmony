@@ -125,9 +125,12 @@
 
 .mini-card-group {
   overflow-y: hidden;
-  max-height: 320px;
+  max-height: 360px;
   padding: 0;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.mini-card-group .mini-card-wrapper {
+  margin-bottom: 35px;
 }
 .mini-card-group .mini-card-wrapper .mini-card-box {
   border-bottom: 1px solid #F0F0F0;
@@ -211,7 +214,7 @@
   padding-top: 0;
   padding-bottom: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  z-index: 100;
+  z-index: 103;
 }
 .navbar .nav-link {
   font-size: 18px;
@@ -2294,6 +2297,7 @@ a {
 }
 .product-info .product-info-header {
   border-bottom: 1px solid #F0F0F0;
+  overflow: hidden;
 }
 .product-info .product-info-title {
   font-family: "Futura-PT-Demi", sans-serif;
@@ -2328,13 +2332,13 @@ a {
   position: absolute;
   display: flex;
   align-items: center;
-  transform: translateX(80%);
+  transform: translateX(20%);
   transition: 0.3s;
   padding-left: 20px;
   visibility: hidden;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
 }
 .product-info .share-box .share-panel a {
   display: block;
@@ -2385,7 +2389,6 @@ a {
 }
 
 .btn-cart-wrapper {
-  margin-bottom: 35px;
   border-bottom: 1px solid #F0F0F0;
 }
 .btn-cart-wrapper .btn {
