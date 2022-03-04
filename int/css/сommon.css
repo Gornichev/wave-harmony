@@ -2336,9 +2336,9 @@ a {
   transition: 0.3s;
   padding-left: 20px;
   visibility: hidden;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
 }
 .product-info .share-box .share-panel a {
   display: block;
@@ -2358,11 +2358,25 @@ a {
   display: block;
   color: #2C2C2C;
 }
+.product-info .btn-box {
+  display: flex;
+}
+.product-info .btn-box .title-section {
+  font-family: "Futura-PT-Book", sans-serif;
+  font-size: 17px;
+  line-height: 23px;
+}
+.product-info .btn-box .icon {
+  display: block;
+}
 .product-info .active .share-panel {
   opacity: 1;
   visibility: visible;
   transform: translateX(0);
   padding: 0;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
 }
 .product-info .product-info-group {
   display: flex;
@@ -2510,6 +2524,34 @@ a {
 .product-info-sizing-footer {
   padding-top: 25px;
   border-top: 1px solid #F0F0F0;
+  margin-bottom: 50px;
+}
+.product-info-sizing-footer .sizing-footer-title {
+  font-family: "Futura-PT-Medium", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2C2C2C;
+  margin-bottom: 30px;
+}
+
+.sizing-footer-box {
+  margin-bottom: 15px;
+}
+
+.footer-box-title {
+  font-family: "Futura-PT-Book", sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+  color: #848484;
+  margin-bottom: 12px;
+}
+
+.footer-box-text {
+  font-family: "Futura-PT-Book", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  color: #2C2C2C;
+  margin: 0;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
