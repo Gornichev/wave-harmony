@@ -2358,17 +2358,6 @@ a {
   display: block;
   color: #2C2C2C;
 }
-.product-info .btn-box {
-  display: flex;
-}
-.product-info .btn-box .title-section {
-  font-family: "Futura-PT-Book", sans-serif;
-  font-size: 17px;
-  line-height: 23px;
-}
-.product-info .btn-box .icon {
-  display: block;
-}
 .product-info .active .share-panel {
   opacity: 1;
   visibility: visible;
@@ -2400,6 +2389,10 @@ a {
   color: #848484;
   font-size: 18px;
   margin-left: 15px;
+}
+
+.sticky-bar {
+  position: sticky;
 }
 
 .btn-cart-wrapper {
@@ -2532,6 +2525,27 @@ a {
   line-height: 28px;
   color: #2C2C2C;
   margin-bottom: 30px;
+}
+
+.btn-box {
+  margin-top: 50px;
+}
+.btn-box .title-section {
+  font-family: "Futura-PT-Book", sans-serif;
+  font-size: 17px;
+  line-height: 23px;
+  color: #21A5B5;
+  display: block;
+}
+.btn-box .icon {
+  display: block;
+  color: #21A5B5;
+  margin-left: 7px;
+}
+.btn-box .btn {
+  padding: 0;
+  display: flex;
+  align-items: center;
 }
 
 .sizing-footer-box {
