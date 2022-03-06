@@ -646,7 +646,7 @@
   padding: 60px 0;
 }
 .section-final-card .swiper {
-  margin: 0;
+  margin: 0 0 75px;
   max-width: 857px;
 }
 .section-final-card .swiper-full-card:hover .swiper-button-next {
@@ -2566,6 +2566,10 @@ a {
   line-height: 18px;
   color: #2C2C2C;
   margin: 0;
+}
+
+.benefits-product-section {
+  max-width: 857px;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */

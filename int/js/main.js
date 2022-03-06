@@ -160,3 +160,16 @@ document.addEventListener( 'click', (e) => {
         customToggle.classList.remove('custom-select-show')
     }
 })
+
+
+const person = {
+
+    userName: 'Pidar',
+    age: 35,
+    isMarried: true,
+    sayHi: function (){
+        console.log('Hello PIdar')
+    }
+
+}
+
