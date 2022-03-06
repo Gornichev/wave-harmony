@@ -2394,6 +2394,7 @@ a {
 
 .sticky-bar {
   position: sticky;
+  top: 0;
 }
 
 .btn-cart-wrapper {
@@ -2596,10 +2597,17 @@ a {
 .accordion-body .benefits-accordion-list li {
   margin-bottom: 10px;
   font-family: "Futura-PT-Book", sans-serif;
+  display: flex;
+  align-items: center;
 }
 .accordion-body .benefits-accordion-list span {
   font-family: "Futura-PT-Medium", sans-serif;
   color: #000000;
+}
+.accordion-body .benefits-accordion-list .icon {
+  font-size: 22px;
+  color: #2C2C2C;
+  margin-right: 20px;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
