@@ -1550,21 +1550,24 @@ a
 .benefits-product-section
 	max-width: 857px
 
-	.accordion-item
+	.accordion
+		margin-bottom: 20px
 
-		.accordion-header
+		.accordion-item
 
-			.accordion-button
-				font-family: "Futura-PT-Medium", sans-serif
-				font-size: 20px
-				line-height: 28px
+			.accordion-header
 
-				&::after
-					color: $mainText
-					border: 1px solid $mainText
+				.accordion-button
+					font-family: "Futura-PT-Medium", sans-serif
+					font-size: 20px
+					line-height: 28px
 
-				&:focus
-					color: $mainText
+					&::after
+						color: $mainText
+						border: 1px solid $mainText
+
+					&:focus
+						color: $mainText
 
 
 .accordion-body
@@ -1591,3 +1594,12 @@ a
 			font-size: 22px
 			color: $mainText
 			margin-right: 20px
+
+.product-review
+
+	.product-review-box
+		padding: 25px 30px
+		border:  1px solid $ultraLightColor
+		border-radius: 15px 15px 0 0
+
+

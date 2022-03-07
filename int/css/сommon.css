@@ -2576,16 +2576,19 @@ a {
 .benefits-product-section {
   max-width: 857px;
 }
-.benefits-product-section .accordion-item .accordion-header .accordion-button {
+.benefits-product-section .accordion {
+  margin-bottom: 20px;
+}
+.benefits-product-section .accordion .accordion-item .accordion-header .accordion-button {
   font-family: "Futura-PT-Medium", sans-serif;
   font-size: 20px;
   line-height: 28px;
 }
-.benefits-product-section .accordion-item .accordion-header .accordion-button::after {
+.benefits-product-section .accordion .accordion-item .accordion-header .accordion-button::after {
   color: #2C2C2C;
   border: 1px solid #2C2C2C;
 }
-.benefits-product-section .accordion-item .accordion-header .accordion-button:focus {
+.benefits-product-section .accordion .accordion-item .accordion-header .accordion-button:focus {
   color: #2C2C2C;
 }
 
@@ -2611,6 +2614,12 @@ a {
   font-size: 22px;
   color: #2C2C2C;
   margin-right: 20px;
+}
+
+.product-review .product-review-box {
+  padding: 25px 30px;
+  border: 1px solid #F0F0F0;
+  border-radius: 15px 15px 0 0;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
