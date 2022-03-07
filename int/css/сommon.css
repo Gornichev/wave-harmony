@@ -2647,5 +2647,27 @@ a {
   border: 1px solid #F0F0F0;
   border-radius: 15px 15px 0 0;
 }
+.product-review-box .product-review-title {
+  font-size: 25px;
+  line-height: 35px;
+  font-family: "Futura-PT-Medium", sans-serif;
+  color: #2C2C2C;
+  margin-bottom: 5px;
+}
+.product-review-box .product-review-element {
+  font-family: "Futura-PT-Book", sans-serif;
+  font-size: 17px;
+  line-height: 23px;
+  color: #21A5B5;
+  margin-bottom: 15px;
+  display: block;
+}
+.product-review-box .product-review-text {
+  font-family: "Futura-PT-Book", sans-serif;
+  font-size: 17px;
+  line-height: 23px;
+  color: #2C2C2C;
+  margin-bottom: 30px;
+}
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
