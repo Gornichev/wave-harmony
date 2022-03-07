@@ -2577,7 +2577,7 @@ a {
   max-width: 857px;
 }
 .benefits-product-section .accordion {
-  margin-bottom: 20px;
+  margin-bottom: 100px;
 }
 .benefits-product-section .accordion .accordion-item .accordion-header .accordion-button {
   font-family: "Futura-PT-Medium", sans-serif;
@@ -2616,7 +2616,33 @@ a {
   margin-right: 20px;
 }
 
-.product-review .product-review-box {
+.product-review .product-review-header .product-review-title {
+  font-family: "Futura-PT-Book", sans-serif;
+  font-size: 30px;
+  line-height: 42px;
+  margin-bottom: 35px;
+}
+
+.review-share-box {
+  padding: 15px 30px;
+  background: #F8F8F8;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.review-share-box .share-box-title {
+  font-size: 20px;
+  line-height: 28px;
+  font-family: "Futura-PT-Book", sans-serif;
+}
+.review-share-box .btn {
+  font-family: "Futura-PT-Medium", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  min-width: 240px;
+  max-height: 60px;
+}
+
+.product-review-box {
   padding: 25px 30px;
   border: 1px solid #F0F0F0;
   border-radius: 15px 15px 0 0;
