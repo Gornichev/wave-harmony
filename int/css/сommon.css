@@ -129,9 +129,12 @@
   padding: 0;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   border-radius: 0 0 20px 20px;
+  position: relative;
 }
 .mini-card-group .mini-card-wrapper {
   margin-bottom: 35px;
+  display: block;
+  height: 100%;
 }
 .mini-card-group .mini-card-wrapper .mini-card-box {
   border-bottom: 1px solid #F0F0F0;
