@@ -649,22 +649,26 @@
 .section-final-card {
   padding: 60px 0;
 }
-.section-final-card .swiper {
+
+.section-final-card-wrapper {
+  margin-bottom: 100px;
+}
+.section-final-card-wrapper .swiper {
   margin: 0 0 75px;
   max-width: 857px;
 }
-.section-final-card .swiper-full-card:hover .swiper-button-next {
+.section-final-card-wrapper .swiper-full-card:hover .swiper-button-next {
   opacity: 1;
 }
-.section-final-card .swiper-full-card:hover .swiper-button-prev {
+.section-final-card-wrapper .swiper-full-card:hover .swiper-button-prev {
   opacity: 1;
 }
-.section-final-card .swiper-full-card .checkbox-follow {
+.section-final-card-wrapper .swiper-full-card .checkbox-follow {
   position: absolute;
   top: 20px;
   right: 20px;
 }
-.section-final-card .swiper-full-card .item-element {
+.section-final-card-wrapper .swiper-full-card .item-element {
   position: absolute;
   background: #FF0000FF;
   color: #ffffff;
@@ -676,30 +680,30 @@
   border-radius: 10px;
   z-index: 102;
 }
-.section-final-card .swiper-full-card .swiper-pagination {
+.section-final-card-wrapper .swiper-full-card .swiper-pagination {
   position: absolute;
   bottom: 5px;
   left: -345px;
 }
-.section-final-card .swiper-full-card .swiper-pagination-bullet {
+.section-final-card-wrapper .swiper-full-card .swiper-pagination-bullet {
   border-radius: 0;
   width: 15px;
   height: 6px;
   background: #E3E3E3;
   opacity: 1;
 }
-.section-final-card .swiper-full-card .swiper-pagination-bullet-active {
+.section-final-card-wrapper .swiper-full-card .swiper-pagination-bullet-active {
   background: #2C2C2C;
 }
-.section-final-card .swiper-wrapper img {
+.section-final-card-wrapper .swiper-wrapper img {
   border-radius: 0;
 }
-.section-final-card .swiper-wrapper .swiper-slide {
+.section-final-card-wrapper .swiper-wrapper .swiper-slide {
   position: relative;
   width: 424px;
   background: #F8F8F8;
 }
-.section-final-card .swiper-button-next {
+.section-final-card-wrapper .swiper-button-next {
   width: 45px;
   height: 80px;
   background: rgba(227, 227, 227, 0.6);
@@ -713,10 +717,10 @@
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.section-final-card .swiper-button-next:hover {
+.section-final-card-wrapper .swiper-button-next:hover {
   background: #E3E3E3;
 }
-.section-final-card .swiper-button-prev {
+.section-final-card-wrapper .swiper-button-prev {
   width: 45px;
   height: 80px;
   background: rgba(227, 227, 227, 0.6);
@@ -730,13 +734,13 @@
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.section-final-card .swiper-button-prev:hover {
+.section-final-card-wrapper .swiper-button-prev:hover {
   background: #E3E3E3;
 }
-.section-final-card .swiper-button-next:after {
+.section-final-card-wrapper .swiper-button-next:after {
   font-size: 17px;
 }
-.section-final-card .swiper-button-prev:after {
+.section-final-card-wrapper .swiper-button-prev:after {
   font-size: 17px;
 }
 
@@ -2668,6 +2672,13 @@ a {
   line-height: 23px;
   color: #2C2C2C;
   margin-bottom: 30px;
+}
+
+.section-product-proposition {
+  margin-bottom: 120px;
+}
+.section-product-proposition .swiper-slide {
+  height: 600px;
 }
 
 /*# sourceMappingURL=%D1%81ommon.css.map */
