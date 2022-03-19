@@ -375,6 +375,7 @@
   width: 34px;
   height: 28px;
   display: block;
+  opacity: 1;
 }
 .icon-clone-box .icon-group .icon-heat:after {
   width: 6px;
@@ -407,6 +408,7 @@
   right: -3px;
 }
 .icon-clone-box .icon-group .search-panel {
+  font-size: inherit;
   position: absolute;
   top: -18px;
   right: 0;
