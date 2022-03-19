@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="int/css/сommon.css">
 </head>
 <body id="top">
-<header class="header">
+<header class="header" id="header">
     <div class="container">
         <a href="index.html" class="logo"><img src="int/img/logo.svg" alt="logo"></a>
         <div class="row align-items-center">
@@ -152,9 +152,76 @@
                 <li class="nav-item"><a href="certificate.html" class="nav-link link-dark px-2">Сертификаты <img src="int/img/gift.png" alt=""></a></li>
                 <li class="nav-item"><a href="contact.html" class="nav-link link-dark px-2">Контакты</a></li>
             </ul>
-            <ul class="nav">
-                <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><span class="text-danger">Распродажа до -40%</span></a></li>
-            </ul>
+            <div class="icon-clone-box">
+                <ul class="list-unstyled d-flex icon-group">
+                    <li class="search-bar">
+                        <i id="searchIcon" class="icon icon-find"></i>
+                        <div id="searchBtn" class="search-panel">
+                            <label for="exampleDataList" class="form-label"></label>
+                            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Я ищу...">
+                            <datalist id="datalistOptions">
+                                <option value="Купальник">
+                                <option value="Доставка">
+                                <option value="Доски">
+                                <option value="море">
+                                <option value="печенье:))">
+                            </datalist>
+                        </div>
+                    </li>
+                    <li><a href="#"><i class="icon icon-heat"></i><span class="dot danger"></span></a></li>
+                    <li class="mini-card-menu"><a href="cart.html"><i class="icon icon-bag"></i><span class="dot danger"></span></a>
+                        <div class="mini-card-menu">
+                            <div class="mini-card">
+                                <div class="mini-card-group">
+                                    <a href="catalog-card.html" class="mini-card-wrapper">
+                                        <div class="mini-card-box">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="int/img/mini-card/mini-card.jpg" alt="">
+                                                </div>
+                                                <div class="col-8">
+                                                    <div class="mini-card-box-body">
+                                                        <span class="mini-card-title">Kiana - одна строка?</span>
+                                                        <p class="mini-card-size">Размер: S - 42/44</p>
+                                                        <span class="mini-card-price">6 600 руб.</span>
+                                                        <div class="row align-items-center">
+                                                            <div class="col-8">
+                                                                <div class="quantity-box">
+                                                                    <button type="button" class="btn btn-minus" disabled><i class="icon icon-horizontal"></i></button>
+                                                                    <span class="quantity-title">1 шт.</span>
+                                                                    <button type="button" class="btn btn-plus"><i class="icon icon-plus"></i></button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="btn-cart-wrapper">
+                                                                    <button type="button" class="btn btn-cart"><i class="icon icon-cart" disabled=""></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="mini-card-footer">
+                                        <div class="mini-card-footer-box mb-20">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="mini-card-footer-title">Итого к оплате:</div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <span class="mini-card-footer-price">26 400 руб.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-primary btn-lg">Перейти к оформлению заказа</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </nav>

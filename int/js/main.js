@@ -162,14 +162,10 @@ document.addEventListener( 'click', (e) => {
 })
 
 
-const person = {
+const header = document.querySelector('#header')
+console.log(header)
 
-    userName: 'Pidar',
-    age: 35,
-    isMarried: true,
-    sayHi: function (){
-        console.log('Hello PIdar')
-    }
-
-}
-
+window.addEventListener('scroll', function() {
+    let scrollHeader = window.scrollY
+    console.log(scrollHeader)
+});

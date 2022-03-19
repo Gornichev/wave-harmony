@@ -353,3 +353,90 @@
 		padding: 5px 15px
 
 
+.icon-clone-box
+	position: relative
+
+	.icon-group
+		font-size: inherit
+
+		li
+			position: relative
+
+			& + li
+				margin-left: 30px
+
+		.icon
+			font-size: 28px
+			color: $mainText
+			position: relative
+
+		.icon-find
+			z-index: 101
+			padding-left: 5px
+			background-color: $mainColor
+			cursor: pointer
+
+		.icon-heat
+			width: 34px
+			height: 28px
+			display: block
+
+			&:after
+				width: 6px
+				height: 6px
+				background: red
+				border-radius: 100%
+				content: ""
+				position: absolute
+				top: -3px
+				right: -3px
+
+		.icon-heat:hover:before
+			content: "\e912"
+			font-size: 28px
+			width: 34px
+			height: 28px
+			display: block
+
+		.icon-bag
+			padding-bottom: 20px
+
+			&:after
+				width: 6px
+				height: 6px
+				background: red
+				border-radius: 100%
+				content: ""
+				position: absolute
+				top: -3px
+				right: -3px
+
+		.search-panel
+			position: absolute
+			top: -18px
+			right: 0
+			width: 180px
+			transition: 0.5s
+			overflow: hidden
+
+			.form-control
+				border: none
+				border-bottom: 1px solid $darkenColor
+				border-radius: 0
+				font-family: 'Futura-PT-Book',sans-serif
+				font-size: 17px
+				color: $mainlightColor
+				opacity: 0
+				transform: translateX(100%)
+				transition: 0.5s
+				padding-left: 0
+
+				&:focus
+					box-shadow: none
+
+			&.show
+
+				.form-control
+					opacity: 1
+					transform: translateX(0)
+					color: $darkenColor
