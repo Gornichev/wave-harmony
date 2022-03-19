@@ -343,6 +343,7 @@
 
 .icon-clone-box {
   position: relative;
+  opacity: 0;
 }
 .icon-clone-box .icon-group {
   font-size: inherit;
@@ -426,6 +427,10 @@
   opacity: 1;
   transform: translateX(0);
   color: #000000;
+}
+
+.backToTop_visible .icon-clone-box {
+  opacity: 1;
 }
 
 .nav-tabs {

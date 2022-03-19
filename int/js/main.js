@@ -169,3 +169,28 @@ window.addEventListener('scroll', function() {
     let scrollHeader = window.scrollY
     console.log(scrollHeader)
 });
+
+
+
+window.addEventListener('DOMContentLoaded', function() {
+    const scrollUpButton = document.querySelector('.backToTop');
+
+    if (scrollUpButton) {
+        scrollUpButton.addEventListener('click', function name() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            });
+        });
+
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrolled >= 90) {
+                scrollUpButton.classList.add('backToTop_visible');
+            } else {
+                scrollUpButton.classList.remove('backToTop_visible');
+            }
+        });
+    }
+});
