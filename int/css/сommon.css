@@ -344,6 +344,12 @@
 .icon-clone-box {
   position: relative;
   opacity: 0;
+  display: none;
+  margin-left: 55px;
+  -webkit-transition: all 0.12s linear;
+  -moz-transition: all 0.12s linear;
+  -o-transition: all 0.12s linear;
+  transition: all 0.12s linear;
 }
 .icon-clone-box .icon-group {
   font-size: inherit;
@@ -429,8 +435,12 @@
   color: #000000;
 }
 
+.backToTop_visible .nav .nav-item:nth-child(10) {
+  display: none;
+}
 .backToTop_visible .icon-clone-box {
   opacity: 1;
+  display: block;
 }
 
 .nav-tabs {

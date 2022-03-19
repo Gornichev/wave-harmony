@@ -173,24 +173,24 @@ window.addEventListener('scroll', function() {
 
 
 window.addEventListener('DOMContentLoaded', function() {
-    const scrollUpButton = document.querySelector('.backToTop');
+    const scrollUpButton = document.querySelector('.backToTop')
 
     if (scrollUpButton) {
         scrollUpButton.addEventListener('click', function name() {
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth',
-            });
-        });
+            })
+        })
 
         window.addEventListener('scroll', function() {
-            const scrolled = window.pageYOffset || document.documentElement.scrollTop;
+            const scrolled = window.pageYOffset || document.documentElement.scrollTop
 
-            if (scrolled >= 90) {
-                scrollUpButton.classList.add('backToTop_visible');
+            if (scrolled >= 82) {
+                scrollUpButton.classList.add('backToTop_visible')
             } else {
-                scrollUpButton.classList.remove('backToTop_visible');
+                scrollUpButton.classList.remove('backToTop_visible')
             }
-        });
+        })
     }
-});
+})
