@@ -132,17 +132,6 @@ const swiper = new Swiper(".swiper-full-card", {
     },
 });
 
-
-const btnShare = document.getElementById('btnShare')
-const shareBox = document.querySelector('.share-box')
-
-shareBox.addEventListener('click', function (){
-
-    shareBox.classList.toggle('active')
-
-})
-
-
 const customToggle = document.querySelector('[data-select]')
 const customList = document.querySelector('.custom-select-list')
 const list = document.querySelector( '.custom-select')
@@ -189,14 +178,30 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 })
 
-const dom = document.querySelector('#dom')
+const btnShare = document.getElementById('btnShare')
+const shareBox = document.querySelector('.share-box')
 
+
+
+document.addEventListener('click', (e) => {
+    const click = e.composedPath().includes(btnShare)
+
+    if(click){
+        shareBox.classList.add('active')
+    }
+
+    if ( !click ) {
+        shareBox.classList.remove('active')
+    }
+})
 
 // Test
 let counter = 0
+const counterElement = document.querySelector('#counter')
 
 setInterval(function (){
     counter = counter + 1
-    console.log(counter)
+
+
 
 },1000)
