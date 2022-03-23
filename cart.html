@@ -228,6 +228,18 @@
         </div>
     </div>
 </nav>
+
+<!--Test-->
+
+<div class="dom-element" id="dom">
+    <div class="container">
+        <div class="counter" id="counter">0</div>
+        <button role="button" id="start">start</button>
+        <button role="button" id="stop">stop</button>
+        <button role="button" id="reset">reset</button>
+    </div>
+</div>
+
 <section class="section-order">
     <div class="container">
         <div class="section-order-box">
@@ -411,31 +423,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="int/js/main.js"></script>
-<script>
-    window.addEventListener('DOMContentLoaded', function() {
-        const scrollUpButton = document.querySelector('.backToTop')
-
-        if (scrollUpButton) {
-            scrollUpButton.addEventListener('click', function name() {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth',
-                })
-            })
-
-            window.addEventListener('scroll', function() {
-                const scrolled = window.pageYOffset || document.documentElement.scrollTop
-
-                if (scrolled >= 82) {
-                    scrollUpButton.classList.add('backToTop_visible')
-                } else {
-                    scrollUpButton.classList.remove('backToTop_visible')
-                }
-            })
-        }
-    })
-</script>
 </body>
 </html>
-
-

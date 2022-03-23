@@ -457,6 +457,16 @@
   content: "\e914";
 }
 
+.dom-element .counter {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+  text-align: center;
+  padding: 30px;
+  font-size: 30px;
+}
+
 .product-modal .btn {
   color: #21A5B5;
   padding: 0;
@@ -495,6 +505,16 @@
   border-radius: 0;
   padding: 0;
   display: block;
+}
+
+.dom-element .counter {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+  text-align: center;
+  padding: 30px;
+  font-size: 30px;
 }
 
 .swiper-intro {

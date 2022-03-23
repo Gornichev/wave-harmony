@@ -12,152 +12,222 @@
     <link rel="stylesheet" href="int/css/сommon.css">
 </head>
 <body id="top">
-    <header class="header">
-        <div class="container">
-            <a href="index.html" class="logo"><img src="int/img/logo.svg" alt="logo"></a>
-            <div class="row align-items-center">
-                <div class="col">
-                    <a class="header-link-phone" href="tel:88005113639"> 8 (800) 511 36 39</a><span class="header-phone-text"> - бесплатно по России</span>
-                </div>
-                <div class="col-auto">
-                    <ul class="list-unstyled d-flex icon-group">
-                        <li class="search-bar">
-                            <i id="searchIcon" class="icon icon-find"></i>
-                            <div id="searchBtn" class="search-panel">
-                                <label for="exampleDataList" class="form-label"></label>
-                                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Я ищу...">
-                                <datalist id="datalistOptions">
-                                    <option value="Купальник">
-                                    <option value="Доставка">
-                                    <option value="Доски">
-                                    <option value="море">
-                                    <option value="печенье:))">
-                                </datalist>
-                            </div>
-                        </li>
-                        <li><a href="#"><i class="icon icon-heat"></i><span class="dot danger"></span></a></li>
-                        <li class="mini-card-menu"><a href="cart.html"><i class="icon icon-bag"></i><span class="dot danger"></span></a>
-                            <div class="mini-card-menu">
-                                <div class="mini-card">
-                                    <div class="mini-card-group">
-                                        <a href="catalog-card.html" class="mini-card-wrapper">
-                                            <div class="mini-card-box">
-                                                <div class="row">
-                                                    <div class="col-4">
-                                                        <img src="int/img/mini-card/mini-card.jpg" alt="">
-                                                    </div>
-                                                    <div class="col-8">
-                                                        <div class="mini-card-box-body">
-                                                            <span class="mini-card-title">Kiana - одна строка?</span>
-                                                            <p class="mini-card-size">Размер: S - 42/44</p>
-                                                            <span class="mini-card-price">6 600 руб.</span>
-                                                            <div class="row align-items-center">
-                                                                <div class="col-8">
-                                                                    <div class="quantity-box">
-                                                                        <button type="button" class="btn btn-minus" disabled><i class="icon icon-horizontal"></i></button>
-                                                                        <span class="quantity-title">1 шт.</span>
-                                                                        <button type="button" class="btn btn-plus"><i class="icon icon-plus"></i></button>
-                                                                    </div>
+<header class="header" id="header">
+    <div class="container">
+        <a href="index.html" class="logo"><img src="int/img/logo.svg" alt="logo"></a>
+        <div class="row align-items-center">
+            <div class="col">
+                <a class="header-link-phone" href="tel:88005113639"> 8 (800) 511 36 39</a><span class="header-phone-text"> - бесплатно по России</span>
+            </div>
+            <div class="col-auto">
+                <ul class="list-unstyled d-flex icon-group">
+                    <li class="search-bar">
+                        <i id="searchIcon" class="icon icon-find"></i>
+                        <div id="searchBtn" class="search-panel">
+                            <label for="exampleDataList" class="form-label"></label>
+                            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Я ищу...">
+                            <datalist id="datalistOptions">
+                                <option value="Купальник">
+                                <option value="Доставка">
+                                <option value="Доски">
+                                <option value="море">
+                                <option value="печенье:))">
+                            </datalist>
+                        </div>
+                    </li>
+                    <li><a href="#"><i class="icon icon-heat"></i><span class="dot danger"></span></a></li>
+                    <li class="mini-card-menu"><a href="cart.html"><i class="icon icon-bag"></i><span class="dot danger"></span></a>
+                        <div class="mini-card-menu">
+                            <div class="mini-card">
+                                <div class="mini-card-group">
+                                    <a href="catalog-card.html" class="mini-card-wrapper">
+                                        <div class="mini-card-box">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="int/img/mini-card/mini-card.jpg" alt="">
+                                                </div>
+                                                <div class="col-8">
+                                                    <div class="mini-card-box-body">
+                                                        <span class="mini-card-title">Kiana - одна строка?</span>
+                                                        <p class="mini-card-size">Размер: S - 42/44</p>
+                                                        <span class="mini-card-price">6 600 руб.</span>
+                                                        <div class="row align-items-center">
+                                                            <div class="col-8">
+                                                                <div class="quantity-box">
+                                                                    <button type="button" class="btn btn-minus" disabled><i class="icon icon-horizontal"></i></button>
+                                                                    <span class="quantity-title">1 шт.</span>
+                                                                    <button type="button" class="btn btn-plus"><i class="icon icon-plus"></i></button>
                                                                 </div>
-                                                                <div class="col-auto">
-                                                                    <div class="btn-cart-wrapper">
-                                                                        <button type="button" class="btn btn-cart"><i class="icon icon-cart" disabled=""></i></button>
-                                                                    </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="btn-cart-wrapper">
+                                                                    <button type="button" class="btn btn-cart"><i class="icon icon-cart" disabled=""></i></button>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </a>
-                                        <div class="mini-card-footer">
-                                            <div class="mini-card-footer-box mb-20">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <div class="mini-card-footer-title">Итого к оплате:</div>
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        <span class="mini-card-footer-price">26 400 руб.</span>
-                                                    </div>
+                                        </div>
+                                    </a>
+                                    <div class="mini-card-footer">
+                                        <div class="mini-card-footer-box mb-20">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="mini-card-footer-title">Итого к оплате:</div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <span class="mini-card-footer-price">26 400 руб.</span>
                                                 </div>
                                             </div>
-                                            <button type="button" class="btn btn-primary btn-lg">Перейти к оформлению заказа</button>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
-    <nav class="navbar navbar-expand-xl sticky-top">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleXl" aria-controls="navbarsExampleXxl" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="icon icon-heat"></i>
-            </button>
-            <div class="collapse navbar-collapse align-items-center justify-content-between" id="navbarsExampleXl">
-                <ul class="nav me-auto">
-                    <li class="nav-item nav-item-menu">
-                        <a href="catalog.html" class="nav-link link-dark px-2 catalog-active-color">Каталог</a>
-                        <div class="menu" id="menu">
-                            <div class="container">
-                                <div class="row justify-content-end">
-                                    <div class="col">
-                                        <h6 class="menu-hover-title mb-15">Купальники</h6>
-                                        <ul class="menu-hover-group">
-                                            <li><a class="menu-hover-link" href="#">Все купальники</a></li>
-                                            <li><a class="menu-hover-link" href="#">Для серфинга</a></li>
-                                            <li><a class="menu-hover-link" href="#">Слитные</a></li>
-                                            <li><a class="menu-hover-link" href="#">Раздельные</a></li>
-                                            <li><a class="menu-hover-link" href="#">С рукавами</a></li>
-                                            <li><a class="menu-hover-link" href="#">Без рукавов</a></li>
-                                            <li><a class="menu-hover-link" href="#">С чашечками</a></li>
-                                            <li><a class="menu-hover-link" href="#">С шортиками</a></li>
-                                            <li><a class="menu-hover-link" href="#">Для беременных</a></li>
-                                            <li><a class="menu-hover-link" href="#">Солнцезащитные</a></li>
-                                            <li><a class="menu-hover-link" href="#">Лосины и легинсы</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-5">
-                                        <h6 class="menu-hover-title mb-15">Комбинезоны</h6>
-                                        <ul class="menu-hover-group">
-                                            <li><a class="menu-hover-link mb-60" href="#">Все комбинезоны</a></li>
-                                            <li><h6 class="menu-hover-title mb-15">Гидрокостюмы</h6></li>
-                                            <li><a class="menu-hover-link mb-60" href="#">Все гидрокостюмы</a></li>
-                                            <li><h6 class="menu-hover-title mb-15">Косметика</h6></li>
-                                            <li><a class="menu-hover-link" href="#">Вся косметика</a></li>
-                                            <li><a class="menu-hover-link" href="#">Серф-цинк</a></li>
-                                            <li><a class="menu-hover-link" href="#"> Бальзам для губ</a></li>
-                                            <li><a class="menu-hover-link" href="#"> Косметические средства</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-auto">
-                                        <div class="wrapper-img-menu">
-                                            <a href="#"><img class="img-fluid" src="int/img/menu-banner/banners.jpg" alt=""></a>
-                                            <a href="#"><img class="img-fluid" src="int/img/menu-banner/banners1.jpg" alt=""></a>
-                                        </div>
+                                        <button type="button" class="btn btn-primary btn-lg">Перейти к оформлению заказа</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li class="nav-item"><a href="blog.html" class="nav-link link-dark px-2 active">Блог</a></li>
-                    <li class="nav-item"><a href="brend.html" class="nav-link link-dark px-2 ">О бренде</a></li>
-                    <li class="nav-item"><a href="size.html" class="nav-link link-dark px-2">Размеры</a></li>
-                    <li class="nav-item"><a href="delivery.html" class="nav-link link-dark px-2">Доставка и оплата</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Отзывы</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Создай свой купальник</a></li>
-                    <li class="nav-item"><a href="certificate.html" class="nav-link link-dark px-2">Сертификаты <img src="int/img/gift.png" alt=""></a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link link-dark px-2">Контакты</a></li>
-                </ul>
-                <ul class="nav">
-                    <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><span class="text-danger">Распродажа до -40%</span></a></li>
                 </ul>
             </div>
         </div>
-    </nav>
+    </div>
+</header>
+    <nav class="navbar navbar-expand-xl sticky-top backToTop">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleXl" aria-controls="navbarsExampleXxl" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="icon icon-heat"></i>
+        </button>
+        <div class="collapse navbar-collapse align-items-center justify-content-between" id="navbarsExampleXl">
+            <ul class="nav me-auto align-items-center">
+                <li class="nav-item nav-item-menu">
+                    <a href="catalog.html" class="nav-link link-dark px-2 catalog-active-color">Каталог</a>
+                    <div class="menu" id="menu">
+                        <div class="container">
+                            <div class="row justify-content-end">
+                                <div class="col">
+                                    <h6 class="menu-hover-title mb-15">Купальники</h6>
+                                    <ul class="menu-hover-group">
+                                        <li><a class="menu-hover-link" href="#">Все купальники</a></li>
+                                        <li><a class="menu-hover-link" href="#">Для серфинга</a></li>
+                                        <li><a class="menu-hover-link" href="#">Слитные</a></li>
+                                        <li><a class="menu-hover-link" href="#">Раздельные</a></li>
+                                        <li><a class="menu-hover-link" href="#">С рукавами</a></li>
+                                        <li><a class="menu-hover-link" href="#">Без рукавов</a></li>
+                                        <li><a class="menu-hover-link" href="#">С чашечками</a></li>
+                                        <li><a class="menu-hover-link" href="#">С шортиками</a></li>
+                                        <li><a class="menu-hover-link" href="#">Для беременных</a></li>
+                                        <li><a class="menu-hover-link" href="#">Солнцезащитные</a></li>
+                                        <li><a class="menu-hover-link" href="#">Лосины и легинсы</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-5">
+                                    <h6 class="menu-hover-title mb-15">Комбинезоны</h6>
+                                    <ul class="menu-hover-group">
+                                        <li><a class="menu-hover-link mb-60" href="#">Все комбинезоны</a></li>
+                                        <li><h6 class="menu-hover-title mb-15">Гидрокостюмы</h6></li>
+                                        <li><a class="menu-hover-link mb-60" href="#">Все гидрокостюмы</a></li>
+                                        <li><h6 class="menu-hover-title mb-15">Косметика</h6></li>
+                                        <li><a class="menu-hover-link" href="#">Вся косметика</a></li>
+                                        <li><a class="menu-hover-link" href="#">Серф-цинк</a></li>
+                                        <li><a class="menu-hover-link" href="#"> Бальзам для губ</a></li>
+                                        <li><a class="menu-hover-link" href="#"> Косметические средства</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="wrapper-img-menu">
+                                        <a href="#"><img class="img-fluid" src="int/img/menu-banner/banners.jpg" alt=""></a>
+                                        <a href="#"><img class="img-fluid" src="int/img/menu-banner/banners1.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="blog.html" class="nav-link link-dark px-2 active">Блог</a></li>
+                <li class="nav-item"><a href="brend.html" class="nav-link link-dark px-2 ">О бренде</a></li>
+                <li class="nav-item"><a href="size.html" class="nav-link link-dark px-2">Размеры</a></li>
+                <li class="nav-item"><a href="delivery.html" class="nav-link link-dark px-2">Доставка и оплата</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Отзывы</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Создай свой купальник</a></li>
+                <li class="nav-item"><a href="certificate.html" class="nav-link link-dark px-2">Сертификаты <img src="int/img/gift.png" alt=""></a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link link-dark px-2">Контакты</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2"><span class="text-danger">Распродажа до -40%</span></a></li>
+                <li>
+                    <div class="icon-clone-box">
+                        <ul class="list-unstyled d-flex icon-group">
+                            <li class="search-bar">
+                                <i id="searchIcon1" class="icon icon-find"></i>
+                                <div id="searchBtn1" class="search-panel">
+                                    <label for="exampleDataList" class="form-label"></label>
+                                    <label for="exampleDataList1"></label><input class="form-control" list="datalistOptions1" id="exampleDataList1" placeholder="Я ищу...">
+                                    <datalist id="datalistOptions1">
+                                        <option value="Купальник">
+                                        <option value="Доставка">
+                                        <option value="Доски">
+                                        <option value="море">
+                                        <option value="печенье:))">
+                                    </datalist>
+                                </div>
+                            </li>
+                            <li><a href="#"><i class="icon icon-heat"></i><span class="dot danger"></span></a></li>
+                            <li class="mini-card-menu"><a href="cart.html"><i class="icon icon-bag"></i><span class="dot danger"></span></a>
+                                <div class="mini-card-menu">
+                                    <div class="mini-card">
+                                        <div class="mini-card-group">
+                                            <a href="catalog-card.html" class="mini-card-wrapper">
+                                                <div class="mini-card-box">
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <img src="int/img/mini-card/mini-card.jpg" alt="">
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <div class="mini-card-box-body">
+                                                                <span class="mini-card-title">Kiana - одна строка?</span>
+                                                                <p class="mini-card-size">Размер: S - 42/44</p>
+                                                                <span class="mini-card-price">6 600 руб.</span>
+                                                                <div class="row align-items-center">
+                                                                    <div class="col-8">
+                                                                        <div class="quantity-box">
+                                                                            <button type="button" class="btn btn-minus" disabled><i class="icon icon-horizontal"></i></button>
+                                                                            <span class="quantity-title">1 шт.</span>
+                                                                            <button type="button" class="btn btn-plus"><i class="icon icon-plus"></i></button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-auto">
+                                                                        <div class="btn-cart-wrapper">
+                                                                            <button type="button" class="btn btn-cart"><i class="icon icon-cart" disabled=""></i></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="mini-card-footer">
+                                                <div class="mini-card-footer-box mb-20">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <div class="mini-card-footer-title">Итого к оплате:</div>
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <span class="mini-card-footer-price">26 400 руб.</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn btn-primary btn-lg">Перейти к оформлению заказа</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 <!--    Section-intro-->
     <section class="section-intro">
         <div class="swiper swiper-intro">
@@ -838,6 +908,30 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="int/js/main.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', function() {
+        const scrollUpButton = document.querySelector('.backToTop')
+
+        if (scrollUpButton) {
+            scrollUpButton.addEventListener('click', function name() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth',
+                })
+            })
+
+            window.addEventListener('scroll', function() {
+                const scrolled = window.pageYOffset || document.documentElement.scrollTop
+
+                if (scrolled >= 82) {
+                    scrollUpButton.classList.add('backToTop_visible')
+                } else {
+                    scrollUpButton.classList.remove('backToTop_visible')
+                }
+            })
+        }
+    })
+</script>
 </body>
 </html>
 

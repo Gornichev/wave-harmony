@@ -5,6 +5,7 @@ const swiperIntro = new Swiper(".swiper-intro", {
     },
 });
 
+
 // Tooltip
 const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
@@ -112,6 +113,7 @@ tabHeaders.forEach(function (item) {
     })
 })
 
+
 // Swiper fool card
 
 const swiper = new Swiper(".swiper-full-card", {
@@ -134,7 +136,7 @@ const swiper = new Swiper(".swiper-full-card", {
 const btnShare = document.getElementById('btnShare')
 const shareBox = document.querySelector('.share-box')
 
-btnShare.addEventListener('click', function (){
+shareBox.addEventListener('click', function (){
 
     shareBox.classList.toggle('active')
 
@@ -146,6 +148,7 @@ const customList = document.querySelector('.custom-select-list')
 const list = document.querySelector( '.custom-select')
 
 document.addEventListener( 'click', (e) => {
+
 
     const examinationList = e.composedPath().includes(list)
 
@@ -160,6 +163,7 @@ document.addEventListener( 'click', (e) => {
         customToggle.classList.remove('custom-select-show')
     }
 })
+
 
 
 window.addEventListener('DOMContentLoaded', function() {
@@ -184,3 +188,15 @@ window.addEventListener('DOMContentLoaded', function() {
         })
     }
 })
+
+const dom = document.querySelector('#dom')
+
+
+// Test
+let counter = 0
+
+setInterval(function (){
+    counter = counter + 1
+    console.log(counter)
+
+},1000)
