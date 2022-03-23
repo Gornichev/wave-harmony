@@ -162,16 +162,6 @@ document.addEventListener( 'click', (e) => {
 })
 
 
-const header = document.querySelector('#header')
-console.log(header)
-
-window.addEventListener('scroll', function() {
-    let scrollHeader = window.scrollY
-    console.log(scrollHeader)
-});
-
-
-
 window.addEventListener('DOMContentLoaded', function() {
     const scrollUpButton = document.querySelector('.backToTop')
 
