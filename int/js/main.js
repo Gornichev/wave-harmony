@@ -186,22 +186,43 @@ const shareBox = document.querySelector('.share-box')
 document.addEventListener('click', (e) => {
     const click = e.composedPath().includes(btnShare)
 
+    // shareBox.classList.toggle('active')
+
     if(click){
-        shareBox.classList.add('active')
+        shareBox.classList.toggle('active')
+
     }
 
     if ( !click ) {
         shareBox.classList.remove('active')
+
     }
 })
 
 // Test
-let counter = 0
-const counterElement = document.querySelector('#counter')
-
-setInterval(function (){
-    counter = counter + 1
-
-
-
-},1000)
+// let counter = 0
+// const counterElement = document.querySelector('#counter')
+// const btnStart = document.querySelector('#start')
+// const btnStop = document.querySelector('#stop')
+// const btnReset = document.querySelector('#reset')
+// let timerId;
+//
+// btnStart.onclick = function (){
+//
+//     timerId = setInterval(function (){
+//         counter = counter + 1
+//         counterElement.innerText = counter
+//
+//     },1000)
+//
+// }
+//
+// btnStop.onclick = function (){
+//     clearInterval(timerId)
+// }
+//
+// btnReset.onclick = function (){
+//     counter = 0
+//     clearInterval(timerId)
+//     counterElement.innerText = counter
+// }
