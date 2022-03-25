@@ -186,8 +186,6 @@ const shareBox = document.querySelector('.share-box')
 document.addEventListener('click', (e) => {
     const click = e.composedPath().includes(btnShare)
 
-    // shareBox.classList.toggle('active')
-
     if(click){
         shareBox.classList.toggle('active')
 
@@ -199,7 +197,20 @@ document.addEventListener('click', (e) => {
     }
 })
 
-// Test
+
+
+// Test Counter
+
+// const userAge = 25
+// let userName = prompt('Pidar')
+//
+// console.log(typeof userName )
+//
+// const  userAge = Number(userName)
+//
+
+
+
 // let counter = 0
 // const counterElement = document.querySelector('#counter')
 // const btnStart = document.querySelector('#start')
@@ -226,3 +237,4 @@ document.addEventListener('click', (e) => {
 //     clearInterval(timerId)
 //     counterElement.innerText = counter
 // }
+
