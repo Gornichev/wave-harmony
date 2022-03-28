@@ -181,8 +181,6 @@ window.addEventListener('DOMContentLoaded', function() {
 const btnShare = document.getElementById('btnShare')
 const shareBox = document.querySelector('.share-box')
 
-
-
 document.addEventListener('click', (e) => {
     const click = e.composedPath().includes(btnShare)
 
@@ -197,8 +195,6 @@ document.addEventListener('click', (e) => {
     }
 })
 
-
-
 // Test Counter
 
 // const userAge = 25
@@ -207,34 +203,42 @@ document.addEventListener('click', (e) => {
 // console.log(typeof userName )
 //
 // const  userAge = Number(userName)
-//
 
 
+let counter = 0
+const counterElement = document.querySelector('#counter')
+const btnStart = document.querySelector('#start')
+const btnStop = document.querySelector('#stop')
+const btnReset = document.querySelector('#reset')
+let timerId;
 
-// let counter = 0
-// const counterElement = document.querySelector('#counter')
-// const btnStart = document.querySelector('#start')
-// const btnStop = document.querySelector('#stop')
-// const btnReset = document.querySelector('#reset')
-// let timerId;
-//
-// btnStart.onclick = function (){
-//
-//     timerId = setInterval(function (){
-//         counter = counter + 1
-//         counterElement.innerText = counter
-//
-//     },1000)
-//
-// }
-//
-// btnStop.onclick = function (){
-//     clearInterval(timerId)
-// }
-//
-// btnReset.onclick = function (){
-//     counter = 0
-//     clearInterval(timerId)
-//     counterElement.innerText = counter
-// }
+btnStart.onclick = function (){
+
+    timerId = setInterval(function (){
+        counter = counter + 1
+        counterElement.innerText = counter
+
+    },1000)
+
+}
+
+btnStop.onclick = function (){
+    clearInterval(timerId)
+}
+
+btnReset.onclick = function (){
+    counter = 0
+    clearInterval(timerId)
+    counterElement.innerText = counter
+}
+
+let weight = '88,3'
+let height = '1.75'
+
+const weightNorm =  Number(weight.replace(',','.'))
+const heightNorm = Number(height.replace(',','.'))
+
+const bmi = (weightNorm / heightNorm **2).toFixed(1)
+
+console.log(bmi)
 

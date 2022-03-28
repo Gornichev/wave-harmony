@@ -2818,4 +2818,59 @@ a {
   margin-bottom: 35px;
 }
 
+.mini-card-box {
+  padding: 25px 0;
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.order-box-side-bar {
+  background: #F8F8F8;
+  border-radius: 20px;
+  padding: 35px 40px;
+  margin: 0;
+  list-style: none;
+  position: sticky;
+  top: 82px;
+}
+.order-box-side-bar .order-box-side-bar-title {
+  font-family: "Futura-PT-Medium", sans-serif;
+  font-size: 28px;
+  line-height: 39px;
+  margin-bottom: 20px;
+  color: #2C2C2C;
+}
+.order-box-side-bar .btn {
+  width: 100%;
+  font-family: "Futura-PT-Medium", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 15px;
+}
+.order-box-side-bar .order-box-footer-text {
+  font-family: "Futura-PT-Book", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  display: block;
+}
+.order-box-side-bar .gradient-color {
+  color: #21A5B5;
+}
+
+.order-box-wrapper {
+  margin-bottom: 30px;
+}
+.order-box-wrapper .order-box-side-bar-text {
+  font-size: 18px;
+  font-family: "Futura-PT-Book", sans-serif;
+  line-height: 25px;
+  color: #444444;
+}
+.order-box-wrapper .order-box-side-bar-price {
+  font-size: 18px;
+  font-family: "Futura-PT-Medium", sans-serif;
+  line-height: 25px;
+  color: #2C2C2C;
+}
+
 /*# sourceMappingURL=%D1%81ommon.css.map */
