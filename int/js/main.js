@@ -112,7 +112,7 @@ tabHeaders.forEach(function (item) {
 
     })
 })
-
+// 33
 
 // Swiper fool card
 
@@ -197,48 +197,9 @@ document.addEventListener('click', (e) => {
 
 // Test Counter
 
-// const userAge = 25
-// let userName = prompt('Pidar')
-//
-// console.log(typeof userName )
-//
-// const  userAge = Number(userName)
+const language = ['piton', 'javascript', 'java', 'c++', 'c#']
 
+for (let i = 1; i < language.length; i += 1) {
 
-let counter = 0
-const counterElement = document.querySelector('#counter')
-const btnStart = document.querySelector('#start')
-const btnStop = document.querySelector('#stop')
-const btnReset = document.querySelector('#reset')
-let timerId;
-
-btnStart.onclick = function (){
-
-    timerId = setInterval(function (){
-        counter = counter + 1
-        counterElement.innerText = counter
-
-    },1000)
-
+    
 }
-
-btnStop.onclick = function (){
-    clearInterval(timerId)
-}
-
-btnReset.onclick = function (){
-    counter = 0
-    clearInterval(timerId)
-    counterElement.innerText = counter
-}
-
-let weight = '88,3'
-let height = '1.75'
-
-const weightNorm =  Number(weight.replace(',','.'))
-const heightNorm = Number(height.replace(',','.'))
-
-const bmi = (weightNorm / heightNorm **2).toFixed(1)
-
-console.log(bmi)
-
