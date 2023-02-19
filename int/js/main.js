@@ -132,6 +132,7 @@ const swiper = new Swiper(".swiper-full-card", {
     },
 });
 
+
 const customToggle = document.querySelector('[data-select]')
 const customList = document.querySelector('.custom-select-list')
 const list = document.querySelector( '.custom-select')
