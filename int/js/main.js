@@ -4,8 +4,8 @@ const swiperIntro = new Swiper(".swiper-intro", {
         clickable: true,
     },
 });
-
-
+// Tooltip
+// Tooltip
 // Tooltip
 const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
